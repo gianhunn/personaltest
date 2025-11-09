@@ -3,6 +3,7 @@
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { HourglassLoader } from "@/components/ui/hourglass"
 import { useState } from "react"
 
 function Star({ filled }: { filled: boolean }) {
@@ -146,14 +147,7 @@ export default function TestPage() {
         <Navigation currentPage="test" />
 
         <main className="mx-auto flex min-h-[calc(100vh-120px)] max-w-6xl flex-col items-center justify-center px-8 py-16">
-          <div className="mb-8 flex items-center justify-center gap-4">
-            <div className="h-16 w-16 animate-bounce rounded-lg bg-[#BD9479] [animation-delay:-0.3s]" />
-            <div className="h-16 w-16 animate-bounce rounded-lg bg-[#5dc9c9] [animation-delay:-0.15s]" />
-            <div className="h-16 w-16 animate-bounce rounded-lg bg-[#a8e6cf]" />
-            <div className="h-16 w-16 animate-bounce rounded-lg bg-[#7ee8b4] [animation-delay:-0.15s]" />
-            <div className="h-16 w-16 animate-bounce rounded-lg bg-[#8dd9e8] [animation-delay:-0.3s]" />
-          </div>
-          <p className="font-serif text-2xl text-[#5a6b6a]">Chờ chút nhé...</p>
+          <HourglassLoader message="Chờ chút nhé..." />
         </main>
       </div>
     )

@@ -129,3 +129,7 @@
 .no-scrollbar {
   scrollbar-width: none;
 }
+
+.hg-svg {
+  filter: drop-shadow(0 12px 24px rgba(189, 148, 121, 0.28));
+}
