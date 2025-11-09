@@ -4,6 +4,7 @@ import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useState } from "react"
+import { googleSheetsService } from "@/services"
 
 function Star({ filled }: { filled: boolean }) {
   return (
@@ -86,11 +87,11 @@ const questions = [
 ]
 
 const ratingOptions = [
-  { value: 1, label: "Rất không đồng ý", bgColor: "bg-[#fef9e7]" },
-  { value: 2, label: "Không đồng ý", bgColor: "bg-[#f4f9d0]" },
-  { value: 3, label: "Trung lập", bgColor: "bg-[#d4f4dd]" },
-  { value: 4, label: "Đồng ý", bgColor: "bg-[#a8e6cf]" },
-  { value: 5, label: "Rất đồng ý", bgColor: "bg-[#7ee8b4]" },
+  { value: -2, stars: 1, label: "Rất không đồng ý", bgColor: "bg-[#fef9e7]" },
+  { value: -1, stars: 2, label: "Không đồng ý", bgColor: "bg-[#f4f9d0]" },
+  { value: 0, stars: 3, label: "Trung lập", bgColor: "bg-[#d4f4dd]" },
+  { value: 1, stars: 4, label: "Đồng ý", bgColor: "bg-[#a8e6cf]" },
+  { value: 2, stars: 5, label: "Rất đồng ý", bgColor: "bg-[#7ee8b4]" },
 ]
 
 export default function TestPage() {
@@ -125,17 +126,32 @@ export default function TestPage() {
     }
   }
 
-  const handleContinue = () => {
+  const handleContinue = async () => {
     if (selectedRating !== null) {
-      setAnswers({ ...answers, [questions[currentQuestion].id]: selectedRating })
+      const updatedAnswers = { ...answers, [questions[currentQuestion].id]: selectedRating }
+      setAnswers(updatedAnswers)
 
       if (currentQuestion < questions.length - 1) {
         const nextQuestion = currentQuestion + 1
         setCurrentQuestion(nextQuestion)
-        setSelectedRating(answers[questions[nextQuestion].id] ?? null)
+        setSelectedRating(updatedAnswers[questions[nextQuestion].id] ?? null)
       } else {
+        // Test completed - save to Google Sheets first, then show loading
+        console.log("Test completed", updatedAnswers)
+
+        // Save to Google Sheets using service (only if gender is set)
+        if (gender) {
+          googleSheetsService.saveTestResults({
+            name,
+            gender,
+            answers: updatedAnswers
+          })
+        } else {
+          console.error('Gender not set, cannot save test results')
+        }
+
+        // Show loading screen after initiating save
         setIsLoading(true)
-        console.log("Test completed", { ...answers, [questions[currentQuestion].id]: selectedRating })
       }
     }
   }
@@ -186,7 +202,7 @@ export default function TestPage() {
               >
                 <div className="flex gap-1">
                   {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} filled={i < option.value} />
+                    <Star key={i} filled={i < option.stars} />
                   ))}
                 </div>
                 <span className="whitespace-nowrap rounded-full bg-white px-6 py-2 text-sm font-medium text-[#5a6b6a]">
