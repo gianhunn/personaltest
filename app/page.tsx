@@ -2,87 +2,177 @@
 
 import { Navigation } from "@/components/navigation"
 import Link from "next/link"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
+import Autoplay from "embla-carousel-autoplay"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  type CarouselApi,
+} from "@/components/ui/carousel"
+import { EllipseOverlay, HeroContent, CarouselImage, ContentItem } from "@/components/home"
+import {
+  GALLERY_IMAGES,
+  ELLIPSE_CONFIG,
+  CAROUSEL_CONFIG,
+  WHY_TAKE_TEST_ITEMS,
+  HOW_TO_ITEMS,
+} from "@/lib/home/constants"
 
 export default function Home() {
-  const [autoScroll, setAutoScroll] = useState(0)
+  const [api, setApi] = useState<CarouselApi>()
+  const [autoplayPlugin, setAutoplayPlugin] = useState<ReturnType<typeof Autoplay> | null>(null)
+  const [isDesktop, setIsDesktop] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setAutoScroll((prev) => (prev + 1) % 6)
-    }, 4000)
-    return () => clearInterval(interval)
+    setMounted(true)
   }, [])
 
-  const galleryImages = [
-    "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=400&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=400&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&h=600&fit=crop",
-  ]
+  // Initialize autoplay plugin and handle responsive breakpoint
+  useEffect(() => {
+    if (!mounted) return
+
+    // Initialize plugin
+    setAutoplayPlugin(
+      Autoplay({
+        delay: CAROUSEL_CONFIG.autoplayDelay,
+        stopOnInteraction: false
+      })
+    )
+
+    // Use MediaQueryList for efficient responsive detection
+    const mediaQuery = window.matchMedia(`(min-width: ${CAROUSEL_CONFIG.breakpoint}px)`)
+
+    // Set initial state
+    setIsDesktop(mediaQuery.matches)
+
+    // Handle media query changes
+    const handleChange = (e: MediaQueryListEvent) => {
+      setIsDesktop(e.matches)
+    }
+
+    // Modern browsers support addEventListener on MediaQueryList
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener("change", handleChange)
+      return () => mediaQuery.removeEventListener("change", handleChange)
+    } else {
+      // Fallback for older browsers (Safari < 14)
+      const legacyHandler = () => setIsDesktop(mediaQuery.matches)
+      mediaQuery.addListener(legacyHandler)
+      return () => mediaQuery.removeListener(legacyHandler)
+    }
+  }, [mounted])
+
+  // Memoize clip-path style to avoid recalculation
+  const carouselClipPath = useMemo(
+    () =>
+      isDesktop
+        ? {
+            clipPath: "ellipse(100% clamp(200px, 25vw, 350px) at 50% 50%)",
+            WebkitClipPath: "ellipse(100% clamp(200px, 25vw, 350px) at 50% 50%)",
+          }
+        : {},
+    [isDesktop]
+  )
+
+  // Calculate desktop hero content position
+  const desktopHeroTop = useMemo(
+    () =>
+      `calc(${ELLIPSE_CONFIG.desktopMinHeight}px - ${Math.abs(
+        ELLIPSE_CONFIG.position
+      )}px + ${ELLIPSE_CONFIG.height / 2}px)`,
+    []
+  )
+
+  // Khi chưa mount (SSR phase), tránh hydration mismatch
+  if (!mounted) {
+    return <div className="min-h-screen bg-[#f8f7f4]" />
+  }
 
   return (
-    <div className="min-h-screen bg-[#f5f3f0]">
+    <div className="min-h-screen bg-[#f8f7f4]">
       <Navigation currentPage="home" />
 
       {/* Hero Section with Gallery */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* Image Gallery */}
-          <div className="flex gap-5 mb-16 overflow-x-auto pb-4">
-            {galleryImages.map((image, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-60 h-80 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
-              >
-                <img
-                  src={image || "/placeholder.svg"}
-                  alt={`Fashion ${index + 1}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
+      <section className="pt-8 pb-0 md:pt-8 md:pb-40 relative">
+        {/* Carousel Container */}
+        <div
+          className={`relative w-full flex ${isDesktop ? "items-center" : "items-start"} justify-center overflow-hidden`}
+          style={{
+            minHeight: isDesktop ? `${ELLIPSE_CONFIG.desktopMinHeight}px` : "auto",
+          }}
+        >
+          {/* Carousel with responsive clip-path (desktop only) */}
+          <div
+            className="relative z-10 w-full px-4"
+            style={carouselClipPath}
+            suppressHydrationWarning
+          >
+            <Carousel
+              setApi={setApi}
+              plugins={autoplayPlugin ? [autoplayPlugin] : []}
+              className="w-full"
+              opts={{
+                align: "start",
+                loop: true,
+                slidesToScroll: 1,
+                duration: CAROUSEL_CONFIG.scrollDuration,
+              }}
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {GALLERY_IMAGES.map((image, index) => (
+                  <CarouselItem key={`gallery-${index}`} className="pl-2 md:pl-4 basis-auto">
+                    <CarouselImage
+                      src={image}
+                      alt={`Fashion image ${index + 1}`}
+                      index={index}
+                    />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
 
-          {/* Hero Content */}
-          <div className="text-center">
-            <p className="text-sm tracking-widest text-[#8b7d72] mb-4 font-serif">KHÁM PHÁ</p>
-            <h1 className="text-5xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light mb-4 text-balance">
-              PHONG CÁCH ĐỘC BẢN CỦA RIÊNG BẠN
-            </h1>
-            <p className="text-base text-[#8b7d72] font-serif">dành cho 22 tuổi trở lên</p>
+          {/* Ellipse Background Overlay - Desktop only */}
+          <div
+            className="hidden md:block absolute inset-0 z-20 pointer-events-none"
+            suppressHydrationWarning
+            aria-hidden="true"
+          >
+            <EllipseOverlay position={ELLIPSE_CONFIG.position} />
+            <EllipseOverlay position={ELLIPSE_CONFIG.position} rotate />
+          </div>
+        </div>
+
+        {/* Hero Content - Mobile: Below carousel */}
+        <HeroContent className="md:hidden mt-6" showBottomMargin />
+
+        {/* Hero Content - Desktop: Overlay on ellipse */}
+        <div
+          className="hidden md:block absolute left-0 right-0 z-[100] pointer-events-none"
+          style={{
+            top: desktopHeroTop,
+            transform: "translateY(-50%)",
+          }}
+        >
+          <div className="max-w-7xl mx-auto px-6 w-full pointer-events-auto">
+            <HeroContent />
           </div>
         </div>
       </section>
 
       {/* Why Take Test Section */}
-      <section className="py-20 border-t border-[#d4c9bf]">
+      <section className="pt-6 pb-12 md:pt-20 md:pb-20 border-t border-[#d4c9bf]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-            <div className="space-y-12">
-              <div>
-                <h3 className="text-xl font-semibold text-[#6b5d52] mb-3 font-serif">Tiết kiệm thời gian</h3>
-                <p className="text-base leading-relaxed text-[#8b7d72] font-serif">
-                  Không phải đắn do giữa các lựa chọn, thay vào đó, bạn có thời gian để lắng nghe và đặt mục tiêu tạo ra
-                  phong cách của chính mình
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-[#6b5d52] mb-3 font-serif">Tự tin hơn</h3>
-                <p className="text-base leading-relaxed text-[#8b7d72] font-serif">
-                  Khi thực sự định hình được bản thân, bạn sẵn sàng thể hiện nhiều khía cạnh của bản thân mình.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-[#6b5d52] mb-3 font-serif">Chân thật</h3>
-                <p className="text-base leading-relaxed text-[#8b7d72] font-serif">
-                  Kết quả khẳng định bản chất thật của bạn, không phải con người bạn muốn trở thành
-                </p>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+            <div className="space-y-8 md:space-y-12">
+              {WHY_TAKE_TEST_ITEMS.map((item, index) => (
+                <ContentItem key={`why-test-${index}`} title={item.title} description={item.description} />
+              ))}
             </div>
             <div className="flex items-center">
-              <h2 className="text-5xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light text-balance leading-tight">
+              <h2 className="text-4xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light text-balance leading-tight">
                 VÌ SAO NÊN LÀM TEST?
               </h2>
             </div>
@@ -91,34 +181,21 @@ export default function Home() {
       </section>
 
       {/* How To Section */}
-      <section className="py-20 border-t border-[#d4c9bf]">
+      <section className="py-12 md:py-20 border-t border-[#d4c9bf]">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-5xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light mb-16">
+          <h2 className="text-4xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light mb-10 md:mb-16">
             LÀM THẾ NÀO?
           </h2>
 
-          <div className="space-y-12 mb-12">
-            <div>
-              <h3 className="text-xl font-semibold text-[#6b5d52] mb-3 font-serif">Làm bài test</h3>
-              <p className="text-base leading-relaxed text-[#8b7d72] font-serif max-w-2xl">
-                Đảm bảo bạn trả lời tất cả các câu hỏi trung thực. Và bạn hãy click vào kết quả đầu tiên xuất hiện trong
-                tâm trí của mình.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-[#6b5d52] mb-3 font-serif">Nhận kết quả</h3>
-              <p className="text-base leading-relaxed text-[#8b7d72] font-serif max-w-2xl">
-                Kết quả bạn nhận được là tấm bản đồ định hình phong cách thời trang CỦA RIÊNG BẠN, được "may đo" chính
-                xác theo cá tính độc đáo và khai phá cả những tiềm năng phong cách bạn chưa từng biết đến.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-[#6b5d52] mb-3 font-serif">Khai mở & Tiến bộ</h3>
-              <p className="text-base leading-relaxed text-[#8b7d72] font-serif max-w-2xl">
-                Nền tảng để bạn nâng cao nhận thức về bản thân, từ đó cải thiện kỹ năng giao tiếp, xây dựng các mối quan
-                hệ chất lượng và biến mục tiêu thành hành động thực tế thông qua tư vấn chuyên sâu hơn.
-              </p>
-            </div>
+          <div className="space-y-8 md:space-y-12 mb-8 md:mb-12">
+            {HOW_TO_ITEMS.map((item, index) => (
+              <ContentItem
+                key={`how-to-${index}`}
+                title={item.title}
+                description={item.description}
+                className="max-w-2xl"
+              />
+            ))}
           </div>
 
           <div className="flex justify-end">
