@@ -85,7 +85,6 @@ export default function Home() {
     []
   )
 
-  // Khi chưa mount (SSR phase), tránh hydration mismatch
   if (!mounted) {
     return <div className="min-h-screen bg-[#f8f7f4]" />
   }
@@ -163,7 +162,7 @@ export default function Home() {
       </section>
 
       {/* Why Take Test Section */}
-      <section className="pt-6 pb-12 md:pt-20 md:pb-20 border-t border-[#d4c9bf]">
+      <section className="pt-12 md:py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
             <div className="space-y-8 md:space-y-12">
@@ -171,7 +170,7 @@ export default function Home() {
                 <ContentItem key={`why-test-${index}`} title={item.title} description={item.description} />
               ))}
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center order-first md:order-none">
               <h2 className="text-4xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light text-balance leading-tight">
                 VÌ SAO NÊN LÀM TEST?
               </h2>
@@ -181,7 +180,7 @@ export default function Home() {
       </section>
 
       {/* How To Section */}
-      <section className="py-12 md:py-20 border-t border-[#d4c9bf]">
+      <section className="py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light mb-10 md:mb-16">
             LÀM THẾ NÀO?
@@ -201,7 +200,7 @@ export default function Home() {
           <div className="flex justify-end">
             <Link
               href="/ket-qua-entp-nu"
-              className="inline-block px-10 py-3 border-2 border-[#6b5d52] text-[#6b5d52] font-serif text-base tracking-widest uppercase transition-all hover:bg-[#6b5d52] hover:text-white"
+              className="inline-block px-10 py-3 border-2 border-[#6b5d52] text-[#6b5d52] font-serif text-base tracking-widest uppercase transition-all hover:bg-[#6b5d52] hover:text-white rounded-full"
             >
               TEST NGAY
             </Link>

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-[#f5f3ed]">
+    <div className="min-h-screen bg-[#f8f7f4]">
       <Navigation currentPage="contact" />
 
       <main className="mx-auto max-w-4xl px-6 py-16">

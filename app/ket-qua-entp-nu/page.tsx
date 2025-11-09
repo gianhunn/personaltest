@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function KetQuaENTPNu() {
   return (
-    <div className="min-h-screen bg-[#f5f3ed]">
+    <div className="min-h-screen bg-[#f8f7f4]">
       <Navigation currentPage="test" />
 
       {/* Hero Section */}

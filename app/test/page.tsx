@@ -143,7 +143,7 @@ export default function TestPage() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-[#f5f3ed]">
+      <div className="min-h-screen bg-[#f8f7f4]">
         <Navigation currentPage="test" />
 
         <main className="mx-auto flex min-h-[calc(100vh-120px)] max-w-6xl flex-col items-center justify-center px-8 py-16">
@@ -158,7 +158,7 @@ export default function TestPage() {
     const isLastQuestion = currentQuestion === questions.length - 1
 
     return (
-      <div className="min-h-screen bg-[#f5f3ed]">
+      <div className="min-h-screen bg-[#f8f7f4]">
         <Navigation currentPage="test" />
 
         <main className="mx-auto flex min-h-[calc(100vh-120px)] max-w-6xl flex-col items-center justify-center px-8 py-16">
@@ -213,7 +213,7 @@ export default function TestPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f5f3ed]">
+    <div className="min-h-screen bg-[#f8f7f4]">
       <Navigation currentPage="test" />
 
       <main className="mx-auto grid min-h-[calc(100vh-120px)] max-w-7xl grid-cols-1 lg:grid-cols-2">

@@ -2,7 +2,7 @@ import { Navigation } from "@/components/navigation"
 
 export default function ClientsPage() {
   return (
-    <div className="min-h-screen bg-[#f5f3ed]">
+    <div className="min-h-screen bg-[#f8f7f4]">
       <Navigation currentPage="clients" />
 
       <main className="mx-auto max-w-6xl px-6 py-16">

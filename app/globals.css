@@ -75,7 +75,7 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
+  --font-sans: "Montserrat", system-ui, -apple-system, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
   /* Added serif font family for elegant typography */
   --font-serif: "Georgia", "Times New Roman", serif;

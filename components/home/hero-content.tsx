@@ -11,7 +11,7 @@ export function HeroContent({ className = "", showBottomMargin = false }: HeroCo
           <h1 className="text-4xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light mb-4 text-balance">
             PHONG CÁCH ĐỘC BẢN CỦA RIÊNG BẠN
           </h1>
-          <p className={`text-base text-[#8b7d72] font-serif ${showBottomMargin ? "mb-6" : ""}`}>
+          <p className={`text-base text-[#8b7d72] font-serif ${showBottomMargin ? "mb-2" : ""}`}>
             dành cho 22 tuổi trở lên
           </p>
         </div>

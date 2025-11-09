@@ -1,11 +1,13 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Montserrat } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat"
+})
 
 export const metadata: Metadata = {
   title: "Personal Test, Inc. - Khám phá phong cách của bạn",
@@ -20,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${montserrat.className} antialiased`}>
         {children}
         <Analytics />
       </body>
