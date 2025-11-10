@@ -1,4 +1,6 @@
 import Navigation from "@/components/navigation"
+import { ContactFormSection } from "./components/contact-form-section"
+import { ContactHeroSection } from "./components/contact-hero-section"
 
 export default function ContactUs() {
   return (
@@ -6,8 +8,7 @@ export default function ContactUs() {
       <Navigation currentPage="contact" />
 
       {/* Hero Section */}
-      <section className="relative w-full min-h-screen">
-        {/* Background Image */}
+      {/* <section className="relative w-full min-h-screen">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -15,11 +16,9 @@ export default function ContactUs() {
               "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CleanShot%202025-11-02%20at%2000.54.17%402x-J6n7TxBXFr6RMwsTEdgySVWmcipgWU.png')",
           }}
         >
-          {/* Overlay for better text readability */}
           <div className="absolute inset-0 bg-black/10" />
         </div>
 
-        {/* Text Content */}
         <div className="relative z-10 flex h-full items-center px-4 sm:px-6 md:px-16 lg:px-24">
           <div className="w-full max-w-4xl">
             <h1 className="font-serif font-bold leading-tight text-[#6b5d52] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
@@ -36,7 +35,9 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <ContactHeroSection />
+      <ContactFormSection />
     </div>
   )
 }
