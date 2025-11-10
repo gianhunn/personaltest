@@ -73,7 +73,7 @@ export function Navigation({ currentPage }: NavigationProps) {
 
       {isMenuOpen && (
         <div className="fixed inset-0 z-[300] flex min-h-[100dvh] flex-col bg-[#F8F7F4] lg:hidden">
-          <div className="flex items-center justify-between border-b border-[#d4cfc0] px-6 py-4">
+          <div className="flex items-center justify-between border-b border-[#d4cfc0] px-6 py-6">
             <Link href="/" onClick={() => setIsMenuOpen(false)}>
               <h1 className="font-serif text-2xl tracking-wide text-[#745E4D]">PERSONAL TEST, INC.</h1>
             </Link>
