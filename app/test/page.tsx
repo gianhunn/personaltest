@@ -264,7 +264,7 @@ export default function TestPage() {
               <div className="grid grid-cols-2 gap-6">
                 <Button
                   onClick={() => setGender("male")}
-                  className={`h-14 rounded-full border border-[#745E4D] text-lg ${
+                  className={`h-14 rounded-full border border-[#745E4D] text-lg cursor-pointer ${
                     gender === "male"
                       ? "bg-[#d4b496] text-white hover:bg-[#d4b496] border-none hover:border-none"
                       : "bg-white text-[#6b7280] hover:bg-gray-50"
@@ -274,7 +274,7 @@ export default function TestPage() {
                 </Button>
                 <Button
                   onClick={() => setGender("female")}
-                  className={`h-14 rounded-full border border-[#745E4D] text-lg ${
+                  className={`h-14 rounded-full border border-[#745E4D] text-lg cursor-pointer ${
                     gender === "female"
                       ? "bg-[#d4b496] text-white hover:bg-[#d4b496] border-none hover:border-none"
                       : "bg-white text-[#6b7280] hover:bg-gray-50"
@@ -289,7 +289,7 @@ export default function TestPage() {
               <Button
                 onClick={handleStartTest}
                 disabled={!name || !gender}
-                className="h-14 w-full lg:w-sm rounded-full bg-[#BD9479] text-lg text-white cursor-pointer hover:bg-[#6b5d52] disabled:opacity-75"
+                className="h-14 w-full lg:w-sm rounded-full bg-[#BD9479] text-lg text-white cursor-pointer hover:bg-[#6b5d52] disabled:opacity-75 cursor-pointer"
               >
                 Bắt đầu
               </Button>

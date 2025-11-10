@@ -26,7 +26,7 @@ export function Navigation({ currentPage }: NavigationProps) {
   const menuItems = [
     { label: "Home", href: "/", key: "home" },
     { label: "Test", href: "/test", key: "test" },
-    { label: "Contact us", href: "/about", key: "about" },
+    { label: "Contact us", href: "/contact", key: "about" },
   ]
 
   const renderNavLink = (label: string, href: string, key: string) => (
@@ -34,7 +34,7 @@ export function Navigation({ currentPage }: NavigationProps) {
       {currentPage === key ? (
         <Button
           variant="default"
-          className="rounded-full bg-[#BD9479] px-8 text-base font-normal text-white hover:bg-[#BD9479]"
+          className="rounded-full bg-[#BD9479] px-8 text-base font-normal text-white hover:bg-[#BD9479] cursor-pointer"
         >
           {label}
         </Button>
@@ -48,7 +48,7 @@ export function Navigation({ currentPage }: NavigationProps) {
     <nav className="sticky top-0 z-[200] bg-[#f8f7f4] backdrop-blur">
       <div className="mx-auto w-full max-w-7xl border-b-2 border-[#d4cfc0] px-6">
         <div className="relative flex items-center justify-between py-6">
-        <div className="hidden items-center gap-8 lg:flex lg:flex-1">
+        <div className="hidden items-center gap-8 lg:flex lg:flex-1 cursor-pointer">
           {menuItems.slice(0, 3).map((item) => renderNavLink(item.label, item.href, item.key))}
         </div>
 
@@ -56,7 +56,7 @@ export function Navigation({ currentPage }: NavigationProps) {
           <h1 className="font-serif text-2xl tracking-wide text-[#745E4D] md:text-3xl">PERSONAL TEST, INC.</h1>
         </Link>
 
-        <div className="hidden items-center gap-8 lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden items-center gap-8 lg:flex lg:flex-1 lg:justify-end cursor-pointer">
           {menuItems.slice(3).map((item) => renderNavLink(item.label, item.href, item.key))}
         </div>
 

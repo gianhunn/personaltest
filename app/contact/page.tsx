@@ -1,89 +1,43 @@
 import { Navigation } from "@/components/navigation"
-import { Button } from "@/components/ui/button"
 
-export default function ContactPage() {
+export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-[#f8f7f4]">
-      <Navigation currentPage="contact" />
+    <div className="min-h-screen bg-[#f5f3ed]">
+      <Navigation currentPage="about" />
 
-      <main className="mx-auto max-w-4xl px-6 py-16">
-        <div className="space-y-12">
-          <div className="text-center">
-            <h1 className="mb-6 font-serif text-5xl tracking-wide text-[#7ba89f]">Contact us</h1>
-            <p className="text-lg leading-relaxed text-[#6b7280]">Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn</p>
-          </div>
+      <main className="relative h-screen w-full overflow-hidden">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url(/stylish-woman-with-sunglasses-and-white-head-wrap-.jpg)",
+            backgroundPosition: "center right",
+          }}
+        >
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/30"></div>
+        </div>
 
-          <div className="rounded-lg bg-white p-8 shadow-sm">
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="mb-2 block text-sm font-medium text-[#6b7280]">
-                  Họ và tên
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full rounded-lg border border-[#d4cfc0] bg-[#f5f3ed] px-4 py-3 text-[#6b7280] focus:border-[#BD9479] focus:outline-none focus:ring-2 focus:ring-[#BD9479]/20"
-                  placeholder="Nhập họ và tên của bạn"
-                />
-              </div>
+        {/* Content overlay */}
+        <div className="relative flex h-full flex-col items-start justify-center px-12 md:px-16 lg:px-20">
+          <div className="max-w-2xl space-y-6">
+            {/* Main heading */}
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light tracking-wide text-[#5a5a5a] leading-tight">
+              Đăng ký phân tích <br /> CÁ NHÂN để giải đáp!
+            </h1>
 
-              <div>
-                <label htmlFor="email" className="mb-2 block text-sm font-medium text-[#6b7280]">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full rounded-lg border border-[#d4cfc0] bg-[#f5f3ed] px-4 py-3 text-[#6b7280] focus:border-[#BD9479] focus:outline-none focus:ring-2 focus:ring-[#BD9479]/20"
-                  placeholder="email@example.com"
-                />
-              </div>
+            {/* CTA Section */}
+            <div className="space-y-4 pt-4">
+              {/* Primary CTA Button */}
+              <a
+                href="/contact"
+                className="inline-block bg-[#a98b7e] hover:bg-[#9a7d71] transition-colors px-8 py-3 rounded-full text-white font-medium text-lg"
+              >
+                ĐĂNG KÝ NGAY!
+              </a>
 
-              <div>
-                <label htmlFor="subject" className="mb-2 block text-sm font-medium text-[#6b7280]">
-                  Chủ đề
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="w-full rounded-lg border border-[#d4cfc0] bg-[#f5f3ed] px-4 py-3 text-[#6b7280] focus:border-[#BD9479] focus:outline-none focus:ring-2 focus:ring-[#BD9479]/20"
-                  placeholder="Bạn muốn liên hệ về vấn đề gì?"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="mb-2 block text-sm font-medium text-[#6b7280]">
-                  Tin nhắn
-                </label>
-                <textarea
-                  id="message"
-                  rows={6}
-                  className="w-full rounded-lg border border-[#d4cfc0] bg-[#f5f3ed] px-4 py-3 text-[#6b7280] focus:border-[#BD9479] focus:outline-none focus:ring-2 focus:ring-[#BD9479]/20"
-                  placeholder="Nhập nội dung tin nhắn của bạn..."
-                />
-              </div>
-
-              <Button className="w-full rounded-full bg-[#BD9479] py-6 text-lg text-white hover:bg-[#BD9479]">
-                Gửi Tin Nhắn
-              </Button>
-            </form>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="text-center">
-              <div className="mb-4 text-3xl text-[#BD9479]">📧</div>
-              <h3 className="mb-2 font-medium text-[#6b7280]">Email</h3>
-              <p className="text-sm text-[#6b7280]">contact@personaltest.com</p>
-            </div>
-            <div className="text-center">
-              <div className="mb-4 text-3xl text-[#BD9479]">📱</div>
-              <h3 className="mb-2 font-medium text-[#6b7280]">Điện thoại</h3>
-              <p className="text-sm text-[#6b7280]">+84 123 456 789</p>
-            </div>
-            <div className="text-center">
-              <div className="mb-4 text-3xl text-[#BD9479]">📍</div>
-              <h3 className="mb-2 font-medium text-[#6b7280]">Địa chỉ</h3>
-              <p className="text-sm text-[#6b7280]">Hà Nội, Việt Nam</p>
+              {/* Secondary text */}
+              <p className="text-[#6b7280] font-light tracking-wide text-sm">ONLINE VÀ FREE</p>
             </div>
           </div>
         </div>
