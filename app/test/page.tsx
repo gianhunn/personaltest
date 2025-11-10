@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { HourglassLoader } from "@/components/ui/hourglass"
 import { useState } from "react"
 import { googleSheetsService } from "@/services"
+import { MaskedVectorImage } from "@/components/ui/masked-vector-image"
 
 function Star({ filled }: { filled: boolean }) {
   return (
@@ -232,43 +233,40 @@ export default function TestPage() {
     <div className="min-h-screen bg-[#f8f7f4]">
       <Navigation currentPage="test" />
 
-      <main className="mx-auto grid min-h-[calc(100vh-120px)] max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div className="relative flex items-center justify-center overflow-hidden">
+      <main className="grid min-h-[calc(100vh-120px)] w-full grid-cols-1 lg:grid-cols-2">
+        <div className="relative flex items-center justify-center overflow-hidden lg:justify-start">
           <div className="relative h-full w-full">
-            <img
-              src="/stylish-woman-with-sunglasses-and-white-head-wrap-.jpg"
-              alt="Stylish fashion photo"
-              className="h-full w-full object-cover"
-              style={{
-                clipPath:
-                  "polygon(0 0, 85% 0, 95% 5%, 90% 15%, 95% 25%, 88% 35%, 93% 45%, 87% 55%, 92% 65%, 86% 75%, 91% 85%, 85% 95%, 90% 100%, 0 100%)",
-              }}
-            />
-            <p className="absolute bottom-8 left-8 text-sm text-white/80">Styled by Polina Tankilevitch</p>
+            <section className="flex w-full h-full items-center justify-start py-12 lg:py-20">
+              <MaskedVectorImage
+                imageSrc="/images/test/stylish-woman.jpg"
+                alt="Stylish fashion photo"
+                containerClassName="w-full max-w-[520px] sm:max-w-[600px] lg:max-w-none lg:w-[700px] lg:-ml-20 xl:w-[760px] xl:-ml-28 2xl:w-[920px] 2xl:-ml-36"
+              />
+            </section>
           </div>
         </div>
 
         <div className="flex items-center justify-center px-8 py-16 lg:px-16">
-          <div className="w-full max-w-md space-y-8">
+          <div className="w-full max-w-2xl space-y-12">
             <div className="space-y-4">
-              <h1 className="font-serif text-4xl tracking-wide text-[#5a6b6a] lg:text-5xl">Tên của bạn là</h1>
+              <h1 className="flex justify-center font-serif text-4xl tracking-wide text-[#5B4F47] lg:text-5xl">Tên của bạn là</h1>
               <Input
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="h-14 rounded-lg border-none bg-white px-6 text-lg shadow-sm"
-                placeholder=""
+                className="h-14 rounded-full border-[#745E4D] bg-white px-6 text-lg shadow-sm placeholder:text-lg md:text-xl md:placeholder:text-xl"
+                placeholder="Nhập tên của bạn"
               />
             </div>
 
             <div className="space-y-4">
-              <h2 className="font-serif text-4xl tracking-wide text-[#5a6b6a] lg:text-5xl">Giới tính</h2>
-              <div className="grid grid-cols-2 gap-4">
+              <h2 className="flex justify-center font-serif text-4xl tracking-wide text-[#5B4F47] lg:text-5xl">Giới tính</h2>
+              <div className="grid grid-cols-2 gap-6">
                 <Button
                   onClick={() => setGender("male")}
-                  className={`h-14 rounded-lg text-lg ${
+                  className={`h-14 rounded-full border border-[#745E4D] text-lg ${
                     gender === "male"
-                      ? "bg-[#BD9479] text-white hover:bg-[#BD9479]"
+                      ? "bg-[#d4b496] text-white hover:bg-[#d4b496] border-none hover:border-none"
                       : "bg-white text-[#6b7280] hover:bg-gray-50"
                   }`}
                 >
@@ -276,9 +274,9 @@ export default function TestPage() {
                 </Button>
                 <Button
                   onClick={() => setGender("female")}
-                  className={`h-14 rounded-lg text-lg ${
+                  className={`h-14 rounded-full border border-[#745E4D] text-lg ${
                     gender === "female"
-                      ? "bg-[#BD9479] text-white hover:bg-[#BD9479]"
+                      ? "bg-[#d4b496] text-white hover:bg-[#d4b496] border-none hover:border-none"
                       : "bg-white text-[#6b7280] hover:bg-gray-50"
                   }`}
                 >
@@ -287,13 +285,13 @@ export default function TestPage() {
               </div>
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4 flex justify-center">
               <Button
                 onClick={handleStartTest}
                 disabled={!name || !gender}
-                className="h-14 w-full rounded-lg bg-white text-lg text-[#6b7280] hover:bg-gray-50 disabled:opacity-50"
+                className="h-14 w-full lg:w-sm rounded-full bg-[#BD9479] text-lg text-white cursor-pointer hover:bg-[#6b5d52] disabled:opacity-75"
               >
-                Bắt đầu test
+                Bắt đầu
               </Button>
             </div>
           </div>

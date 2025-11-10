@@ -47,7 +47,7 @@ export function Navigation({ currentPage }: NavigationProps) {
   return (
     <nav className="sticky top-0 z-[200] bg-[#f8f7f4] backdrop-blur">
       <div className="mx-auto w-full max-w-7xl border-b-2 border-[#d4cfc0] px-6">
-        <div className="relative flex items-center justify-between py-4">
+        <div className="relative flex items-center justify-between py-6">
         <div className="hidden items-center gap-8 lg:flex lg:flex-1">
           {menuItems.slice(0, 3).map((item) => renderNavLink(item.label, item.href, item.key))}
         </div>
