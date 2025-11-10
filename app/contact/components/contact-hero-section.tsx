@@ -25,9 +25,12 @@ export function ContactHeroSection() {
           </div>
 
           <div className="mt-12 space-y-6 text-[#4f4239] sm:mt-14">
-            <p className="font-sans text-base font-semibold underline decoration-2 underline-offset-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+            <a
+              href="/contact"
+              className="font-sans text-base font-semibold underline decoration-2 underline-offset-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+            >
               ĐĂNG KÝ NGAY!
-            </p>
+            </a>
             <p className="font-sans text-sm tracking-[0.2em] text-[#4f4239]/80 sm:text-base md:text-lg lg:text-xl xl:text-2xl uppercase">
               ONLINE VÀ FREE
             </p>
