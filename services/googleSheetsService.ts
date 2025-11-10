@@ -161,6 +161,55 @@ class GoogleSheetsService {
       }
     }
   }
+
+  /**
+   * Find email by code from Google Sheets
+   */
+  async findEmailByCode(code: string): Promise<ApiResponse> {
+    try {
+      const response = await fetch(`${this.baseUrl}/find-email?code=${encodeURIComponent(code)}`)
+      const result: ApiResponse = await response.json()
+      return result
+    } catch (error) {
+      console.error('Error finding email by code:', error)
+      return {
+        success: false,
+        message: 'Failed to find email by code',
+        error: error instanceof Error ? error.message : 'Unknown error'
+      }
+    }
+  }
+
+  /**
+   * Send test results via email
+   */
+  async sendTestResultsEmail(emailData: {
+    email: string
+    name: string
+    gender: 'male' | 'female'
+    answers: Record<number, number>
+    code?: string
+  }): Promise<ApiResponse> {
+    try {
+      const response = await fetch('/api/email/send-results', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(emailData),
+      })
+
+      const result: ApiResponse = await response.json()
+      return result
+    } catch (error) {
+      console.error('Error sending email:', error)
+      return {
+        success: false,
+        message: 'Failed to send email',
+        error: error instanceof Error ? error.message : 'Unknown error'
+      }
+    }
+  }
 }
 
 // Export singleton instance
