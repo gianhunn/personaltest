@@ -11,7 +11,7 @@ import { MaskedVectorImage } from "@/components/ui/masked-vector-image"
 function Star({ filled }: { filled: boolean }) {
   return (
     <svg
-      className={`h-8 w-8 ${filled ? "fill-[#BD9479]" : "fill-gray-300"}`}
+      className={`h-8 w-8 fill-[#55cec7]`}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -89,11 +89,11 @@ const questions = [
 ]
 
 const ratingOptions = [
-  { value: -2, stars: 1, label: "Rất không đồng ý", bgColor: "bg-[#fef9e7]" },
-  { value: -1, stars: 2, label: "Không đồng ý", bgColor: "bg-[#f4f9d0]" },
-  { value: 0, stars: 3, label: "Trung lập", bgColor: "bg-[#d4f4dd]" },
-  { value: 1, stars: 4, label: "Đồng ý", bgColor: "bg-[#a8e6cf]" },
-  { value: 2, stars: 5, label: "Rất đồng ý", bgColor: "bg-[#7ee8b4]" },
+  { value: -2, stars: 1, label: "Rất không đồng ý", bgColor: "bg-[#bd9479]" },
+  { value: -1, stars: 2, label: "Không đồng ý", bgColor: "bg-[#745e4d]" },
+  { value: 0, stars: 3, label: "Trung lập", bgColor: "bg-[#745e4d]" },
+  { value: 1, stars: 4, label: "Đồng ý", bgColor: "bg-[#433831]" },
+  { value: 2, stars: 5, label: "Rất đồng ý", bgColor: "bg-[#433831]" },
 ]
 
 export default function TestPage() {
@@ -178,26 +178,26 @@ export default function TestPage() {
       <div className="min-h-screen bg-[#f8f7f4]">
         <Navigation currentPage="test" />
 
-        <main className="mx-auto flex min-h-[calc(100vh-120px)] max-w-6xl flex-col items-center justify-center px-8 py-16">
-          <div className="mb-16 max-w-4xl text-center">
+        <main className="mx-auto flex min-h-[calc(100vh-120px)] max-w-full flex-col items-center justify-center px-8 py-16">
+          <div className="mb-16 max-w-6xl text-center">
             <h2 className="font-serif text-3xl leading-relaxed tracking-wide text-[#5a6b6a] lg:text-4xl">
               {question.text}
+              <br />
               <em className="font-serif">{question.italicText}</em>
             </h2>
           </div>
 
-          <div className="mb-16 flex flex-wrap justify-center gap-4">
+          <div className="mb-16 flex justify-center gap-5">
             {ratingOptions.map((option) => (
               <button
                 key={option.value}
                 onClick={() => setSelectedRating(option.value)}
-                className={`flex flex-col items-center gap-3 rounded-2xl px-8 py-6 transition-all hover:scale-105 ${
-                  option.bgColor
-                } ${selectedRating === option.value ? "ring-4 ring-[#BD9479]" : ""}`}
+                className={`w-[200px] flex flex-col items-center gap-3 rounded-2xl px-8 py-6 transition-all hover:scale-105 ${option.bgColor
+                  } ${selectedRating === option.value ? "ring-4 ring-[#BD9479]" : ""}`}
               >
-                <div className="flex gap-1">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} filled={i < option.stars} />
+                <div className="flex justify-center gap-1">
+                  {Array.from({ length: option.stars }).map((_, i) => (
+                    <Star key={i} filled />
                   ))}
                 </div>
                 <span className="whitespace-nowrap rounded-full bg-white px-6 py-2 text-sm font-medium text-[#5a6b6a]">
@@ -207,7 +207,7 @@ export default function TestPage() {
             ))}
           </div>
 
-          <div className="flex w-full max-w-4xl justify-between">
+          <div className="flex w-full max-w-6xl justify-between">
             <Button
               onClick={handleBack}
               variant="ghost"
@@ -264,21 +264,19 @@ export default function TestPage() {
               <div className="grid grid-cols-2 gap-6">
                 <Button
                   onClick={() => setGender("male")}
-                  className={`h-14 rounded-full border border-[#745E4D] text-lg cursor-pointer ${
-                    gender === "male"
-                      ? "bg-[#d4b496] text-white hover:bg-[#d4b496] border-none hover:border-none"
+                  className={`h-14 rounded-full border border-[#745E4D] text-lg cursor-pointer ${gender === "male"
+                      ? "bg-[#BD9479] text-white hover:bg-[#BD9479] border-none hover:border-none"
                       : "bg-white text-[#6b7280] hover:bg-gray-50"
-                  }`}
+                    }`}
                 >
                   Nam
                 </Button>
                 <Button
                   onClick={() => setGender("female")}
-                  className={`h-14 rounded-full border border-[#745E4D] text-lg cursor-pointer ${
-                    gender === "female"
-                      ? "bg-[#d4b496] text-white hover:bg-[#d4b496] border-none hover:border-none"
+                  className={`h-14 rounded-full border border-[#745E4D] text-lg cursor-pointer ${gender === "female"
+                      ? "bg-[#BD9479] text-white hover:bg-[#BD9479] border-none hover:border-none"
                       : "bg-white text-[#6b7280] hover:bg-gray-50"
-                  }`}
+                    }`}
                 >
                   Nữ
                 </Button>
