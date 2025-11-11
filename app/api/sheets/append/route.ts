@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { getGoogleSheetsClient, appendToSheet } from '@/lib/googleSheets';
+import { googleSheetsClient, appendToSheet } from '@/lib/googleSheets';
 import { GOOGLE_SHEETS_CONFIG } from '@/lib/config';
 
 export async function POST(request: NextRequest) {
@@ -14,12 +14,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const sheets = await getGoogleSheetsClient();
+    const sheets = googleSheetsClient;
     const spreadsheetId = GOOGLE_SHEETS_CONFIG.SPREADSHEET_ID;
 
-    // Force append to configured sheet column A
-    const sheetName = GOOGLE_SHEETS_CONFIG.SHEET_NAME;
-    const range = `${sheetName}!A:A`; // Use configured sheet column A
+    // Get sheet name from query parameter or use default
+    const { searchParams } = new URL(request.url);
+    const sheetName = searchParams.get('sheet') || GOOGLE_SHEETS_CONFIG.SHEET_NAME;
+
+    const range = `${sheetName}`; // Just use sheet name for appending - Google Sheets will find the next available row
 
     const result = await appendToSheet(sheets, spreadsheetId, range, [row]);
 

@@ -4,7 +4,7 @@ import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { HourglassLoader } from "@/components/ui/hourglass"
 import { useState, useEffect } from "react"
-import { googleSheetsService } from "@/services"
+import { googleSheetsService, emailService } from "@/services"
 import { TestIntroSection } from "./components/test-intro-section"
 
 function Star({ filled }: { filled: boolean }) {
@@ -104,6 +104,7 @@ export default function TestPage() {
   const [answers, setAnswers] = useState<Record<number, number>>({})
   const [isLoading, setIsLoading] = useState(false)
   const [urlCode, setUrlCode] = useState<string | null>(null)
+  const [testCompleted, setTestCompleted] = useState(false)
 
     // Get code from URL params on component mount
   useEffect(() => {
@@ -119,6 +120,7 @@ export default function TestPage() {
   const handleStartTest = () => {
     if (name && gender) {
       setTestStarted(true)
+      setTestCompleted(false) // Reset completion state
     }
   }
 
@@ -131,11 +133,13 @@ export default function TestPage() {
       const prevQuestion = currentQuestion - 1
       setCurrentQuestion(prevQuestion)
       setSelectedRating(answers[questions[prevQuestion].id] ?? null)
+      setTestCompleted(false) // Reset completion state when going back
     } else {
       if (selectedRating !== null) {
         setAnswers({ ...answers, [questions[currentQuestion].id]: selectedRating })
       }
       setTestStarted(false)
+      setTestCompleted(false) // Reset completion state
     }
   }
 
@@ -150,6 +154,8 @@ export default function TestPage() {
         setSelectedRating(updatedAnswers[questions[nextQuestion].id] ?? null)
       } else {
         // Test completed - save to Google Sheets first, then show loading
+        setTestCompleted(true) // Disable button immediately
+        
         // Save to Google Sheets using service (only if gender is set)
         if (gender) {
           try {
@@ -162,10 +168,7 @@ export default function TestPage() {
             if (saveResult.success) {
               console.log('Test results saved successfully')
 
-              // If we have a code from URL, find email and send results
-              if (urlCode) {
-                await handleSendEmailResults(updatedAnswers)
-              }
+              handleSendEmailResults(updatedAnswers)
             } else {
               console.error('Failed to save test results:', saveResult.message)
             }
@@ -195,7 +198,7 @@ export default function TestPage() {
         }
 
         // Send test results via email
-        const emailSendResult = await googleSheetsService.sendTestResultsEmail({
+        const emailSendResult = await emailService.sendTestResultsEmail({
           email,
           name,
           gender: gender!,
@@ -250,8 +253,9 @@ export default function TestPage() {
             {ratingOptions.map((option) => (
               <button
                 key={option.value}
-                onClick={() => setSelectedRating(option.value)}
-                className={`w-[200px] flex flex-col items-center gap-3 rounded-2xl px-8 py-6 transition-all hover:scale-105 ${option.bgColor
+                onClick={() => !testCompleted && setSelectedRating(option.value)}
+                disabled={testCompleted}
+                className={`w-[200px] flex flex-col items-center gap-3 rounded-2xl px-8 py-6 transition-all hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed ${option.bgColor
                   } ${selectedRating === option.value ? "ring-4 ring-[#BD9479]" : ""}`}
               >
                 <div className="flex justify-center gap-1">
@@ -269,14 +273,15 @@ export default function TestPage() {
           <div className="flex w-full max-w-6xl justify-between">
             <Button
               onClick={handleBack}
+              disabled={testCompleted}
               variant="ghost"
-              className="text-lg text-[#5a6b6a] underline hover:bg-transparent hover:text-[#BD9479]"
+              className="text-lg text-[#5a6b6a] underline hover:bg-transparent hover:text-[#BD9479] disabled:opacity-50"
             >
               Quay lại
             </Button>
             <Button
               onClick={handleContinue}
-              disabled={selectedRating === null}
+              disabled={selectedRating === null || testCompleted}
               variant="ghost"
               className="text-lg text-[#5a6b6a] underline hover:bg-transparent hover:text-[#BD9479] disabled:opacity-50"
             >

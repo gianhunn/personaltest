@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { getGoogleSheetsClient, readSheet } from '@/lib/googleSheets';
+import { googleSheetsClient, readSheet } from '@/lib/googleSheets';
 import { GOOGLE_SHEETS_CONFIG } from '@/lib/config';
 
 export async function GET(request: NextRequest) {
@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const sheets = await getGoogleSheetsClient();
+    const sheets = googleSheetsClient;
     const spreadsheetId = GOOGLE_SHEETS_CONFIG.SPREADSHEET_ID;
 
     // Read the code-email mapping sheet to find the code

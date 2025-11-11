@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { getGoogleSheetsClient, clearSheet } from '@/lib/googleSheets';
+import { googleSheetsClient, clearSheet } from '@/lib/googleSheets';
 import { GOOGLE_SHEETS_CONFIG } from '@/lib/config';
 
 export async function DELETE(request: NextRequest) {
@@ -14,10 +14,14 @@ export async function DELETE(request: NextRequest) {
       );
     }
 
-    const sheets = await getGoogleSheetsClient();
+    const sheets = googleSheetsClient;
     const spreadsheetId = GOOGLE_SHEETS_CONFIG.SPREADSHEET_ID;
-    const sheetName = GOOGLE_SHEETS_CONFIG.SHEET_NAME;
-    const range = `${sheetName}!A${rowIndex + 1}:Z${rowIndex + 1}`; // Clear specific row in configured sheet
+
+    // Get sheet name from query parameter or use default
+    const { searchParams } = new URL(request.url);
+    const sheetName = searchParams.get('sheet') || GOOGLE_SHEETS_CONFIG.SHEET_NAME;
+
+    const range = `${sheetName}!A${rowIndex + 1}:Z${rowIndex + 1}`; // Clear specific row in specified or default sheet
     const result = await clearSheet(sheets, spreadsheetId, range);
 
     return Response.json({
