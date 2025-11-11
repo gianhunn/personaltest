@@ -1,12 +1,13 @@
 {
   "entp": [
     {
+      "gender": "female",
       "personalityType": "ENTP",
       "personalityTitle": "Người có tầm nhìn xa",
       "personalityDimensions": [
         {
           "en": "Extraversion",
-          "vi": "Hướng ngoài"
+          "vi": "Hướng ngoại"
         },
         {
           "en": "INtuition",
@@ -37,7 +38,6 @@
       ],
       "subStyles": [
         {
-          "gender": "female",
           "styleName": "Effortless Rebel",
           "styleDescription": "Phá cách những vẫn tự nhiên",
           "metadata": {
@@ -46,15 +46,15 @@
           },
           "outfitImages": [
             {
-              "src": "/images/entp/female/1.jpg",
+              "src": "/images/results/entp/female/1.jpg",
               "alt": "Phong cách ENTP - Áo blazer màu be phối với quần jeans"
             },
             {
-              "src": "/images/entp/female/2.jpg",
+              "src": "/images/results/entp/female/2.jpg",
               "alt": "Phong cách ENTP - Áo sơ mi xanh dương phong cách"
             },
             {
-              "src": "/images/entp/female/3.jpg",
+              "src": "/images/results/entp/female/3.jpg",
               "alt": "Phong cách ENTP - Quần trắng phối với áo blazer"
             }
           ],
@@ -69,14 +69,14 @@
               "title": "Chất liệu",
               "description": "Cotton, denim, da, vải thô, linen, tơ",
               "iconBg": "bg-[#5b4f47]",
-              "src": "/images/entp/female/6.jpg",
+              "src": "/images/results/entp/female/6.jpg",
               "alt": "Phong cách ENTP - Phụ kiện 1"
             },
             {
               "title": "Phụ kiện",
               "description": "Khuyên tai bản to, sneaker chunky, túi tote canvas",
               "iconBg": "bg-[#745e4d]",
-              "src": "/images/entp/female/5.jpg",
+              "src": "/images/results/entp/female/5.jpg",
               "alt": "Phong cách ENTP - Phụ kiện 2"
             },
             {
@@ -88,13 +88,3254 @@
             }
           ],
           "quoteSection": {
-            "backgroundImage": "/images/entp/female/bg.jpg",
+            "backgroundImage": "/images/results/bg.jpg",
             "backgroundImageAlt": "Không gian làm việc và phong cách sống",
             "quote": "Tôi không chạy theo công thức. Tôi tạo ra phiên bản riêng của mọi xu hướng.",
             "description": "Bạn mang năng lượng của sự tự do – thông minh, phá cách và chẳng bao giờ chịu \"đúng yêu\". Phong cách của bạn là lời tuyên ngôn ngầm: \"Tôi sống theo cách của tôi.\"\n\nBạn thích mix & match ngẫu hứng – một chiếc blazer nghiêm túc phối cùng sneaker nổi bật, hay một đôi khuyên tai to bản kết hợp với tóc búi tự nhiên. Mọi thứ trông như ngẫu nhiên, nhưng lại rất \"ra chất bạn\"."
           },
           "styleGuideOutfitImage": {
-            "src": "/images/entp/female/4.jpg",
+            "src": "/images/results/entp/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ENTP",
+      "personalityTitle": "Người có tầm nhìn xa",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoài"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Ngẫu hứng, dí dỏm và tràn đầy năng lượng",
+          "regular": " - bạn ghét khuôn khổ, thích tự do khám phá và sống theo nhịp riêng của mình"
+        },
+        {
+          "bold": "Yêu thử thách, thích phiêu lưu",
+          "regular": " - bạn say mê những hành trình mới, những cuộc trò chuyện sâu và cơ hội bung sức sáng tạo."
+        },
+        {
+          "bold": "Chân thành và ấm áp",
+          "regular": " - hoạt ngôn nhưng biết lắng nghe, dễ đồng cảm và luôn sẵn lòng giúp đỡ."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Smart Casual & Urban Explorer",
+          "styleDescription": "Thoải mái, tinh tế & năng động",
+          "metadata": {
+            "title": "Kết quả ENTP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ENTP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/entp/male/1.jpg",
+              "alt": "Phong cách ENTP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/entp/male/2.jpg",
+              "alt": "Phong cách ENTP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/entp/male/3.jpg",
+              "alt": "Phong cách ENTP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#b9b8be",
+            "#edc15e",
+            "#c9a56b",
+            "#153a55"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, denim, linen, da lộn",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/entp/male/6.jpg",
+              "alt": "Phong cách ENTP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Sneaker, đồng hồ trẻ trung, kính mát ",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/entp/male/5.jpg",
+              "alt": "Phong cách ENTP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Mix smart item với casual, thêm phụ kiện nhỏ tạo điểm nhấn",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ENTP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không tuân theo quy tắc. Tôi biết khi nào nên phá vỡ nó để khác biệt.",
+            "description": "Bạn thông minh, linh hoạt và luôn biết cách khiến mình nổi bật một cách tự nhiên. Phong cách của bạn thể hiện tinh thần “vừa đủ nổi loạn để thú vị, vừa đủ tinh tế để đáng tin.”\"\n\nBạn không gò bó trong suit cổ điển, bạn phá form bằng áo khoác bomber, sneaker, hay phụ kiện lạ mắt, tạo điểm nhấn riêng cho từng outfit."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/entp/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "entj": [
+    {
+      "gender": "female",
+      "personalityType": "ENTJ",
+      "personalityTitle": "Nhà điều hành",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Judgement",
+          "vi": "Nguyên tắc"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Tự tin, tham vọng, không ngại thử thách",
+          "regular": "- bạn xem thay đổi là cơ hội để chứng minh năng lực và luôn kiên định với mục tiêu."
+        },
+        {
+          "bold": "Tư duy lãnh đạo, hành động dứt khoát",
+          "regular": " - bạn thích mọi thứ rõ ràng, hiệu quả và có kế hoạch."
+        },
+        {
+          "bold": "Mạnh mẽ nhưng ấm áp",
+          "regular": " - bạn quan tâm bằng hành động, không phô trương, vì bạn thật lòng muốn yêu thương."
+        },
+        {
+          "bold": "Yêu bản thân và hiểu rõ giá trị bản thân",
+          "regular": " - bạn chọn điều tốt nhất cho mình, vì biết mình xứng đáng và có năng lực để đạt được điều đó."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Power Dressing & Executive",
+          "styleDescription": "Quyền lực và đẳng cấp",
+          "metadata": {
+            "title": "Kết quả ENTJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ENTJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/entj/female/1.jpg",
+              "alt": "Phong cách ENTJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/entj/female/2.jpg",
+              "alt": "Phong cách ENTJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/entj/female/3.jpg",
+              "alt": "Phong cách ENTJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#56181a",
+            "#223f61",
+            "#b4b0ab",
+            "#000000"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Len, tweed, da, lụa cao cấp",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/entj/female/6.jpg",
+              "alt": "Phong cách ENTJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Túi da, giày cao gót mũi nhọn, đồng hồ kim loại, khuyên tai tối giản",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/entj/female/5.jpg",
+              "alt": "Phong cách ENTJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Blazer may đo + quần âu hoặc váy bút chì, giày cao gót và túi cứng cáp - chỉn chu nhưng không gò bó",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ENTJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần phải nổi bật.\nTôi sinh ra để dẫn đầu.",
+            "description": "Bạn chọn trang phục như chọn chiến lược – rõ ràng, dứt khoát và thể hiện vị thế. Form đồ chuẩn, đường cắt sắc, chất liệu có độ “đứng” giúp bạn toát lên tinh thần lãnh đạo tự nhiên.\n\nGiữa sự mạnh mẽ vẫn có nét mềm của một lớp lụa bên trong áo vest, một đường bo eo tinh tế, đủ để người đối diện thấy bạn vừa quyền lực, vừa nữ tính."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/entj/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ENTJ",
+      "personalityTitle": "Nhà điều hành",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Judgement",
+          "vi": "Nguyên tắc"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Tự tin, tham vọng, không ngại thử thách",
+          "regular": "- bạn xem thay đổi là cơ hội để chứng minh năng lực và luôn kiên định với mục tiêu."
+        },
+        {
+          "bold": "Tư duy lãnh đạo, hành động dứt khoát",
+          "regular": " - bạn thích mọi thứ rõ ràng, hiệu quả và có kế hoạch."
+        },
+        {
+          "bold": "Mạnh mẽ nhưng ấm áp",
+          "regular": " - bạn quan tâm bằng hành động, không phô trương, vì bạn thật lòng muốn yêu thương."
+        },
+        {
+          "bold": "Yêu bản thân và hiểu rõ giá trị bản thân",
+          "regular": " - bạn chọn điều tốt nhất cho mình, vì biết mình xứng đáng và có năng lực để đạt được điều đó."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Executive Formal / Business Casual",
+          "styleDescription": "Công sở chuyên nghiệp / thoải mái",
+          "metadata": {
+            "title": "Kết quả ENTJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ENTJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/entj/male/1.jpg",
+              "alt": "Phong cách ENTJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/entj/male/2.jpg",
+              "alt": "Phong cách ENTJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/entj/male/3.jpg",
+              "alt": "Phong cách ENTJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#5b4f47",
+            "#000000",
+            "#a8945e",
+            "#736d4c"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Len, cotton cao cấp, linen",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/entj/male/6.jpg",
+              "alt": "Phong cách ENTJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày da nâu hoặc đen, cà vạt tông trầm, đồng hồ dây da hoặc kim loại",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/entj/male/5.jpg",
+              "alt": "Phong cách ENTJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Suit may đo + sơ mi + giày oxford hoặc loafer",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ENTJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần phô trương quyền lực.\nTôi khiến người khác cảm nhận nó khi tôi bước vào phòng.",
+            "description": "Bạn không cần nhiều chi tiết, chỉ cần độ chuẩn xác. Từng món đồ trên người bạn đều có chủ đích từ phom dáng, chất liệu đến cách phối hài hòa.\n\nMột bộ suit vừa vặn, áo sơ mi cổ cứng, giày da bóng.Đó không chỉ là trang phục, mà là vỏ bọc của sự tự tin và bản lĩnh."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/entj/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "intj": [
+    {
+      "gender": "female",
+      "personalityType": "INTJ",
+      "personalityTitle": "Nhà khoa học",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Judgement",
+          "vi": "Nguyên tắc"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Sống có nguyên tắc, bạn luôn tin vào sự thật",
+          "regular": "và mọi thứ cần rõ ràng: đúng là đúng, sai là sai."
+        },
+        {
+          "bold": "Thích sự yên tĩnh, không thích những cuộc nói chuyện hời hợt",
+          "regular": "bạn cần không gian riêng để suy nghĩ và tái tạo năng lượng."
+        },
+        {
+          "bold": "Bền bỉ, có tầm nhìn, chọn đi chậm mà chắc",
+          "regular": "với mục tiêu rõ ràng."
+        },
+        {
+          "bold": "Ham học hỏi, phân tích sâu",
+          "regular": "luôn tìm “vì sao” để hiểu và làm chủ tương lai."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Minimalist & Architect",
+          "styleDescription": "Tối giản & sắc nét",
+          "metadata": {
+            "title": "Kết quả INTJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách INTJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/intj/female/1.jpg",
+              "alt": "Phong cách INTJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/intj/female/2.jpg",
+              "alt": "Phong cách INTJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/intj/female/3.jpg",
+              "alt": "Phong cách INTJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#557087",
+            "#2b292b",
+            "#727772",
+            "#b4b0ab"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton dày, linen, len, da mịn",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/intj/female/6.jpg",
+              "alt": "Phong cách INTJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Túi da trơn, giày loafer, khuyên tai nhỏ, đồng hồ tối giản",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/intj/female/5.jpg",
+              "alt": "Phong cách INTJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Blazer dáng suông + quần âu cạp cao hoặc đầm trơn cổ vuông + giày mũi nhọn ",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách INTJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần phải gây ấn tượng.\nChỉ cần xuất hiện đúng lúc, đúng cách để người khác tự phải chú ý.",
+            "description": "Bạn sống có nguyên tắc và chọn sự tinh giản làm ngôn ngữ của sức mạnh. Gu ăn mặc của bạn phản ánh đúng bản chất: rõ ràng, có chủ đích, không một chi tiết thừa.\n\nBạn yêu thích những phom dáng gọn gàng, đứng form và chất liệu cao cấp, vì bạn hiểu giá trị nằm ở sự bền vững chứ không ở vẻ hào nhoáng."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/intj/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "INTJ",
+      "personalityTitle": "Nhà khoa học",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Judgement",
+          "vi": "Nguyên tắc"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Sống có nguyên tắc, bạn luôn tin vào sự thật",
+          "regular": "và mọi thứ cần rõ ràng: đúng là đúng, sai là sai."
+        },
+        {
+          "bold": "Thích sự yên tĩnh, không thích những cuộc nói chuyện hời hợt",
+          "regular": "bạn cần không gian riêng để suy nghĩ và tái tạo năng lượng."
+        },
+        {
+          "bold": "Bền bỉ, có tầm nhìn, chọn đi chậm mà chắc",
+          "regular": "với mục tiêu rõ ràng."
+        },
+        {
+          "bold": "Ham học hỏi, phân tích sâu",
+          "regular": "luôn tìm “vì sao” để hiểu và làm chủ tương lai."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Modern Minimalist / Techwear",
+          "styleDescription": "Tối giản, hiện đại, tiện dụng",
+          "metadata": {
+            "title": "Kết quả INTJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách INTJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/intj/male/1.jpg",
+              "alt": "Phong cách INTJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/intj/male/2.jpg",
+              "alt": "Phong cách INTJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/intj/male/3.jpg",
+              "alt": "Phong cách INTJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#433831",
+            "#bfaf8d",
+            "#2b292b",
+            "#727772"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Nylon, spandex, polyester chống thấm",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/intj/male/6.jpg",
+              "alt": "Phong cách INTJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Sneaker xám, đồng hồ điện tử, mũ lưỡi trai, balo",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/intj/male/5.jpg",
+              "alt": "Phong cách INTJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Layering tone xám–đen, áo khoác có khóa kéo kỹ thuật, túi hộp tiện dụng",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách INTJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không chạy theo thời trang.\nTôi thiết kế quy tắc của riêng mình.",
+            "description": "Bạn logic, điềm tĩnh và luôn rõ ràng về mục tiêu, điều đó thể hiện ngay trong cách bạn ăn mặc: tinh gọn, chuẩn xác và không dư thừa.\n\nMọi món đồ đều được bạn chọn vì công năng, sự vừa vặn và khả năng tồn tại lâu dài, không phải vì xu hướng."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/intj/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "intp": [
+    {
+      "gender": "female",
+      "personalityType": "INTP",
+      "personalityTitle": "Nhà tư duy",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Chính kiến rõ ràng, tiêu chuẩn cao",
+          "regular": " - bạn yêu ghét rạch ròi, làm gì cũng phải chỉn chu và có lý."
+        },
+        {
+          "bold": "Sống bằng đam mê và trí tuệ",
+          "regular": " - khi hứng thú, bạn sẵn sàng đào sâu đến tận cùng, vì tri thức là cách bạn khẳng định giá trị."
+        },
+        {
+          "bold": "Thông minh, logic",
+          "regular": " - bạn tư duy độc lập, diễn đạt sắc sảo và thuyết phục bằng lý lẽ."
+        },
+        {
+          "bold": "Nghiêm khắc với người ở trên, nhưng ấm áp với người bên cạnh",
+          "regular": " - công bằng với mọi người, không nịnh bợ quyền lực mà luôn sẵn lòng nâng đỡ người có chí."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Normcore",
+          "styleDescription": "Thoải mái, tối giản",
+          "metadata": {
+            "title": "Kết quả INTP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách INTP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/intp/female/1.jpg",
+              "alt": "Phong cách INTP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/intp/female/2.jpg",
+              "alt": "Phong cách INTP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/intp/female/3.jpg",
+              "alt": "Phong cách INTP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#2a3048",
+            "#000000",
+            "#557087"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, denim, nỉ, jersey",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/intp/female/6.jpg",
+              "alt": "Phong cách INTP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày sneaker, balo canvas, nón len, đồng hồ dây vải",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/intp/female/5.jpg",
+              "alt": "Phong cách INTP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Ao thun + quần jeans xanh + áo khoác dáng rộng hoặc sơ mi oversize",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách INTP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần chạy theo xu hướng.\nTôi tạo ra trật tự riêng cho thế giới của mình.",
+            "description": "Bạn không cần nhiều màu sắc để nổi bật, trí tuệ của bạn chính là điểm nhấn. Phong cách của bạn hướng đến sự tinh gọn, hiện đại và logic, giống như cách bạn sắp xếp mọi ý tưởng trong đầu: rõ ràng, thông minh, có hệ thống.\n\nBạn chuộng form tối giản, đường cắt thẳng và chất liệu nhẹ nhưng có cấu trúc. Mỗi món đồ trên người bạn đều “có lý do để tồn tại”."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/intp/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "INTP",
+      "personalityTitle": "Nhà tư duy",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Chính kiến rõ ràng, tiêu chuẩn cao",
+          "regular": " - bạn yêu ghét rạch ròi, làm gì cũng phải chỉn chu và có lý."
+        },
+        {
+          "bold": "Sống bằng đam mê và trí tuệ",
+          "regular": " - khi hứng thú, bạn sẵn sàng đào sâu đến tận cùng, vì tri thức là cách bạn khẳng định giá trị."
+        },
+        {
+          "bold": "Thông minh, logic",
+          "regular": " - bạn tư duy độc lập, diễn đạt sắc sảo và thuyết phục bằng lý lẽ."
+        },
+        {
+          "bold": "Nghiêm khắc với người ở trên, nhưng ấm áp với người bên cạnh",
+          "regular": " - công bằng với mọi người, không nịnh bợ quyền lực mà luôn sẵn lòng nâng đỡ người có chí."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Normcore",
+          "styleDescription": "Thoải mái, tối giản",
+          "metadata": {
+            "title": "Kết quả INTP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách INTP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/intp/male/1.jpg",
+              "alt": "Phong cách INTP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/intp/male/2.jpg",
+              "alt": "Phong cách INTP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/intp/male/3.jpg",
+              "alt": "Phong cách INTP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#dad2c5",
+            "#5b4636",
+            "#5c5c5a",
+            "#343316"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Canvas, cotton thô, nylon",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/intp/male/6.jpg",
+              "alt": "Phong cách INTP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày thể thao, thắt lưng vải, túi đeo chéo, đồng hồ điện tử",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/intp/male/5.jpg",
+              "alt": "Phong cách INTP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo thun hoặc sơ mi basic + quần cargo hoặc quần suông + sneaker",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách INTP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần ồn ào, chỉ cần thông minh và khác biệt đúng cách.",
+            "description": "Bạn ăn mặc như cách bạn tư duy: logic, tinh gọn và không rườm rà. Mỗi món đồ đều có công năng, đúng vị trí, không hơn, không kém.\n\nPhong cách của bạn là sự pha trộn giữa sự nghiêm túc của trí thức và sự thoải mái của người sáng tạo."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/intp/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "esfj": [
+    {
+      "gender": "female",
+      "personalityType": "ESFJ",
+      "personalityTitle": "Người quan tâm",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Judging",
+          "vi": "Óc phán đoán"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Tự nhiên và đáng tin cậy",
+          "regular": " - bạn không phô trương, nhưng luôn khiến người khác cảm nhận được sự chu đáo, tận tâm và giá trị bạn mang lại."
+        },
+        {
+          "bold": "Ấm áp và tinh tế",
+          "regular": " - bạn dễ đọc cảm xúc của người khác, quan tâm đúng lúc và thể hiện tình cảm qua hành động, sự hiện diện hơn là lời nói."
+        },
+        {
+          "bold": "Yêu những điều dễ thương mà chững chạc",
+          "regular": " - bạn chuộng sự mềm mại, gần gũi nhưng vẫn giữ nét chỉn chu trong cách sống."
+        },
+        {
+          "bold": "Nói nhiều để kết nối",
+          "regular": " - bạn lan tỏa năng lượng tích cực qua lời nói, khiến mọi người thấy thoải mái và gần nhau hơn."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Elegant Warm & Graceful Classic",
+          "styleDescription": "Thanh lịch, tinh tế & cổ điển",
+          "metadata": {
+            "title": "Kết quả ESFJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ESFJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/esfj/female/1.jpg",
+              "alt": "Phong cách ESFJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/esfj/female/2.jpg",
+              "alt": "Phong cách ESFJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/esfj/female/3.jpg",
+              "alt": "Phong cách ESFJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#dee5ed",
+            "#dda8a2",
+            "#f9f0e7",
+            "#f7d7ae"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, lụa, len, tweed, chiffon",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/esfj/female/6.jpg",
+              "alt": "Phong cách ESFJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Vòng cổ thanh mảnh, khuyên tai ngọc, túi da nhỏ, giày slingback hoặc block heel",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/esfj/female/5.jpg",
+              "alt": "Phong cách ESFJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Váy midi xếp ly + áo blouse tay phồng nhẹ + giày slingback + túi cứng form",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ESFJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi muốn mình xuất hiện đẹp, không phải để gây chú ý, mà để khiến người khác cảm thấy dễ chịu khi ở cạnh.",
+            "description": "Bạn luôn muốn xuất hiện chỉn chu, dễ gần và ấm áp, không phô trương nhưng luôn đủ để người khác cảm nhận được sự tinh tế và đáng tin của bạn.\n\nPhong cách của bạn thiên về nét thanh lịch cổ điển pha chút dịu dàng: phom nữ tính, chất liệu mềm, đường cắt tinh gọn, tạo cảm giác thân thiện và tôn nghiêm cùng lúc."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/esfj/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ESFJ",
+      "personalityTitle": "Người quan tâm",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Judging",
+          "vi": "Óc phán đoán"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Tự nhiên và đáng tin cậy",
+          "regular": " - bạn không phô trương, nhưng luôn khiến người khác cảm nhận được sự chu đáo, tận tâm và giá trị bạn mang lại."
+        },
+        {
+          "bold": "Ấm áp và tinh tế",
+          "regular": " - bạn dễ đọc cảm xúc của người khác, quan tâm đúng lúc và thể hiện tình cảm qua hành động, sự hiện diện hơn là lời nói."
+        },
+        {
+          "bold": "Yêu những điều dễ thương mà chững chạc",
+          "regular": " - bạn chuộng sự mềm mại, gần gũi nhưng vẫn giữ nét chỉn chu trong cách sống."
+        },
+        {
+          "bold": "Nói nhiều để kết nối",
+          "regular": " - bạn lan tỏa năng lượng tích cực qua lời nói, khiến mọi người thấy thoải mái và gần nhau hơn."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Smart & Approachable Gentleman",
+          "styleDescription": "Lịch lãm, tinh tế & gần gũi",
+          "metadata": {
+            "title": "Kết quả ESFJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ESFJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/esfj/male/1.jpg",
+              "alt": "Phong cách ESFJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/esfj/male/2.jpg",
+              "alt": "Phong cách ESFJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/esfj/male/3.jpg",
+              "alt": "Phong cách ESFJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#fff0e2",
+            "#b5b7b4",
+            "#7293b4",
+            "#9c6b4b"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, len, tweed, linen",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/esfj/male/6.jpg",
+              "alt": "Phong cách ESFJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Đồng hồ da nâu, giày loafers, áo khoác blazer nhẹ, mùi hương tươi mát",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/esfj/male/5.jpg",
+              "alt": "Phong cách ESFJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo sơ mi xanh nhạt + quần chinos nâu sáng + blazer xám + giày da lười + đồng hồ dây da",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ESFJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi xuất hiện để khiến mọi người cảm thấy dễ chịu – vì đó cũng là cách tôi thể hiện sự tôn trọng của mình.",
+            "description": "Bạn là người chỉn chu, lịch thiệp và rất biết cách tạo cảm giác thân thiện qua vẻ ngoài. Trang phục của bạn luôn sạch, phẳng, vừa vặn, thể hiện tinh thần tôn trọng và sự sẵn sàng trong mọi hoàn cảnh.\n\nBạn chọn phong cách smart-casual pha chút cổ điển, đủ trẻ trung để gần gũi, đủ nghiêm túc để tạo niềm tin."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/esfj/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "estj": [
+    {
+      "gender": "female",
+      "personalityType": "ESTJ",
+      "personalityTitle": "Người giám hộ",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Judgement",
+          "vi": "Nguyên tắc"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Thẳng thắn và có chính kiến",
+          "regular": " - bạn không thích vòng vo; đã tin là đúng thì sẽ bảo vệ đến cùng."
+        },
+        {
+          "bold": "Chỉn chu và chuyên nghiệp",
+          "regular": " - bạn coi trọng hình ảnh, luôn muốn được nhìn nhận là người đáng tin và có vị thế."
+        },
+        {
+          "bold": "Nói ít làm nhiều",
+          "regular": " - bạn làm việc có kế hoạch, hiệu quả và thường là người tổ chức, dẫn dắt người khác."
+        },
+        {
+          "bold": "Tận tâm và tự hào về nỗ lực",
+          "regular": " - bạn dễ bị cuốn vào công việc, nhưng xem đó là niềm vui và cách khẳng định giá trị bản thân."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Distinguished & Classy",
+          "styleDescription": "Cao cấp, may đo vừa vặn",
+          "metadata": {
+            "title": "Kết quả ESTJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ESTJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/estj/female/1.jpg",
+              "alt": "Phong cách ESTJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/estj/female/2.jpg",
+              "alt": "Phong cách ESTJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/estj/female/3.jpg",
+              "alt": "Phong cách ESTJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#dad2c5",
+            "#2a3048",
+            "#a8945e",
+            "#ffffff"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Len, lụa, da, tweed",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/estj/female/6.jpg",
+              "alt": "Phong cách ESTJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Túi da cao cấp, giày cao gót mũi nhọn, vòng tay hoặc đồng hồ tinh giản",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/estj/female/5.jpg",
+              "alt": "Phong cách ESTJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Blazer may đo + chân váy bút chì hoặc đầm liền phom chuẩn + giày cao gót ",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ESTJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không phô trương quyền lực. Tôi thể hiện nó qua sự chuẩn xác và uy tín.",
+            "description": "Bạn là người nguyên tắc, lý trí và luôn xuất hiện với hình ảnh chỉn chu. Mọi thứ trên bạn từ form áo, màu sắc đến cách đứng đều nói lên sự tự tin và kiểm soát.\n\nBạn thích những trang phục có cấu trúc rõ, phom đứng, thể hiện năng lực và vị thế. Dù mạnh mẽ, bạn vẫn giữ nét nữ tính qua chất liệu mềm, đường bo nhẹ hay phụ kiện tinh gọn."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/estj/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ESTJ",
+      "personalityTitle": "Người giám hộ",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Judgement",
+          "vi": "Nguyên tắc"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Thẳng thắn và có chính kiến",
+          "regular": " - bạn không thích vòng vo; đã tin là đúng thì sẽ bảo vệ đến cùng."
+        },
+        {
+          "bold": "Chỉn chu và chuyên nghiệp",
+          "regular": " - bạn coi trọng hình ảnh, luôn muốn được nhìn nhận là người đáng tin và có vị thế."
+        },
+        {
+          "bold": "Nói ít làm nhiều",
+          "regular": " - bạn làm việc có kế hoạch, hiệu quả và thường là người tổ chức, dẫn dắt người khác."
+        },
+        {
+          "bold": "Tận tâm và tự hào về nỗ lực",
+          "regular": " - bạn dễ bị cuốn vào công việc, nhưng xem đó là niềm vui và cách khẳng định giá trị bản thân."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Boardroom Power",
+          "styleDescription": "Quyền lực, may đo vừa vặn",
+          "metadata": {
+            "title": "Kết quả ESTJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ESTJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/estj/male/1.jpg",
+              "alt": "Phong cách ESTJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/estj/male/2.jpg",
+              "alt": "Phong cách ESTJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/estj/male/3.jpg",
+              "alt": "Phong cách ESTJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#e7d7c0",
+            "#2b292b",
+            "#5b4636",
+            "#727772"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Len, cotton, polyester",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/estj/male/6.jpg",
+              "alt": "Phong cách ESTJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày derby bóng, đồng hồ kim loại, cà vạt silk, khăn túi áo tinh gọn",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/estj/male/5.jpg",
+              "alt": "Phong cách ESTJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Suit phom vừa vặn + sơ mi trắng + cà vạt trung tính + giày da đen + đồng hồ thanh lịch",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ESTJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần chứng minh gì thêm, chỉ cần xuất hiện, người khác đã hiểu tôi đáng tin đến mức nào.",
+            "description": "Bạn ăn mặc như cách bạn làm việc – chỉn chu, đúng mực và không sai một nhịp. Suit của bạn luôn vừa vặn, áo luôn phẳng, cà vạt ngay ngắn. Vì với bạn, hình thức là cách thể hiện sự tôn trọng và năng lực.\n\nBạn chuộng phom dáng cổ điển, tone màu truyền thống, vật liệu bền chắc. Mọi chi tiết đều được cân nhắc kỹ, không cần nổi bật, chỉ cần “đúng”."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/estj/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "isfj": [
+    {
+      "gender": "female",
+      "personalityType": "ISFJ",
+      "personalityTitle": "Người nuôi dưỡng",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Judging",
+          "vi": "Óc phán đoán"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Sống nội tâm và đáng tin cậy",
+          "regular": " - bạn quan sát tinh tế, ít nói nhưng luôn lắng nghe và thấu hiểu. Khi đã tin ai, bạn trung thành và luôn là điểm tựa vững vàng cho họ."
+        },
+        {
+          "bold": "Coi trọng giá trị thật hơn vẻ bề ngoài",
+          "regular": " - bạn chọn làm điều đúng thay vì điều dễ, thà im lặng còn hơn nói lời vô nghĩa. Với bạn, hành động luôn quan trọng hơn hình thức."
+        },
+        {
+          "bold": "Yêu sự ổn định và tỉ mỉ trong mọi việc",
+          "regular": " - bạn thích nhịp sống có trật tự, làm gì cũng chỉn chu và kiên trì đến cùng dù không ồn ào, nhưng luôn tạo được niềm tin nơi người khác."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Conventional & Traditional",
+          "styleDescription": "Truyền thống, dịu dàng",
+          "metadata": {
+            "title": "Kết quả ISFJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ISFJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/isfj/female/1.jpg",
+              "alt": "Phong cách ISFJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/isfj/female/2.jpg",
+              "alt": "Phong cách ISFJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/isfj/female/3.jpg",
+              "alt": "Phong cách ISFJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#bd9479",
+            "#875335",
+            "#a8945e",
+            "#5b4f47"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, chiffon, crepe",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/isfj/female/6.jpg",
+              "alt": "Phong cách ISFJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày kitten heel, túi be, vòng cổ nhỏ",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/isfj/female/5.jpg",
+              "alt": "Phong cách ISFJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Váy midi dáng chữ A hoặc set áo – váy đồng bộ trang nhã và dịu dàng",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ISFJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần ồn ào để được chú ý. Sự tử tế và tinh tế của tôi tự khắc khiến người khác nhớ mãi.",
+            "description": "Bạn hướng đến sự tinh tế, chuẩn mực và an yên. Phong cách của bạn nhẹ nhàng nhưng không hề mờ nhạt. Từng chi tiết nhỏ đều phản ánh sự chu đáo và tấm lòng ấm áp.\n\nBạn chọn trang phục mềm mại, tông màu nhã và phom dáng gọn gàng. Bởi với bạn, vẻ đẹp không nằm ở sự phô trương mà ở cảm giác “đúng mực”."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/isfj/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ISFJ",
+      "personalityTitle": "Người nuôi dưỡng",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Judging",
+          "vi": "Óc phán đoán"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Sống nội tâm và đáng tin cậy",
+          "regular": " - bạn quan sát tinh tế, ít nói nhưng luôn lắng nghe và thấu hiểu. Khi đã tin ai, bạn trung thành và luôn là điểm tựa vững vàng cho họ."
+        },
+        {
+          "bold": "Coi trọng giá trị thật hơn vẻ bề ngoài",
+          "regular": " - bạn chọn làm điều đúng thay vì điều dễ, thà im lặng còn hơn nói lời vô nghĩa. Với bạn, hành động luôn quan trọng hơn hình thức."
+        },
+        {
+          "bold": "Yêu sự ổn định và tỉ mỉ trong mọi việc",
+          "regular": " - bạn thích nhịp sống có trật tự, làm gì cũng chỉn chu và kiên trì đến cùng dù không ồn ào, nhưng luôn tạo được niềm tin nơi người khác."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Clean & Conventional",
+          "styleDescription": "Gọn gàng và truyền thống",
+          "metadata": {
+            "title": "Kết quả ISFJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ISFJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/isfj/male/1.jpg",
+              "alt": "Phong cách ISFJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/isfj/male/2.jpg",
+              "alt": "Phong cách ISFJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/isfj/male/3.jpg",
+              "alt": "Phong cách ISFJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#b4b0ab",
+            "#29282c",
+            "#433831",
+            "#5c5c5a"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, len, da",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/isfj/male/6.jpg",
+              "alt": "Phong cách ISFJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày loafers, thắt lưng da trơn, đồng hồ mặt đơn giản",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/isfj/male/5.jpg",
+              "alt": "Phong cách ISFJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "sơ mi cài nút + áo len cổ tròn + quần chinos sáng màu",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ISFJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cố gây ấn tượng. Tôi chỉ chọn xuất hiện với sự chỉn chu đủ để người khác cảm thấy tin tưởng.",
+            "description": "Bạn trầm tĩnh, kín đáo và luôn chọn cách thể hiện bản thân qua sự chỉn chu. Gu thời trang của bạn thiên về sự gọn gàng, sạch sẽ và bền vững, như chính tính cách đáng tin cậy của bạn.\n\nBạn thích trang phục giản đơn nhưng tinh tế, chú trọng chi tiết nhỏ như cổ áo, nếp tay áo hay chất vải, vì chúng thể hiện sự tôn trọng và chu đáo trong cách sống."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/isfj/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "istj": [
+    {
+      "gender": "female",
+      "personalityType": "ISTJ",
+      "personalityTitle": "Người trách nhiệm",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Judgement",
+          "vi": "Nguyên tắc"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Sống nguyên tắc và kỷ luật",
+          "regular": " - Mọi việc bạn đều có kế hoạch rõ ràng, đúng giờ và ngăn nắp là thói quen cố định của bạn."
+        },
+        {
+          "bold": "Yêu sự ổn định và truyền thống",
+          "regular": " - Thay đổi đột ngột khiến bạn khó chịu, luôn hướng đến nhịp sống quen thuộc và cân bằng."
+        },
+        {
+          "bold": "Thận trọng và luôn chuẩn bị trước",
+          "regular": " - Bạn tập trung vào cách giảm rủi ro thay vì chỉ nhìn vào cơ hội, để bảo vệ bản thân và người mình yêu quý."
+        },
+        {
+          "bold": "Đề cao trách nhiệm và vai trò cá nhân",
+          "regular": " - Với bạn, sự vững vàng, dù là trong công việc hay gia đình, chính là thước đo của giá trị con người."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Practical & Classic Conservative",
+          "styleDescription": "Thực tế, cổ điển & trang nhã",
+          "metadata": {
+            "title": "Kết quả ISTJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ISTJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/istj/female/1.jpg",
+              "alt": "Phong cách ISTJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/istj/female/2.jpg",
+              "alt": "Phong cách ISTJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/istj/female/3.jpg",
+              "alt": "Phong cách ISTJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#ffffff",
+            "#2a3048",
+            "#5b4f47",
+            "#a8945e"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, len, da",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/istj/female/6.jpg",
+              "alt": "Phong cách ISTJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày oxford, đồng hồ dây da, túi trung tính",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/istj/female/5.jpg",
+              "alt": "Phong cách ISTJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo sơ mi trắng + quần âu hoặc chân váy chữ A + áo len cổ tròn",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ISTJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần chạy theo xu hướng. Tôi chọn những điều bền vững, vì sự tinh tế thật sự nằm ở giá trị lâu dài.",
+            "description": "Bạn là người yêu thích sự ổn định và thực tế. Trong thời trang cũng vậy, bạn chọn những món đồ có giá trị lâu dài hơn là xu hướng nhất thời. Mỗi chi tiết trong outfit của bạn đều được cân nhắc kỹ, vừa vặn và phù hợp hoàn cảnh.\n\nPhong cách của bạn mang đến cảm giác tin cậy và chín chắn, không cần quá cầu kỳ, chỉ cần đứng đắn và đúng mực là đủ. Sự chỉn chu và thống nhất trong gu ăn mặc thể hiện tính kỷ luật, trách nhiệm và sự tôn trọng của bạn với chính mình và người đối diện."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/istj/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ISTJ",
+      "personalityTitle": "Người trách nhiệm",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Judgement",
+          "vi": "Nguyên tắc"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Sống nguyên tắc và kỷ luật",
+          "regular": " - Mọi việc bạn đều có kế hoạch rõ ràng, đúng giờ và ngăn nắp là thói quen cố định của bạn."
+        },
+        {
+          "bold": "Yêu sự ổn định và truyền thống",
+          "regular": " - Thay đổi đột ngột khiến bạn khó chịu, luôn hướng đến nhịp sống quen thuộc và cân bằng."
+        },
+        {
+          "bold": "Thận trọng và luôn chuẩn bị trước",
+          "regular": " - Bạn tập trung vào cách giảm rủi ro thay vì chỉ nhìn vào cơ hội, để bảo vệ bản thân và người mình yêu quý."
+        },
+        {
+          "bold": "Đề cao trách nhiệm và vai trò cá nhân",
+          "regular": " - Với bạn, sự vững vàng, dù là trong công việc hay gia đình, chính là thước đo của giá trị con người."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Timeless Classic",
+          "styleDescription": "Cổ điển, luôn hợp thời",
+          "metadata": {
+            "title": "Kết quả ISTJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ISTJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/istj/male/1.jpg",
+              "alt": "Phong cách ISTJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/istj/male/2.jpg",
+              "alt": "Phong cách ISTJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/istj/male/3.jpg",
+              "alt": "Phong cách ISTJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#2b292b",
+            "#557087",
+            "#ffffff",
+            "#2a3048"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Len, cotton, lụa",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/istj/male/6.jpg",
+              "alt": "Phong cách ISTJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày da, cà vạt lụa",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/istj/male/5.jpg",
+              "alt": "Phong cách ISTJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Suit cổ điển tông navy + sơ mi trắng + giày oxford đen hoặc nâu; phom dáng chuẩn",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ISTJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần phô trương, chỉ cần xuất hiện với sự chuẩn mực và đáng tin để người khác cảm thấy yên tâm.",
+            "description": "Bạn là người sống nguyên tắc, điềm đạm và luôn đề cao sự chuẩn mực. Trong thời trang, bạn không chạy theo xu hướng mà trung thành với những giá trị bền vững và tinh tế theo thời gian. Gu ăn mặc của bạn thể hiện sự nghiêm túc, kỷ luật và tôn trọng, với chính bản thân cũng như người đối diện.\n\nBạn chú trọng từng chi tiết nhỏ: độ phẳng của áo, cách gấp khăn túi, hay độ bóng của đôi giày. Tất cả đều nói lên sự chu toàn và đáng tin cậy."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/istj/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "infj": [
+    {
+      "gender": "female",
+      "personalityType": "INFJ",
+      "personalityTitle": "Người cố vấn",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Judging",
+          "vi": "Óc phán đoán"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Sáng tạo và tinh tế",
+          "regular": " - bạn nhìn thấy ý nghĩa trong từng chi tiết nhỏ và luôn tìm cách biến điều bình thường thành đặc biệt."
+        },
+        {
+          "bold": "Sống chân thành với hệ giá trị của mình",
+          "regular": " - Dù nhẹ nhàng nhưng luôn kiên định, chọn thể hiện niềm tin bằng hành động và sự chân thành."
+        },
+        {
+          "bold": "Mộng mơ nhưng có kỷ luật",
+          "regular": " - cảm xúc nhiều nhưng bạn vẫn sống có nguyên tắc, muốn mỗi ngày đều tốt hơn hôm qua."
+        },
+        {
+          "bold": "Trân trọng kết nối thật",
+          "regular": " - bạn không thích sự ồn ào mà tìm niềm vui trong những mối quan hệ sâu sắc, giản dị và chân thành."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Alluring & Subtle Artistic",
+          "styleDescription": "Thu hút, tinh tế, có chiều sâu",
+          "metadata": {
+            "title": "Kết quả INFJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách INFJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/infj/female/1.jpg",
+              "alt": "Phong cách INFJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/infj/female/2.jpg",
+              "alt": "Phong cách INFJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/infj/female/3.jpg",
+              "alt": "Phong cách INFJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#414e3c",
+            "#557087",
+            "#e7d7c0",
+            "#a8945e"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Lụa, satin, voan, chiffon",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/infj/female/6.jpg",
+              "alt": "Phong cách INFJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày mules, hoa tai thanh mảnh, túi nhỏ",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/infj/female/5.jpg",
+              "alt": "Phong cách INFJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Blouse lụa mềm + chân váy midi hoặc váy dài pastel, thêm giày mules",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách INFJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần nói nhiều, phong cách của tôi là sự tĩnh lặng có chiều sâu.",
+            "description": "Bạn là người sống sâu sắc và đầy cảm hứng, tinh tế trong cảm nhận, chọn lọc trong cách thể hiện. Phong cách của bạn phản chiếu tâm hồn: nhẹ nhàng, tối giản nhưng chứa đựng nhiều lớp ý nghĩa.\n\nBạn thích những chất liệu “có hồn” – linen, lụa mờ, cotton mềm – những thứ thở cùng bạn, không phô trương nhưng khiến người khác muốn ở lại lâu hơn."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/infj/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "INFJ",
+      "personalityTitle": "Người cố vấn",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Judging",
+          "vi": "Óc phán đoán"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Sáng tạo và tinh tế",
+          "regular": " - bạn nhìn thấy ý nghĩa trong từng chi tiết nhỏ và luôn tìm cách biến điều bình thường thành đặc biệt."
+        },
+        {
+          "bold": "Sống chân thành với hệ giá trị của mình",
+          "regular": " - Dù nhẹ nhàng nhưng luôn kiên định, chọn thể hiện niềm tin bằng hành động và sự chân thành."
+        },
+        {
+          "bold": "Mộng mơ nhưng có kỷ luật",
+          "regular": " - cảm xúc nhiều nhưng bạn vẫn sống có nguyên tắc, muốn mỗi ngày đều tốt hơn hôm qua."
+        },
+        {
+          "bold": "Trân trọng kết nối thật",
+          "regular": " - bạn không thích sự ồn ào mà tìm niềm vui trong những mối quan hệ sâu sắc, giản dị và chân thành."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Thoughtful Bohemian",
+          "styleDescription": "Sâu sắc, phóng khoáng",
+          "metadata": {
+            "title": "Kết quả INFJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách INFJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/infj/male/1.jpg",
+              "alt": "Phong cách INFJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/infj/male/2.jpg",
+              "alt": "Phong cách INFJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/infj/male/3.jpg",
+              "alt": "Phong cách INFJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#dad2c5",
+            "#bd9479",
+            "#5b4636",
+            "#56181a"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Len mỏng, cotton thô, linen",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/infj/male/6.jpg",
+              "alt": "Phong cách INFJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày da, cà vạt lụa",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/infj/male/5.jpg",
+              "alt": "Phong cách INFJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo len mỏng hoặc sơ mi linen + quần suông màu đất + giày da lộn",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách INFJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không tìm cách gây chú ý, tôi để lại dấu ấn bằng chiều sâu và sự tinh tế.",
+            "description": "Bạn là người trầm tĩnh, sâu sắc và có gu thẩm mỹ tinh tế. Mỗi món đồ bạn chọn đều mang một câu chuyện – ít nhưng đủ, giản dị nhưng có sức nặng.\n\nPhong cách của bạn pha trộn giữa cổ điển và hiện đại, giống như chính bạn – hướng nội nhưng luôn tỏa sáng theo cách riêng."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/infj/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "infp": [
+    {
+      "gender": "female",
+      "personalityType": "INFP",
+      "personalityTitle": "Người hòa giải",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Sống giàu cảm xúc và sâu sắc.",
+          "regular": "Mọi điều bạn làm đều xuất phát từ trái tim và giá trị bạn tin tưởng."
+        },
+        {
+          "bold": "Sáng tạo và nhạy cảm.",
+          "regular": " Trực giác giúp bạn nhìn thế giới theo cách riêng, chạm đến cảm xúc người khác một cách tự nhiên."
+        },
+        {
+          "bold": "Hướng nội nhưng ấm áp.",
+          "regular": " Thích ở một mình để nạp năng lượng, song vẫn trân quý những mối quan hệ chân thành."
+        },
+        {
+          "bold": "Kiên định với giá trị của mình",
+          "regular": " Bạn chọn sống đúng lòng, dù điều đó đôi khi khiến bạn thiệt thòi."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Artistic Indie/Whimsical",
+          "styleDescription": "Lãng mạn, cổ điển, thơ mộng",
+          "metadata": {
+            "title": "Kết quả INFP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách INFP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/infp/female/1.jpg",
+              "alt": "Phong cách INFP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/infp/female/2.jpg",
+              "alt": "Phong cách INFP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/infp/female/3.jpg",
+              "alt": "Phong cách INFP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#ddc1a7",
+            "#a8945e",
+            "#9aa280",
+            "#5b4f47"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, voan, ren, linen",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/infp/female/6.jpg",
+              "alt": "Phong cách INFP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Mũ beret, túi vintage, vòng cổ nhỏ",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/infp/female/5.jpg",
+              "alt": "Phong cách INFP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Váy hoa + áo blouse cổ bèo + túi da vintage + giày búp bê hoặc sandal quai mảnh",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách INFP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần gây chú ý, tôi chỉ muốn thế giới này dịu dàng như chính mình.",
+            "description": "Bạn mang trong mình tâm hồn nghệ sĩ – dịu dàng, sâu sắc và tràn đầy cảm xúc. Gu thời trang của bạn phản chiếu thế giới nội tâm tinh tế ấy: nhẹ, bay, nhưng vẫn có điểm nhấn riêng đầy cá tính."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/infp/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "INFP",
+      "personalityTitle": "Người hòa giải",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Sống giàu cảm xúc và sâu sắc.",
+          "regular": "Mọi điều bạn làm đều xuất phát từ trái tim và giá trị bạn tin tưởng."
+        },
+        {
+          "bold": "Sáng tạo và nhạy cảm.",
+          "regular": " Trực giác giúp bạn nhìn thế giới theo cách riêng, chạm đến cảm xúc người khác một cách tự nhiên."
+        },
+        {
+          "bold": "Hướng nội nhưng ấm áp.",
+          "regular": " Thích ở một mình để nạp năng lượng, song vẫn trân quý những mối quan hệ chân thành."
+        },
+        {
+          "bold": "Kiên định với giá trị của mình",
+          "regular": " Bạn chọn sống đúng lòng, dù điều đó đôi khi khiến bạn thiệt thòi."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Eclectic/Soft Vintage",
+          "styleDescription": "Cổ điển,nhẹ nhàng",
+          "metadata": {
+            "title": "Kết quả INFP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách INFP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/infp/male/1.jpg",
+              "alt": "Phong cách INFP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/infp/male/2.jpg",
+              "alt": "Phong cách INFP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/infp/male/3.jpg",
+              "alt": "Phong cách INFP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#9aa280",
+            "#e7d7c0",
+            "#1c4232",
+            "#4a4628"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Denim, cotton, nhung, len",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/infp/male/6.jpg",
+              "alt": "Phong cách INFP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Áo graphic, quần ống rộng, converse",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/infp/male/5.jpg",
+              "alt": "Phong cách INFP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Phối cũ–mới xen kẽ, tone ấm, thêm một item mang dấu ấn cá nhân",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách INFP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không tìm cách nổi bật – tôi chỉ muốn mọi thứ quanh mình mang cảm xúc thật.",
+            "description": "Bạn là người sống có chiều sâu, thích suy tư và yêu cái đẹp giản dị. Phong cách của bạn không phô trương mà mang nét lãng mạn, nhẹ nhàng và có chút hoài cổ, như cách bạn tìm kiếm ý nghĩa trong từng chi tiết nhỏ."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/infp/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "enfj": [
+    {
+      "gender": "female",
+      "personalityType": "ENFJ",
+      "personalityTitle": "Người cho đi",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Judging",
+          "vi": "Óc phán đoán"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Trách nhiệm và nhiệt huyết.",
+          "regular": " Khi đã làm, bạn làm đến cùng, nỗ lực chính là cách bạn khẳng định giá trị bản thân."
+        },
+        {
+          "bold": "Sống tình cảm và cống hiến.",
+          "regular": " Luôn muốn mang lại điều tích cực cho tập thể và hết lòng với điều mình tin tưởng."
+        },
+        {
+          "bold": "Thích trải nghiệm và nhiều ước mơ.",
+          "regular": " Càng thử thách, bạn càng hứng thú và không ngừng phát triển qua từng trải nghiệm."
+        },
+        {
+          "bold": "Có lý tưởng sống rõ ràng.",
+          "regular": " Không chỉ muốn thành công cho riêng mình, bạn còn mong lan tỏa năng lượng và giá trị tốt đẹp đến người khác."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Wholesome Chic & Approachable",
+          "styleDescription": "Duyên dáng, tươi tắn",
+          "metadata": {
+            "title": "Kết quả ENFJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ENFJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/enfj/female/1.jpg",
+              "alt": "Phong cách ENFJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/enfj/female/2.jpg",
+              "alt": "Phong cách ENFJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/enfj/female/3.jpg",
+              "alt": "Phong cách ENFJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#2a3048",
+            "#557087",
+            "#414e3c",
+            "#886d52"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, linen, poplin",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/enfj/female/6.jpg",
+              "alt": "Phong cách ENFJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày búp bê, túi sáng màu, khuyên nhỏ",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/enfj/female/5.jpg",
+              "alt": "Phong cách ENFJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo blouse + chân váy chữ A hoặc quần suông sáng màu, thanh lịch và dễ thương",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ENFJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không chỉ muốn bản thân đẹp, tôi khiến mọi người muốn tốt hơn khi ở cạnh tôi.",
+            "description": "Bạn mang trong mình nguồn năng lượng tích cực và tinh thần lãnh đạo tự nhiên. Mọi lựa chọn thời trang của bạn đều thể hiện sự chuyên nghiệp, tinh tế nhưng vẫn đầy cảm xúc.\n\nPhong cách của bạn vừa quyến rũ vừa có sức lan tỏa, như cách bạn truyền cảm hứng cho người khác."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/enfj/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ENFJ",
+      "personalityTitle": "Người cho đi",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Judging",
+          "vi": "Óc phán đoán"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Trách nhiệm và nhiệt huyết.",
+          "regular": " Khi đã làm, bạn làm đến cùng, nỗ lực chính là cách bạn khẳng định giá trị bản thân."
+        },
+        {
+          "bold": "Sống tình cảm và cống hiến.",
+          "regular": " Luôn muốn mang lại điều tích cực cho tập thể và hết lòng với điều mình tin tưởng."
+        },
+        {
+          "bold": "Thích trải nghiệm và nhiều ước mơ.",
+          "regular": " Càng thử thách, bạn càng hứng thú và không ngừng phát triển qua từng trải nghiệm."
+        },
+        {
+          "bold": "Có lý tưởng sống rõ ràng.",
+          "regular": " Không chỉ muốn thành công cho riêng mình, bạn còn mong lan tỏa năng lượng và giá trị tốt đẹp đến người khác."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Approachable Preppy",
+          "styleDescription": "Thanh lịch, trẻ trung",
+          "metadata": {
+            "title": "Kết quả ENFJ - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ENFJ - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/enfj/male/1.jpg",
+              "alt": "Phong cách ENFJ - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/enfj/male/2.jpg",
+              "alt": "Phong cách ENFJ - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/enfj/male/3.jpg",
+              "alt": "Phong cách ENFJ - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#1c4232",
+            "#e7d7c0",
+            "#843941",
+            "#343316"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, khaki, linen",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/enfj/male/6.jpg",
+              "alt": "Phong cách ENFJ - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày da/sneakers, thắt lưng nâu, đồng hồ dây da",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/enfj/male/5.jpg",
+              "alt": "Phong cách ENFJ - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Polo hoặc sơ mi sáng + quần chinos",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ENFJ"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần nói nhiều, năng lượng tích cực của tôi tự lan tỏa trong từng chi tiết.",
+            "description": "Bạn luôn toát ra sự tự tin và cuốn hút. Gu thời trang của bạn là sự kết hợp hoàn hảo giữa lịch lãm, tinh tế và một chút phóng khoáng.\n\nBạn ăn mặc không chỉ để trông tốt hơn, mà để tạo năng lượng tích cực cho người đối diện."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/enfj/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "enfp": [
+    {
+      "gender": "female",
+      "personalityType": "ENFP",
+      "personalityTitle": "Người truyền cảm hứng",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Tràn đầy năng lượng và thích điều mới mẻ",
+          "regular": " - bạn muốn cuộc sống lúc nào cũng rực rỡ và đầy cảm hứng."
+        },
+        {
+          "bold": "Dễ say mê nhưng cũng dễ đổi hướng.",
+          "regular": " Khi hứng thú, bạn hết mình; khi mất cảm xúc, bạn buông tay nhẹ nhàng để tìm hành trình mới."
+        },
+        {
+          "bold": "Quan tâm tinh tế.",
+          "regular": " Những hành động nhỏ, bất ngờ giản dị chính là cách bạn lan tỏa sự ấm áp."
+        },
+        {
+          "bold": "Nhiệt huyết nhưng dễ chùng xuống",
+          "regular": " - bạn cần môi trường linh hoạt, sáng tạo, nơi năng lượng và cảm hứng của bạn được thắp sáng mỗi ngày."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Playful Chic & Creative Boho",
+          "styleDescription": "Năng động, vui tươi",
+          "metadata": {
+            "title": "Kết quả ENFP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ENFP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/enfp/female/1.jpg",
+              "alt": "Phong cách ENFP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/enfp/female/2.jpg",
+              "alt": "Phong cách ENFP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/enfp/female/3.jpg",
+              "alt": "Phong cách ENFP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#af9cc9",
+            "#e8ab12",
+            "#44af8f",
+            "#ba6733"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, linen, chiffon, ren, vải dệt",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/enfp/female/6.jpg",
+              "alt": "Phong cách ENFP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Khuyên tai bản to, vòng tay nhiều lớp, túi đan dây hoặc canvas, sneakers",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/enfp/female/5.jpg",
+              "alt": "Phong cách ENFP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo sơ mi trắng + quần suông hoặc chân váy midi; thêm điểm nhấn bằng khăn lụa hoặc phụ kiện màu đỏ",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ENFP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần phải giống ai,  chỉ cần hôm nay tôi thấy vui và là chính mình.",
+            "description": "Bạn là người tràn đầy năng lượng và cảm hứng, gu thời trang của bạn cũng phản ánh điều đó: tự do, ngẫu hứng và nhiều màu sắc.\n\nBạn không theo quy tắc, bạn “mix” theo cảm xúc và kỳ lạ là, nó vẫn luôn có gu."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/enfp/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ENFP",
+      "personalityTitle": "Người truyền cảm hứng",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Tràn đầy năng lượng và thích điều mới mẻ",
+          "regular": " - bạn muốn cuộc sống lúc nào cũng rực rỡ và đầy cảm hứng."
+        },
+        {
+          "bold": "Dễ say mê nhưng cũng dễ đổi hướng.",
+          "regular": " Khi hứng thú, bạn hết mình; khi mất cảm xúc, bạn buông tay nhẹ nhàng để tìm hành trình mới."
+        },
+        {
+          "bold": "Quan tâm tinh tế.",
+          "regular": " Những hành động nhỏ, bất ngờ giản dị chính là cách bạn lan tỏa sự ấm áp."
+        },
+        {
+          "bold": "Nhiệt huyết nhưng dễ chùng xuống",
+          "regular": " - bạn cần môi trường linh hoạt, sáng tạo, nơi năng lượng và cảm hứng của bạn được thắp sáng mỗi ngày."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Playful Casual",
+          "styleDescription": "Thoải mái, vui tươi, năng động",
+          "metadata": {
+            "title": "Kết quả ENFP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ENFP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/enfp/male/1.jpg",
+              "alt": "Phong cách ENFP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/enfp/male/2.jpg",
+              "alt": "Phong cách ENFP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/enfp/male/3.jpg",
+              "alt": "Phong cách ENFP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#dcc39b",
+            "#e1e0db",
+            "#b45d28",
+            "#18517c"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, jersey, denim",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/enfp/male/6.jpg",
+              "alt": "Phong cách ENFP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày sneaker, nón bucket, vòng tay màu",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/enfp/male/5.jpg",
+              "alt": "Phong cách ENFP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo họa tiết + quần sáng màu + sneaker trắng hoặc phối tone nổi",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ENFP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không lập kế hoạch để gây ấn tượng, tôi chỉ muốn mỗi ngày đều có một điều bất ngờ để kể lại.",
+            "description": "Bạn sống tự do, phóng khoáng và luôn sẵn sàng cho điều mới mẻ.\n\nGu ăn mặc của bạn là sự kết hợp giữa sáng tạo và phóng khoáng, một chút đường phố, một chút nghệ sĩ, và hoàn toàn “tôi”."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/enfp/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "istp": [
+    {
+      "gender": "female",
+      "personalityType": "ISTP",
+      "personalityTitle": "Nhà kỹ thuật",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Độc lập và thích thử thách.",
+          "regular": " Càng khó càng hứng thú - bạn luôn muốn tự mình khám phá và làm khác đi"
+        },
+        {
+          "bold": "Tinh ý và sáng tạo trong quan sát.",
+          "regular": " Bạn thường thấy điều người khác bỏ qua và tìm ra cách giải quyết rất riêng."
+        },
+        {
+          "bold": "Đề cao tự do.",
+          "regular": " Không thích ràng buộc, bạn sống thật, làm điều mình muốn theo nhịp riêng."
+        },
+        {
+          "bold": "Giản dị và sống cảm hứng.",
+          "regular": " Thích những điều nhỏ bé mang lại niềm vui thật  như thú cưng, phim hài hay phút giây thư giãn thoải mái."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Modern Workwear",
+          "styleDescription": "Tự nhiên, mộc mạc, gần gũi",
+          "metadata": {
+            "title": "Kết quả ISTP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ISTP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/istp/female/1.jpg",
+              "alt": "Phong cách ISTP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/istp/female/2.jpg",
+              "alt": "Phong cách ISTP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/istp/female/3.jpg",
+              "alt": "Phong cách ISTP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#e6a73f",
+            "#aea598",
+            "#29282c",
+            "#e7d7c0"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Da, denim, canvas",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/istp/female/6.jpg",
+              "alt": "Phong cách ISTP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Túi chéo da, boots cổ ngắn, kính đen, vòng tay kim loại mảnh",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/istp/female/5.jpg",
+              "alt": "Phong cách ISTP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo khoác da + quần cargo hoặc jeans tối màu + boots; thêm kính đen hoặc dây nịt",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ISTP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần phải khác biệt, tôi chỉ cần được là chính mình, và thế là đủ nổi bật.",
+            "description": "Bạn có gu riêng và không thích tuân theo quy tắc nào. Phong cách của bạn đơn giản, gọn gàng nhưng luôn toát lên sự tự tin tự nhiên ,  kiểu “ngầu mà không cần cố”.\n\nBạn chọn những món đồ dễ di chuyển, tiện dụng và có phom chuẩn, vừa đủ cá tính, vừa thoải mái."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/istp/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ISTP",
+      "personalityTitle": "Nhà kỹ thuật",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Độc lập và thích thử thách.",
+          "regular": " Càng khó càng hứng thú - bạn luôn muốn tự mình khám phá và làm khác đi"
+        },
+        {
+          "bold": "Tinh ý và sáng tạo trong quan sát.",
+          "regular": " Bạn thường thấy điều người khác bỏ qua và tìm ra cách giải quyết rất riêng."
+        },
+        {
+          "bold": "Đề cao tự do.",
+          "regular": " Không thích ràng buộc, bạn sống thật, làm điều mình muốn theo nhịp riêng."
+        },
+        {
+          "bold": "Giản dị và sống cảm hứng.",
+          "regular": " Thích những điều nhỏ bé mang lại niềm vui thật  như thú cưng, phim hài hay phút giây thư giãn thoải mái."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Rugged Practical / Streetwear",
+          "styleDescription": "Thực tế, đường phố",
+          "metadata": {
+            "title": "Kết quả ISTP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ISTP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/istp/male/1.jpg",
+              "alt": "Phong cách ISTP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/istp/male/2.jpg",
+              "alt": "Phong cách ISTP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/istp/male/3.jpg",
+              "alt": "Phong cách ISTP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#e7d7c0",
+            "#e6a73f",
+            "#414e3c",
+            "#ffffff"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Denim dày, cotton, da",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/istp/male/6.jpg",
+              "alt": "Phong cách ISTP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Mũ snapback, sneaker dày, dây xích nhỏ hoặc vòng da",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/istp/male/5.jpg",
+              "alt": "Phong cách ISTP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Quần cargo + áo thun basic + hoodie layer + sneaker chunky",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ISTP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không nói nhiều, tôi để hành động và phong cách sống của mình lên tiếng.",
+            "description": "Bạn ăn mặc như chính cách bạn sống – thực tế, gọn gàng và luôn sẵn sàng hành động. Không thích phô trương, bạn chọn những item bền, tiện dụng và có tính linh hoạt cao.\n\nPhong cách của bạn pha giữa streetwear và utility: áo khoác bomber, quần cargo, giày thể thao, đồng hồ kỹ thuật. Tất cả đều phản ánh tinh thần “work hard, play smart”."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/istp/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "isfp": [
+    {
+      "gender": "female",
+      "personalityType": "ISFP",
+      "personalityTitle": "Người nghệ sĩ",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Bạn có trái tim ấm và tinh tế.",
+          "regular": " Luôn lắng nghe, thấu hiểu và quan tâm đến cảm xúc người khác bằng những cử chỉ nhỏ."
+        },
+        {
+          "bold": "Nhẹ nhàng và điềm đạm.",
+          "regular": " Không cần nói nhiều, sự hiện diện của bạn đã mang lại cảm giác an yên cho người khác."
+        },
+        {
+          "bold": "Tinh tế và chỉn chu.",
+          "regular": " Mọi việc bạn làm đều được chuẩn bị chu đáo và có chủ đích rõ ràng."
+        },
+        {
+          "bold": "Trân trọng sự tĩnh lặng.",
+          "regular": " Yêu cảm giác thư giãn, không gian yên bình và những khoảnh khắc được là chính mình."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Soft Minimal & Natural Grace",
+          "styleDescription": "Tối giản & tự nhiên",
+          "metadata": {
+            "title": "Kết quả ISFP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ISFP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/isfp/female/1.jpg",
+              "alt": "Phong cách ISFP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/isfp/female/2.jpg",
+              "alt": "Phong cách ISFP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/isfp/female/3.jpg",
+              "alt": "Phong cách ISFP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#ebdcd0",
+            "#f4e0ce",
+            "#f4ccca",
+            "#abaf86"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Linen, cotton, len, lụa mờ",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/isfp/female/6.jpg",
+              "alt": "Phong cách ISFP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Vòng tay mảnh, khuyên tai nhỏ, túi da mềm, giày bệt hoặc sandal dây",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/isfp/female/5.jpg",
+              "alt": "Phong cách ISFP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo linen trắng + quần culottes be + giày bệt da mềm + túi chéo nhỏ + mùi hương gỗ hoặc hoa nhẹ",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ISFP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần nổi bật, tôi chỉ cần mọi thứ quanh mình thật yên và thật thật.",
+            "description": "Bạn là người yêu cái đẹp giản dị, mọi thứ quanh bạn đều mang một nét dịu dàng, chỉn chu và tinh tế. Bạn chọn trang phục không để gây ấn tượng, mà để cảm thấy dễ chịu và là chính mình.\n\nPhong cách của bạn mềm mại, thiên về chất liệu tự nhiên và đường cắt tinh gọn."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/isfp/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ISFP",
+      "personalityTitle": "Người nghệ sĩ",
+      "personalityDimensions": [
+        {
+          "en": "Introverted",
+          "vi": "Hướng nội"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Bạn có trái tim ấm và tinh tế.",
+          "regular": " Luôn lắng nghe, thấu hiểu và quan tâm đến cảm xúc người khác bằng những cử chỉ nhỏ."
+        },
+        {
+          "bold": "Nhẹ nhàng và điềm đạm.",
+          "regular": " Không cần nói nhiều, sự hiện diện của bạn đã mang lại cảm giác an yên cho người khác."
+        },
+        {
+          "bold": "Tinh tế và chỉn chu.",
+          "regular": " Mọi việc bạn làm đều được chuẩn bị chu đáo và có chủ đích rõ ràng."
+        },
+        {
+          "bold": "Trân trọng sự tĩnh lặng.",
+          "regular": " Yêu cảm giác thư giãn, không gian yên bình và những khoảnh khắc được là chính mình."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Calm Modern & Effortless Ease",
+          "styleDescription": "Hiện đại & thoải mái tự nhiên",
+          "metadata": {
+            "title": "Kết quả ISFP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ISFP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/isfp/male/1.jpg",
+              "alt": "Phong cách ISFP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/isfp/male/2.jpg",
+              "alt": "Phong cách ISFP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/isfp/male/3.jpg",
+              "alt": "Phong cách ISFP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#f1ead8",
+            "#d5c7ad",
+            "#bec5a4",
+            "#b5b7b4"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, denim, linen, len",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/isfp/male/6.jpg",
+              "alt": "Phong cách ISFP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Đồng hồ dây da, balo canvas, mũ lưỡi trai, vòng tay gỗ hoặc da",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/isfp/male/5.jpg",
+              "alt": "Phong cách ISFP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Sơ mi linen + quần chinos + giày slip-on + đồng hồ da nâu + mùi hương nhẹ kiểu gỗ ấm",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ISFP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cần định nghĩa phong cách, tôi chỉ chọn những gì khiến tôi thấy dễ thở và thật.",
+            "description": "Bạn trầm tĩnh, tinh tế và luôn chọn sự thoải mái làm thước đo cho phong cách. Gu của bạn đơn giản nhưng có chiều sâu, giống như cách bạn sống: nhẹ nhàng, thực tế, không ồn ào.\n\nBạn yêu thích các item mang tính tự nhiên, vừa vặn và cảm giác “fit” với cơ thể."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/isfp/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "estp": [
+    {
+      "gender": "female",
+      "personalityType": "ESTP",
+      "personalityTitle": "Nhà thực thi",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Thẳng thắn và sống thật.",
+          "regular": " Không vòng vo hay giả vờ, với bạn, được là chính mình quan trọng hơn việc được yêu thích."
+        },
+        {
+          "bold": "Làm chủ cuộc sống.",
+          "regular": " Tự do và tự quyết là nguyên tắc của bạn - mọi thứ phải thú vị và đúng gu riêng."
+        },
+        {
+          "bold": "Thu hút một cách tự nhiên.",
+          "regular": " Sự tự tin và cá tính khiến bạn nổi bật dù không cố gắng."
+        },
+        {
+          "bold": "Nhanh trí và truyền cảm hứng.",
+          "regular": " Bạn lan tỏa năng lượng tích cực, dẫn dắt người khác bằng tinh thần tiên phong và sự cuốn hút riêng của bản thân."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Sporty Casual & Form-Fitting",
+          "styleDescription": "Tôn dáng, năng động",
+          "metadata": {
+            "title": "Kết quả ESTP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ESTP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/estp/female/1.jpg",
+              "alt": "Phong cách ESTP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/estp/female/2.jpg",
+              "alt": "Phong cách ESTP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/estp/female/3.jpg",
+              "alt": "Phong cách ESTP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#485150",
+            "#dad2c5",
+            "#727772",
+            "#aea598"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Spandex, nylon, cotton co giãn",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/estp/female/6.jpg",
+              "alt": "Phong cách ESTP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Giày thể thao chunky, túi đeo hông, mũ lưỡi trai, đồng hồ thể thao",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/estp/female/5.jpg",
+              "alt": "Phong cách ESTP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo crop thể thao + quần jogger ôm + sneaker trắng, hoặc tank top ôm + quần short + áo khoác bomber",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ESTP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không theo trend, tôi chính là người tạo ra trend.",
+            "description": "Bạn là người luôn khiến không gian quanh mình sống động. Phong cách của bạn phản ánh đúng tính cách: mạnh mẽ, cá tính nhưng vẫn rất cuốn hút.\n\nBạn thích những thiết kế táo bạo, pha trộn khéo giữa năng lượng đường phố và sự tự tin hiện đại."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/estp/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ESTP",
+      "personalityTitle": "Nhà thực thi",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Thẳng thắn và sống thật.",
+          "regular": " Không vòng vo hay giả vờ, với bạn, được là chính mình quan trọng hơn việc được yêu thích."
+        },
+        {
+          "bold": "Làm chủ cuộc sống.",
+          "regular": " Tự do và tự quyết là nguyên tắc của bạn - mọi thứ phải thú vị và đúng gu riêng."
+        },
+        {
+          "bold": "Thu hút một cách tự nhiên.",
+          "regular": " Sự tự tin và cá tính khiến bạn nổi bật dù không cố gắng."
+        },
+        {
+          "bold": "Nhanh trí và truyền cảm hứng.",
+          "regular": " Bạn lan tỏa năng lượng tích cực, dẫn dắt người khác bằng tinh thần tiên phong và sự cuốn hút riêng của bản thân."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Athletic & Confident",
+          "styleDescription": "Tự tin, năng động",
+          "metadata": {
+            "title": "Kết quả ESTP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ESTP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/estp/male/1.jpg",
+              "alt": "Phong cách ESTP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/estp/male/2.jpg",
+              "alt": "Phong cách ESTP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/estp/male/3.jpg",
+              "alt": "Phong cách ESTP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#29282c",
+            "#5c5c5a",
+            "#c6c1ae",
+            "#66523a"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Polyester, spandex, cotton co giãn",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/estp/male/6.jpg",
+              "alt": "Phong cách ESTP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Đồng hồ thể thao bản lớn, giày chạy dáng chunky, balo nhỏ gọn hoặc túi đeo chéo",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/estp/male/5.jpg",
+              "alt": "Phong cách ESTP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo thun body-fit + quần jogger tối màu + giày + đồng hồ; hoặc áo khoác bomber + quần short thể thao",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ESTP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không cố gắng gây ấn tượng, nhưng người khác luôn nhớ tôi đầu tiên.",
+            "description": "Bạn là người của hành động - nhanh trí, năng động và luôn có mặt đúng nơi, đúng lúc. Phong cách của bạn hiện đại, khỏe khoắn, phản ánh tinh thần dám chơ dám làm.\n\nBạn chuộng những item thể hiện sự tự do và linh hoạt, có điểm nhấn vừa đủ để thể hiện “chất riêng”."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/estp/male/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ],
+  "esfp": [
+    {
+      "gender": "female",
+      "personalityType": "ESFP",
+      "personalityTitle": "Nhà trình diễn",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Bạn ấm áp và dễ mến,",
+          "regular": " luôn mang đến năng lượng tích cực và khiến người khác thấy thoải mái khi ở bên."
+        },
+        {
+          "bold": "Thích kết nối và sẻ chia.",
+          "regular": " Yêu những buổi tụ tập, những khoảnh khắc chân thành cùng bạn bè, người thân."
+        },
+        {
+          "bold": "Biết tận hưởng hiện tại.",
+          "regular": " Với bạn, hạnh phúc đến từ những điều nhỏ bé và thật lòng."
+        },
+        {
+          "bold": "Trân trọng sự quan tâm tinh tế.",
+          "regular": " Chỉ một hành động nhỏ cũng đủ khiến bạn cảm động và thấy được yêu thương."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Bold & Provocative Statement",
+          "styleDescription": "Phá cách, táo bạo",
+          "metadata": {
+            "title": "Kết quả ESTP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ESTP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/esfp/female/1.jpg",
+              "alt": "Phong cách ESTP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/esfp/female/2.jpg",
+              "alt": "Phong cách ESTP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/esfp/female/3.jpg",
+              "alt": "Phong cách ESTP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#56181a",
+            "#4a4628",
+            "#736d4c",
+            "#cac3b0"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Da bóng, satin, sequins",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/esfp/female/6.jpg",
+              "alt": "Phong cách ESTP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Clutch nhỏ, khuyên tròn lớn, vòng cổ hoặc vòng tay bản to",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/esfp/female/5.jpg",
+              "alt": "Phong cách ESTP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Váy cut-out ôm sát + giày cao gót mũi nhọn + khuyên tròn bản lớn, hoặc áo corset ánh kim + quần da đen + clutch mini.",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ESTP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi tận hưởng từng khoảnh khắc và tôi chọn tỏa sáng theo cách của riêng mình.",
+            "description": "Bạn mang trong mình năng lượng tỏa sáng – vui vẻ, sống động và luôn biết cách khiến mọi thứ quanh mình trở nên thú vị hơn. Gu ăn mặc của bạn cũng vậy: tươi sáng, gợi cảm nhưng vẫn gần gũi, tự nhiên.\n\nBạn thích những item giúp bản thân “thấy mình đẹp ngay lập tức”."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/esfp/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "personalityType": "ESFP",
+      "personalityTitle": "Nhà trình diễn",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoại"
+        },
+        {
+          "en": "Sensing",
+          "vi": "Cảm giác"
+        },
+        {
+          "en": "Feeling",
+          "vi": "Tình cảm"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Bạn ấm áp và dễ mến,",
+          "regular": " luôn mang đến năng lượng tích cực và khiến người khác thấy thoải mái khi ở bên."
+        },
+        {
+          "bold": "Thích kết nối và sẻ chia.",
+          "regular": " Yêu những buổi tụ tập, những khoảnh khắc chân thành cùng bạn bè, người thân."
+        },
+        {
+          "bold": "Biết tận hưởng hiện tại.",
+          "regular": " Với bạn, hạnh phúc đến từ những điều nhỏ bé và thật lòng."
+        },
+        {
+          "bold": "Trân trọng sự quan tâm tinh tế.",
+          "regular": " Chỉ một hành động nhỏ cũng đủ khiến bạn cảm động và thấy được yêu thương."
+        }
+      ],
+      "subStyles": [
+        {
+          "styleName": "Flashy & Attention-Grabbing",
+          "styleDescription": "Ánh kim, màu sắc nổi bật",
+          "metadata": {
+            "title": "Kết quả ESTP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ESTP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/results/esfp/male/1.jpg",
+              "alt": "Phong cách ESTP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/results/esfp/male/2.jpg",
+              "alt": "Phong cách ESTP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/results/esfp/male/3.jpg",
+              "alt": "Phong cách ESTP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#5b4f47",
+            "#5b4f47",
+            "#5b4f47",
+            "#5b4f47"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Da bóng, metallic, polyester",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/results/esfp/male/6.jpg",
+              "alt": "Phong cách ESTP - Phụ kiện 1"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Nhẫn bản to, dây chuyền bạc hoặc vàng trắng, sneaker thiết kế độc đáo",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/results/esfp/male/5.jpg",
+              "alt": "Phong cách ESTP - Phụ kiện 2"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Áo bomber ánh kim + quần da đen + sneaker chunky + dây chuyền bạc, hoặc áo phông in nổi + quần jeans slim fit + áo khoác da.",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "",
+              "alt": "Phong cách ESTP"
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/images/results/bg.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi sống hết mình cho hôm nay và muốn lan tỏa năng lượng đó đến mọi người.",
+            "description": "Bạn thân thiện, vui tính và luôn tràn đầy năng lượng tích cực. Phong cách của bạn phản ánh đúng tinh thần đó – hiện đại, thoải mái nhưng vẫn đủ điểm nhấn để thể hiện cá tính.\n\nBạn chuộng những trang phục dễ vận động nhưng có form đẹp."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/results/esfp/male/4.jpg",
             "alt": "GỢI Ý PHỐI TRANG PHỤC"
           }
         }

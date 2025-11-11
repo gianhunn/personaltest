@@ -5,7 +5,7 @@ import { getStyleData, getSubStyleData, hasSubStyles } from "@/lib/data/getStyle
 import type { StyleData } from "@/lib/data/types"
 
 // For now, default to ENTP with first sub-style. In the future, this can be dynamic based on test results
-const STYLE_KEY = "entp" as const
+const STYLE_KEY = "esfp" as const
 const STYLE_INDEX = 0 // Index in the style array (default: 0)
 const SUB_STYLE_INDEX = 0 // Default to first sub-style
 
@@ -27,21 +27,21 @@ export default function ResultPage() {
 
             {/* Hero Section */}
             <section className="container max-w-7xl mx-auto px-6 py-16">
-                <div className="grid lg:grid-cols-2 gap-12">
+                <div className="flex justify-between items-center">
                     {/* Left side - Title and Description */}
-                    <div className="space-y-8">
+                    <div className="space-y-8 w-3/5">
                         <header>
                             <h1 className="font-serif text-6xl lg:text-7xl text-[#5a5a5a] leading-tight">
                                 BẠN LÀ <span className="text-[#9b8b7e] italic">{styleData.personalityType}</span>
                             </h1>
-                            <p className="font-serif text-4xl lg:text-5xl text-[#5a5a5a] mt-2 italic">{styleData.personalityTitle}</p>
+                            <p className="font-serif text-5xl lg:text-7xl text-[#5a5a5a] mt-2 italic font-bold">{styleData.personalityTitle}</p>
                         </header>
 
                         {/* Description bullets */}
-                        <ul className="space-y-2 text-[#5a5a5a] list-none text-xl">
+                        <ul className="space-y-2 text-[#5a5a5a] list-none text-xl text-justify">
                             {styleData.descriptionBullets.map((bullet, index) => (
                                 <li key={index} className="flex gap-3">
-                                    <span aria-hidden="true">•</span>
+                                    <span aria-hidden="true" className="relative text-5xl -top-[10px]">•</span>
                                     <div>
                                         <span className="font-semibold">{bullet.bold}</span>
                                         <span className="leading-relaxed">{bullet.regular}</span>
@@ -52,7 +52,7 @@ export default function ResultPage() {
                     </div>
 
                     {/* Right side - Personality Dimensions */}
-                    <aside className="space-y-8 flex flex-col justify-center items-end" aria-label="Các đặc điểm tính cách">
+                    <aside className="space-y-8 w-1/5 flex justify-end" aria-label="Các đặc điểm tính cách">
                         <dl className="space-y-6">
                             {styleData.personalityDimensions.map((dimension, index) => (
                                 <div key={index}>
@@ -68,12 +68,12 @@ export default function ResultPage() {
             {/* Style Section */}
             <section className="container max-w-7xl mx-auto px-6 py-16">
                 <div className="flex justify-between">
-                    <p className="text-3xl text-[#5a5a5a] mb-12">PHONG CÁCH CỦA BẠN LÀ</p>
-                    <div className="">
-                        <h2 className="font-serif text-5xl lg:text-7xl text-[#5a5a5a] mb-4">
+                    <p className="w-fit text-nowrap text-3xl text-[#5a5a5a] mb-12">PHONG CÁCH CỦA BẠN LÀ</p>
+                    <div className="text-right">
+                        <h2 className="font-serif text-4xl lg:text-5xl text-[#5a5a5a] mb-4 font-bold">
                             <span className="italic">{styleData.styleName}</span>
                         </h2>
-                        <p className="text-2xl text-[#5a5a5a] mb-12 text-right">{styleData.styleDescription}</p>
+                        <p className="text-4xl text-[#5a5a5a] mb-12 text-right">{styleData.styleDescription}</p>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -133,7 +133,7 @@ export default function ResultPage() {
                                 {/* Stacked preview images */}
                                 <div className="flex flex-col gap-4">
                                     {styleData.styleGuideItems.slice(0, 2).map((item, index) => (
-                                        <div key={index} className={`${index === 0 ? "z-[3]" : "z-[2]"} relative w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden [:not(:first-child)]:mt-[-35px]`}>
+                                        <div key={index} className={`${index === 0 ? "z-[3]" : "z-[2]"} relative w-24 h-24 md:w-32 md:h-32 rounded-xl overflow-hidden [:not(:first-child)]:mt-[-35px]`}>
                                             <Image
                                                 src={item.src}
                                                 alt={item.alt}
@@ -157,11 +157,11 @@ export default function ResultPage() {
                                                     : index === 2
                                                         ? "bg-[#5b4f47] z-[1]"
                                                         : ""
-                                                } flex justify-center items-center rounded-lg text-white gap-4 h-24 md:h-32 [:not(:first-child)]:mt-[-35px] relative`}
+                                                } flex justify-center items-center rounded-xl text-white gap-4 h-24 md:h-32 [:not(:first-child)]:mt-[-35px] relative`}
                                         >
                                             <div className={`${index > 0 ? "mb-[-10px]" : ""} w-full flex justify-between items-center px-4`}>
                                                 <h4 className="font-semibold text-lg w-1/3">{item.title}</h4>
-                                                <p className="text-sm text-white/80 w-2/3">{item.description}</p>
+                                                <p className="text-md text-white/80 w-2/3 text-justify">{item.description}</p>
                                             </div>
                                         </div>
                                     ))}
@@ -184,10 +184,10 @@ export default function ResultPage() {
                 />
                 <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center">
                     <blockquote className="container flex items-center flex-col max-w-8xl mx-auto px-6 py-16">
-                        <h1 className="font-serif text-4xl lg:text-7xl text-white text-center leading-relaxed mb-8 italic">
+                        <pre className="w-full max-w-7xl font-serif text-4xl lg:text-7xl text-white text-justify mb-8 italic text-wrap">
                             {styleData.quoteSection.quote}
-                        </h1>
-                        <p className="max-w-7xl text-white text-center leading-relaxed text-2xl text-left">
+                        </pre>
+                        <p className="w-full max-w-7xl text-white leading-relaxed text-2xl text-justify">
                             {styleData.quoteSection.description.split("\n\n").map((paragraph, index, array) => (
                                 <span key={index}>
                                     {paragraph}
