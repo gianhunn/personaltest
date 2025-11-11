@@ -3,15 +3,8 @@
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { HourglassLoader } from "@/components/ui/hourglass"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { googleSheetsService } from "@/services"
-import { cn } from "@/lib/utils"
-import {
-  genderOptionButtonBaseClass,
-  genderOptionButtonSelectedClass,
-  genderOptionButtonUnselectedClass,
-  primaryRoundedButtonClass,
-} from "@/lib/form-styles"
 import { TestIntroSection } from "./components/test-intro-section"
 
 function Star({ filled }: { filled: boolean }) {
@@ -110,6 +103,18 @@ export default function TestPage() {
   const [selectedRating, setSelectedRating] = useState<number | null>(null)
   const [answers, setAnswers] = useState<Record<number, number>>({})
   const [isLoading, setIsLoading] = useState(false)
+  const [urlCode, setUrlCode] = useState<string | null>(null)
+
+    // Get code from URL params on component mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search)
+      const code = urlParams.get('code')
+      if (code) {
+        setUrlCode(code)
+      }
+    }
+  }, [])
 
   const handleStartTest = () => {
     if (name && gender) {
@@ -145,15 +150,28 @@ export default function TestPage() {
         setSelectedRating(updatedAnswers[questions[nextQuestion].id] ?? null)
       } else {
         // Test completed - save to Google Sheets first, then show loading
-        console.log("Test completed", updatedAnswers)
-
         // Save to Google Sheets using service (only if gender is set)
         if (gender) {
-          googleSheetsService.saveTestResults({
-            name,
-            gender,
-            answers: updatedAnswers
-          })
+          try {
+            const saveResult = await googleSheetsService.saveTestResults({
+              name,
+              gender,
+              answers: updatedAnswers
+            })
+
+            if (saveResult.success) {
+              console.log('Test results saved successfully')
+
+              // If we have a code from URL, find email and send results
+              if (urlCode) {
+                await handleSendEmailResults(updatedAnswers)
+              }
+            } else {
+              console.error('Failed to save test results:', saveResult.message)
+            }
+          } catch (error) {
+            console.error('Error saving test results:', error)
+          }
         } else {
           console.error('Gender not set, cannot save test results')
         }
@@ -161,6 +179,41 @@ export default function TestPage() {
         // Show loading screen after initiating save
         setIsLoading(true)
       }
+    }
+  }
+
+  const handleSendEmailResults = async (testAnswers: Record<number, number>) => {
+    try {
+      // Find email by code
+      const emailResult = await googleSheetsService.findEmailByCode(urlCode!)
+
+      if (emailResult.success && emailResult.data) {
+        const { email, codeFound } = emailResult.data
+
+        if (!codeFound) {
+          console.log('Code not found, using default email:', email)
+        }
+
+        // Send test results via email
+        const emailSendResult = await googleSheetsService.sendTestResultsEmail({
+          email,
+          name,
+          gender: gender!,
+          answers: testAnswers,
+          code: urlCode!
+        })
+
+        if (emailSendResult.success) {
+          console.log('Email sent successfully')
+        } else {
+          console.error('Failed to send email:', emailSendResult.message)
+        }
+
+      } else {
+        console.error('Could not find email for code:', urlCode, emailResult.message)
+      }
+    } catch (error) {
+      console.error('Error sending email results:', error)
     }
   }
 
