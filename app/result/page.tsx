@@ -159,7 +159,7 @@ export default function ResultPage() {
                                                         : ""
                                                 } flex justify-center items-center rounded-lg text-white gap-4 h-24 md:h-32 [:not(:first-child)]:mt-[-35px] relative`}
                                         >
-                                            <div className={`${index > 0 ? "mb-[-10px]" : ""} w-full flex justify-between px-4`}>
+                                            <div className={`${index > 0 ? "mb-[-10px]" : ""} w-full flex justify-between items-center px-4`}>
                                                 <h4 className="font-semibold text-lg w-1/3">{item.title}</h4>
                                                 <p className="text-sm text-white/80 w-2/3">{item.description}</p>
                                             </div>
@@ -173,7 +173,7 @@ export default function ResultPage() {
             </section>
 
             {/* Quote Section with Background */}
-            <section className="relative h-[600px] w-full" aria-label="Tuyên ngôn phong cách">
+            <section className="relative h-[600px] w-full opacity-[70]" aria-label="Tuyên ngôn phong cách">
                 <Image
                     src={styleData.quoteSection.backgroundImage}
                     alt={styleData.quoteSection.backgroundImageAlt}
@@ -182,18 +182,17 @@ export default function ResultPage() {
                     className="object-cover"
                     priority
                 />
-                <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center px-6">
-                    <blockquote className="max-w-5xl">
-                        <h2 className="font-serif text-4xl lg:text-5xl text-white text-center leading-relaxed mb-8 italic">
+                <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center">
+                    <blockquote className="container flex items-center flex-col max-w-8xl mx-auto px-6 py-16">
+                        <h1 className="font-serif text-4xl lg:text-7xl text-white text-center leading-relaxed mb-8 italic">
                             {styleData.quoteSection.quote}
-                        </h2>
-                        <p className="text-white text-center max-w-3xl leading-relaxed text-lg">
+                        </h1>
+                        <p className="max-w-7xl text-white text-center leading-relaxed text-2xl text-left">
                             {styleData.quoteSection.description.split("\n\n").map((paragraph, index, array) => (
                                 <span key={index}>
                                     {paragraph}
                                     {index < array.length - 1 && (
                                         <>
-                                            <br />
                                             <br />
                                         </>
                                     )}

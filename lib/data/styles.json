@@ -69,23 +69,26 @@
               "title": "Chất liệu",
               "description": "Cotton, denim, da, vải thô, linen, tơ",
               "iconBg": "bg-[#5b4f47]",
-              "src": "/images/entp/female/6.jpg"
+              "src": "/images/entp/female/6.jpg",
+              "alt": "Phong cách ENTP - Phụ kiện 1"
             },
             {
               "title": "Phụ kiện",
               "description": "Khuyên tai bản to, sneaker chunky, túi tote canvas",
               "iconBg": "bg-[#745e4d]",
-              "src": "/images/entp/female/5.jpg"
+              "src": "/images/entp/female/5.jpg",
+              "alt": "Phong cách ENTP - Phụ kiện 2"
             },
             {
               "title": "Công thức phối khác",
               "description": "Blazer sáng màu + áo thun in logo + quần jeans ống suông + sneaker trắng + khuyên tai bạc",
               "iconBg": "bg-[#5b4f47]",
-              "src": ""
+              "src": "",
+              "alt": "Phong cách ENTP"
             }
           ],
           "quoteSection": {
-            "backgroundImage": "/fashion-lifestyle-hands-desk-workspace.jpg",
+            "backgroundImage": "/images/entp/female/bg.jpg",
             "backgroundImageAlt": "Không gian làm việc và phong cách sống",
             "quote": "Tôi không chạy theo công thức. Tôi tạo ra phiên bản riêng của mọi xu hướng.",
             "description": "Bạn mang năng lượng của sự tự do – thông minh, phá cách và chẳng bao giờ chịu \"đúng yêu\". Phong cách của bạn là lời tuyên ngôn ngầm: \"Tôi sống theo cách của tôi.\"\n\nBạn thích mix & match ngẫu hứng – một chiếc blazer nghiêm túc phối cùng sneaker nổi bật, hay một đôi khuyên tai to bản kết hợp với tóc búi tự nhiên. Mọi thứ trông như ngẫu nhiên, nhưng lại rất \"ra chất bạn\"."
