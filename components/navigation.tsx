@@ -29,27 +29,25 @@ export function Navigation({ currentPage }: NavigationProps) {
     { label: "Contact us", href: "/contact", key: "about" },
   ]
 
-  const renderNavLink = (label: string, href: string, key: string) => (
-    <Link href={href}>
-      {currentPage === key ? (
-        <Button
-          variant="default"
-          className="rounded-full bg-[#BD9479] px-8 text-base font-normal text-white hover:bg-[#BD9479] cursor-pointer"
-        >
-          {label}
-        </Button>
-      ) : (
-        <span className="text-base text-[#5B4F47] transition-colors hover:text-[#BD9479]">{label}</span>
-      )}
-    </Link>
-  )
-
   return (
     <nav className="sticky top-0 z-[200] bg-[#f8f7f4] backdrop-blur">
       <div className="mx-auto w-full max-w-7xl border-b-2 border-[#d4cfc0] px-6">
         <div className="relative flex items-center justify-between py-6">
         <div className="hidden items-center gap-8 lg:flex lg:flex-1 cursor-pointer">
-          {menuItems.slice(0, 3).map((item) => renderNavLink(item.label, item.href, item.key))}
+          {menuItems.slice(0, 3).map((item) => (
+            <Link key={item.key} href={item.href}>
+              {currentPage === item.key ? (
+                <Button
+                  variant="default"
+                  className="rounded-full bg-[#BD9479] px-8 text-base font-normal text-white hover:bg-[#BD9479] cursor-pointer"
+                >
+                  {item.label}
+                </Button>
+              ) : (
+                <span className="text-base text-[#5B4F47] transition-colors hover:text-[#BD9479]">{item.label}</span>
+              )}
+            </Link>
+          ))}
         </div>
 
         <Link href="/" className="flex-shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2">
@@ -57,7 +55,20 @@ export function Navigation({ currentPage }: NavigationProps) {
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex lg:flex-1 lg:justify-end cursor-pointer">
-          {menuItems.slice(3).map((item) => renderNavLink(item.label, item.href, item.key))}
+          {menuItems.slice(3).map((item) => (
+            <Link key={item.key} href={item.href}>
+              {currentPage === item.key ? (
+                <Button
+                  variant="default"
+                  className="rounded-full bg-[#BD9479] px-8 text-base font-normal text-white hover:bg-[#BD9479] cursor-pointer"
+                >
+                  {item.label}
+                </Button>
+              ) : (
+                <span className="text-base text-[#5B4F47] transition-colors hover:text-[#BD9479]">{item.label}</span>
+              )}
+            </Link>
+          ))}
         </div>
 
         <button
@@ -73,7 +84,7 @@ export function Navigation({ currentPage }: NavigationProps) {
 
       {isMenuOpen && (
         <div className="fixed inset-0 z-[300] flex min-h-[100dvh] flex-col bg-[#F8F7F4] lg:hidden">
-          <div className="flex items-center justify-between border-b border-[#d4cfc0] px-6 py-6">
+          <div className="flex items-center justify-between border-b border-[#d4cfc0] px-6 py-4">
             <Link href="/" onClick={() => setIsMenuOpen(false)}>
               <h1 className="font-serif text-2xl tracking-wide text-[#745E4D]">PERSONAL TEST, INC.</h1>
             </Link>

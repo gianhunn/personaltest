@@ -1,0 +1,101 @@
+{
+  "entp": [
+    {
+      "personalityType": "ENTP",
+      "personalityTitle": "Người có tầm nhìn xa",
+      "personalityDimensions": [
+        {
+          "en": "Extraversion",
+          "vi": "Hướng ngoài"
+        },
+        {
+          "en": "INtuition",
+          "vi": "Trực giác"
+        },
+        {
+          "en": "Thinking",
+          "vi": "Lý trí"
+        },
+        {
+          "en": "Perceiving",
+          "vi": "Nhận thức linh hoạt"
+        }
+      ],
+      "descriptionBullets": [
+        {
+          "bold": "Ngẫu hứng, dí dỏm và tràn đầy năng lượng - Yêu thử thách, thích phiêu lưu tinh thần",
+          "regular": " - bạn say mê những hành trình mới, những cuộc trò chuyện sâu và cơ hội bung sức sáng tạo."
+        },
+        {
+          "bold": "Chân thành và ấm áp",
+          "regular": " - hoạt ngôn nhưng biết lắng nghe, dễ đồng cảm và luôn sẵn lòng giúp đỡ."
+        },
+        {
+          "bold": "Hơi vụng về nhưng duyên dáng",
+          "regular": " - có thể quên vài chi tiết nhỏ, nhưng chính sự hồn nhiên và thật lòng khiến ai cũng thấy dễ chịu khi ở bên bạn."
+        }
+      ],
+      "subStyles": [
+        {
+          "gender": "female",
+          "styleName": "Effortless Rebel",
+          "styleDescription": "Phá cách những vẫn tự nhiên",
+          "metadata": {
+            "title": "Kết quả ENTP - Effortless Rebel | Personal Test",
+            "description": "Khám phá phong cách thời trang Effortless Rebel phù hợp với tính cách ENTP - phá cách nhưng tự nhiên"
+          },
+          "outfitImages": [
+            {
+              "src": "/images/entp/female/1.jpg",
+              "alt": "Phong cách ENTP - Áo blazer màu be phối với quần jeans"
+            },
+            {
+              "src": "/images/entp/female/2.jpg",
+              "alt": "Phong cách ENTP - Áo sơ mi xanh dương phong cách"
+            },
+            {
+              "src": "/images/entp/female/3.jpg",
+              "alt": "Phong cách ENTP - Quần trắng phối với áo blazer"
+            }
+          ],
+          "colorPalette": [
+            "#d8d1be",
+            "#e78c3b",
+            "#a44522",
+            "#223f61"
+          ],
+          "styleGuideItems": [
+            {
+              "title": "Chất liệu",
+              "description": "Cotton, denim, da, vải thô, linen, tơ",
+              "iconBg": "bg-[#5b4f47]",
+              "src": "/images/entp/female/6.jpg"
+            },
+            {
+              "title": "Phụ kiện",
+              "description": "Khuyên tai bản to, sneaker chunky, túi tote canvas",
+              "iconBg": "bg-[#745e4d]",
+              "src": "/images/entp/female/5.jpg"
+            },
+            {
+              "title": "Công thức phối khác",
+              "description": "Blazer sáng màu + áo thun in logo + quần jeans ống suông + sneaker trắng + khuyên tai bạc",
+              "iconBg": "bg-[#5b4f47]",
+              "src": ""
+            }
+          ],
+          "quoteSection": {
+            "backgroundImage": "/fashion-lifestyle-hands-desk-workspace.jpg",
+            "backgroundImageAlt": "Không gian làm việc và phong cách sống",
+            "quote": "Tôi không chạy theo công thức. Tôi tạo ra phiên bản riêng của mọi xu hướng.",
+            "description": "Bạn mang năng lượng của sự tự do – thông minh, phá cách và chẳng bao giờ chịu \"đúng yêu\". Phong cách của bạn là lời tuyên ngôn ngầm: \"Tôi sống theo cách của tôi.\"\n\nBạn thích mix & match ngẫu hứng – một chiếc blazer nghiêm túc phối cùng sneaker nổi bật, hay một đôi khuyên tai to bản kết hợp với tóc búi tự nhiên. Mọi thứ trông như ngẫu nhiên, nhưng lại rất \"ra chất bạn\"."
+          },
+          "styleGuideOutfitImage": {
+            "src": "/images/entp/female/4.jpg",
+            "alt": "GỢI Ý PHỐI TRANG PHỤC"
+          }
+        }
+      ]
+    }
+  ]
+}
