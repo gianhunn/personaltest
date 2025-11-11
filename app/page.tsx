@@ -199,7 +199,7 @@ export default function Home() {
 
           <div className="flex justify-end">
             <Link
-              href="/ket-qua-entp-nu"
+              href="/test"
               className="inline-block px-10 py-3 border-2 border-[#6b5d52] text-[#6b5d52] font-serif text-base tracking-widest uppercase transition-all hover:bg-[#6b5d52] hover:text-white rounded-full"
             >
               TEST NGAY
