@@ -1,13 +1,14 @@
 import type { ComponentPropsWithoutRef, ReactNode } from "react"
 
 import { Input } from "@/components/ui/input"
-import { roundedInputClass } from "@/lib/form-styles"
+import { roundedInputClass, roundedInputErrorClass } from "@/lib/form-styles"
 import { cn } from "@/lib/utils"
 
 type LabeledInputProps = ComponentPropsWithoutRef<typeof Input> & {
   label: ReactNode
   containerClassName?: string
   labelClassName?: string
+  error?: string
 }
 
 export function LabeledInput({
@@ -16,6 +17,7 @@ export function LabeledInput({
   labelClassName,
   className,
   id,
+  error,
   ...inputProps
 }: LabeledInputProps) {
   return (
@@ -29,7 +31,21 @@ export function LabeledInput({
       >
         {label}
       </label>
-      <Input id={id} className={cn(roundedInputClass, className)} {...inputProps} />
+      <div className="space-y-2">
+        <Input
+          id={id}
+          className={cn(
+            error ? roundedInputErrorClass : roundedInputClass,
+            className
+          )}
+          {...inputProps}
+        />
+        {error && (
+          <p className="text-center text-sm text-red-600 font-medium">
+            {error}
+          </p>
+        )}
+      </div>
     </div>
   )
 }

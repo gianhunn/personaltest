@@ -1,14 +1,17 @@
 import { NextRequest } from 'next/server';
-import { getGoogleSheetsClient, readSheet } from '@/lib/googleSheets';
+import { googleSheetsClient, readSheet } from '@/lib/googleSheets';
 import { GOOGLE_SHEETS_CONFIG } from '@/lib/config';
 
 export async function GET(request: NextRequest) {
   try {
-    const sheets = await getGoogleSheetsClient();
+    const sheets = googleSheetsClient;
     const spreadsheetId = GOOGLE_SHEETS_CONFIG.SPREADSHEET_ID;
 
-    const sheetName = GOOGLE_SHEETS_CONFIG.SHEET_NAME;
-    const range = `${sheetName}!A:Z`; // Read from configured sheet
+    // Get sheet name from query parameter or use default
+    const { searchParams } = new URL(request.url);
+    const sheetName = searchParams.get('sheet') || GOOGLE_SHEETS_CONFIG.SHEET_NAME;
+
+    const range = `${sheetName}!A:Z`; // Read from specified or default sheet
     const rows = await readSheet(sheets, spreadsheetId, range);
 
     return Response.json({

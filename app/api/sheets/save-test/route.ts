@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { getGoogleSheetsClient, appendToSheet } from '@/lib/googleSheets';
+import { googleSheetsClient, appendToSheet } from '@/lib/googleSheets';
 import { GOOGLE_SHEETS_CONFIG } from '@/lib/config';
 
 export async function POST(request: NextRequest) {
@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const sheets = await getGoogleSheetsClient();
+    const sheets = googleSheetsClient;
     const spreadsheetId = GOOGLE_SHEETS_CONFIG.SPREADSHEET_ID;
 
     // Prepare data for Google Sheets

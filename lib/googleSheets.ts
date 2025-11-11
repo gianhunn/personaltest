@@ -3,14 +3,17 @@ import { GOOGLE_SHEETS_CONFIG } from './config';
 
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
 
-export async function getGoogleSheetsClient() {
-  const auth = new google.auth.GoogleAuth({
-    credentials: GOOGLE_SHEETS_CONFIG.CREDENTIALS,
-    scopes: SCOPES,
-  });
+// Create singleton Google Sheets client
+const auth = new google.auth.GoogleAuth({
+  credentials: GOOGLE_SHEETS_CONFIG.CREDENTIALS,
+  scopes: SCOPES,
+});
 
-  const sheets = google.sheets({ version: 'v4', auth });
-  return sheets;
+export const googleSheetsClient = google.sheets({ version: 'v4', auth });
+
+// Legacy function for backward compatibility (deprecated)
+export async function getGoogleSheetsClient() {
+  return googleSheetsClient;
 }
 
 export async function readSheet(sheets: any, spreadsheetId: string, range: string) {

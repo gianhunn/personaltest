@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import nodemailer from 'nodemailer';
+import { gmailTransporter } from '@/lib/emailTransporter';
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,14 +13,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create Gmail transporter
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_APP_PASSWORD, // App-specific password, not regular password
-      },
-    });
+    // Use pre-configured Gmail transporter
+    const transporter = gmailTransporter;
 
     // Calculate personality type based on answers
     const personalityResult = calculatePersonalityType(answers);
@@ -42,6 +36,11 @@ export async function POST(request: NextRequest) {
     const info = await transporter.sendMail(mailOptions);
 
     console.log('Email sent successfully to:', email);
+    
+    return Response.json(
+      { success: true, message: 'Email sent successfully', data: { messageId: info.messageId } },
+      { status: 200 }
+    );
   } catch (error) {
     console.error('Error sending email:', error);
     return Response.json(
