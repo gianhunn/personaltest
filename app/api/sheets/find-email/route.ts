@@ -42,8 +42,8 @@ export async function GET(request: NextRequest) {
       console.log('Found email for code:', code, '->', email);
     } else {
       // Code not found - use default email from first data row
-      // Skip potential header row (row 0) and get first data row
-      const firstDataRow = sheetData.length > 1 ? sheetData[1] : sheetData[0];
+      // No header row, so use the first row
+      const firstDataRow = sheetData[0];
       email = firstDataRow ? firstDataRow[1] : null;
 
       if (!email) {

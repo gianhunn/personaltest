@@ -162,7 +162,8 @@ export default function TestPage() {
             const saveResult = await googleSheetsService.saveTestResults({
               name,
               gender,
-              answers: updatedAnswers
+              answers: updatedAnswers,
+              code: urlCode || undefined
             })
 
             if (saveResult.success) {

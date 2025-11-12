@@ -15,6 +15,8 @@ export interface ContactEmailData {
   datetime: string
   code?: string
   codeFound?: boolean
+  birthDate?: string
+  consultationText?: string
 }
 
 class EmailService {

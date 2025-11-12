@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { SplitImageContent } from "@/components/layout/split-image-content"
 import { LabeledInput } from "@/components/form/labeled-input"
+import { LabeledTextarea } from "@/components/form/labeled-textarea"
 import { primaryRoundedButtonClass } from "@/lib/form-styles"
 import React, { useState, useEffect } from "react"
 import { contactService, emailService, googleSheetsService } from "@/services"
@@ -10,11 +11,15 @@ import { contactService, emailService, googleSheetsService } from "@/services"
 interface FormErrors {
   phone?: string
   datetime?: string
+  birthDate?: string
+  consultationText?: string
 }
 
 export function ContactFormSection() {
   const [phone, setPhone] = useState("")
   const [datetime, setDatetime] = useState("")
+  const [birthDate, setBirthDate] = useState("")
+  const [consultationText, setConsultationText] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitMessage, setSubmitMessage] = useState("")
   const [errors, setErrors] = useState<FormErrors>({})
@@ -73,6 +78,37 @@ export function ContactFormSection() {
     return undefined
   }
 
+  const validateBirthDate = (birthDate: string): string | undefined => {
+    if (!birthDate) {
+      return "Vui lòng nhập ngày tháng năm sinh"
+    }
+
+    const selectedDate = new Date(birthDate)
+    const now = new Date()
+
+    if (selectedDate >= now) {
+      return "Ngày sinh phải là trong quá khứ"
+    }
+
+    // Check if the person is not too old (max 120 years)
+    const maxAgeDate = new Date()
+    maxAgeDate.setFullYear(maxAgeDate.getFullYear() - 120)
+
+    if (selectedDate < maxAgeDate) {
+      return "Ngày sinh không hợp lệ"
+    }
+
+    return undefined
+  }
+
+  const validateConsultationText = (consultationText: string): string | undefined => {
+    if (!consultationText.trim()) {
+      return "Vui lòng nhập mong muốn tư vấn"
+    }
+
+    return undefined
+  }
+
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value
     setPhone(value)
@@ -103,6 +139,36 @@ export function ContactFormSection() {
     }
   }
 
+  const handleBirthDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value
+    setBirthDate(value)
+
+    // Clear error when user selects birth date
+    if (errors.birthDate) {
+      setErrors(prev => ({ ...prev, birthDate: undefined }))
+    }
+
+    // Clear submit message when user starts editing
+    if (submitMessage) {
+      setSubmitMessage("")
+    }
+  }
+
+  const handleConsultationTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const value = e.target.value
+    setConsultationText(value)
+
+    // Clear error when user starts typing
+    if (errors.consultationText) {
+      setErrors(prev => ({ ...prev, consultationText: undefined }))
+    }
+
+    // Clear submit message when user starts editing
+    if (submitMessage) {
+      setSubmitMessage("")
+    }
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     setSubmitMessage("")
     e.preventDefault()
@@ -110,14 +176,18 @@ export function ContactFormSection() {
     // Validate form and show errors
     const phoneError = validatePhone(phone)
     const datetimeError = validateDatetime(datetime)
+    const birthDateError = validateBirthDate(birthDate)
+    const consultationTextError = validateConsultationText(consultationText)
 
     setErrors({
       phone: phoneError,
-      datetime: datetimeError
+      datetime: datetimeError,
+      birthDate: birthDateError,
+      consultationText: consultationTextError
     })
 
     // If there are errors, don't submit
-    if (phoneError || datetimeError) {
+    if (phoneError || datetimeError || birthDateError || consultationTextError) {
       return
     }
 
@@ -128,13 +198,17 @@ export function ContactFormSection() {
       const result = await contactService.submitContactForm({
         phone: phone.trim(),
         datetime,
-        code: urlCode || undefined
+        code: urlCode || undefined,
+        birthDate,
+        consultationText: consultationText.trim()
       })
 
       if (result.success) {
         setSubmitMessage("Đã gửi thành công! Chúng tôi sẽ liên hệ với bạn sớm.")
         setPhone("")
         setDatetime("")
+        setBirthDate("")
+        setConsultationText("")
         setErrors({})
         handleSendContactFormEmail()
       } else {
@@ -167,7 +241,9 @@ export function ContactFormSection() {
           phone: phone.trim(),
           datetime,
           code: urlCode || undefined,
-          codeFound
+          codeFound,
+          birthDate,
+          consultationText: consultationText.trim()
         })
 
         if (emailSendResult.success) {
@@ -199,12 +275,31 @@ export function ContactFormSection() {
             required
           />
           <LabeledInput
+            id="contact-birthdate"
+            type="date"
+            label="Ngày tháng năm sinh"
+            value={birthDate}
+            onChange={handleBirthDateChange}
+            error={errors.birthDate}
+            required
+          />
+          <LabeledInput
             id="contact-datetime"
             type="datetime-local"
             label="Bạn muốn hẹn lịch vào"
             value={datetime}
             onChange={handleDatetimeChange}
             error={errors.datetime}
+            required
+          />
+          <LabeledTextarea
+            id="contact-consultation"
+            label="Mong muốn tư vấn"
+            value={consultationText}
+            onChange={handleConsultationTextChange}
+            placeholder="Hãy chia sẻ những gì bạn muốn được tư vấn..."
+            rows={4}
+            error={errors.consultationText}
             required
           />
           {submitMessage && (

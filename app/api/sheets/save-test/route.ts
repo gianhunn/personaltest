@@ -5,7 +5,7 @@ import { GOOGLE_SHEETS_CONFIG } from '@/lib/config';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, gender, answers } = body;
+    const { name, gender, answers, code } = body;
 
     if (!name || !gender || !answers) {
       return Response.json(
@@ -24,12 +24,13 @@ export async function POST(request: NextRequest) {
     // Convert answers object to array format for sheets
     const answersArray = Object.values(answers); // Get answer values in order
 
-    // Create row data: [timestamp, name, gender, answer1, answer2, ..., answer12]
+    // Create row data: [timestamp, name, gender, answer1, answer2, ..., answer12, code] (code optional)
     const rowData = [
       timestamp,
       name,
       gender,
-      ...answersArray
+      ...answersArray,
+      ...(code ? [code] : [])
     ];
 
     const range = `${sheetName}!A:A`; // Append to configured sheet column A
@@ -48,6 +49,7 @@ export async function POST(request: NextRequest) {
           name,
           gender,
           answers: answersArray,
+          ...(code && { code }),
           totalAnswers: answersArray.length
         }
       },
