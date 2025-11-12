@@ -5,6 +5,7 @@ export interface TestResult {
   name: string
   gender: 'male' | 'female'
   answers: Record<number, number>
+  code?: string
 }
 
 class GoogleSheetsService {

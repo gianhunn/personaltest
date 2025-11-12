@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { usePreservedParams } from "@/hooks/use-preserved-params"
 
 interface NavigationProps {
   currentPage?: "home" | "test" | "about" | "clients" | "contact"
@@ -11,6 +12,7 @@ interface NavigationProps {
 
 export function Navigation({ currentPage }: NavigationProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { buildUrl } = usePreservedParams()
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -35,7 +37,7 @@ export function Navigation({ currentPage }: NavigationProps) {
         <div className="relative flex items-center justify-between py-6">
         <div className="hidden items-center gap-8 lg:flex lg:flex-1 cursor-pointer">
           {menuItems.slice(0, 3).map((item) => (
-            <Link key={item.key} href={item.href}>
+            <Link key={item.key} href={buildUrl(item.href)}>
               {currentPage === item.key ? (
                 <Button
                   variant="default"
@@ -56,7 +58,7 @@ export function Navigation({ currentPage }: NavigationProps) {
 
         <div className="hidden items-center gap-8 lg:flex lg:flex-1 lg:justify-end cursor-pointer">
           {menuItems.slice(3).map((item) => (
-            <Link key={item.key} href={item.href}>
+            <Link key={item.key} href={buildUrl(item.href)}>
               {currentPage === item.key ? (
                 <Button
                   variant="default"
@@ -101,7 +103,7 @@ export function Navigation({ currentPage }: NavigationProps) {
               {menuItems.map((item) => (
                 <Link
                   key={item.key}
-                  href={item.href}
+                  href={buildUrl(item.href)}
                   className="w-full"
                   onClick={() => setIsMenuOpen(false)}
                 >

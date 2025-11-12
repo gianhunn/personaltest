@@ -4,7 +4,7 @@ import { gmailTransporter } from '@/lib/emailTransporter';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { email, phone, datetime, code, codeFound } = body;
+    const { email, phone, datetime, code, codeFound, birthDate, consultationText } = body;
 
     if (!email || !phone || !datetime) {
       return Response.json(
@@ -25,7 +25,9 @@ export async function POST(request: NextRequest) {
         phone,
         datetime,
         code,
-        codeFound
+        codeFound,
+        birthDate,
+        consultationText
       }),
     };
 
@@ -47,7 +49,7 @@ export async function POST(request: NextRequest) {
 
 // Generate HTML email content for contact form
 function generateContactEmailHtml(data: any) {
-  const { phone, datetime, code, codeFound } = data;
+  const { phone, datetime, code, codeFound, birthDate, consultationText } = data;
 
   return `
     <!DOCTYPE html>
@@ -85,9 +87,19 @@ function generateContactEmailHtml(data: any) {
             <span class="value">${phone}</span>
           </div>
           <div class="info-item">
+            <span class="label">Ngày sinh:</span>
+            <span class="value">${birthDate ? new Date(birthDate).toLocaleDateString('vi-VN') : 'Chưa cung cấp'}</span>
+          </div>
+          <div class="info-item">
             <span class="label">Thời gian hẹn:</span>
             <span class="value">${new Date(datetime).toLocaleString('vi-VN')}</span>
           </div>
+          ${consultationText ? `
+          <div class="info-item">
+            <span class="label">Mong muốn tư vấn:</span>
+            <span class="value">${consultationText.replace(/\n/g, '<br>')}</span>
+          </div>
+          ` : ''}
           ${code ? `
           <div class="info-item">
             <span class="label">Mã tham chiếu:</span>

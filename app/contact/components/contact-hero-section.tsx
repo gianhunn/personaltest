@@ -1,4 +1,10 @@
+"use client"
+
+import { usePreservedParams } from "@/hooks/use-preserved-params"
+
 export function ContactHeroSection() {
+  const { buildUrl } = usePreservedParams()
+  const contactUrl = buildUrl("/contact")
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
       {/* Background Image */}
@@ -26,7 +32,7 @@ export function ContactHeroSection() {
 
           <div className="mt-12 space-y-6 text-[#4f4239] sm:mt-14">
             <a
-              href="/contact"
+              href={contactUrl}
               className="font-sans text-base font-semibold underline decoration-2 underline-offset-4 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
             >
               ĐĂNG KÝ NGAY!

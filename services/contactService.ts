@@ -5,6 +5,8 @@ export interface ContactData {
   phone: string
   datetime: string
   code?: string
+  birthDate?: string
+  consultationText?: string
 }
 
 class ContactService {

@@ -1,25 +1,24 @@
 import type { ComponentPropsWithoutRef, ReactNode } from "react"
 
-import { Input } from "@/components/ui/input"
-import { roundedInputClass, roundedInputErrorClass } from "@/lib/form-styles"
+import { roundedTextareaClass, roundedTextareaErrorClass } from "@/lib/form-styles"
 import { cn } from "@/lib/utils"
 
-type LabeledInputProps = ComponentPropsWithoutRef<typeof Input> & {
+type LabeledTextareaProps = ComponentPropsWithoutRef<"textarea"> & {
   label: ReactNode
   containerClassName?: string
   labelClassName?: string
   error?: string
 }
 
-export function LabeledInput({
+export function LabeledTextarea({
   label,
   containerClassName,
   labelClassName,
   className,
   id,
   error,
-  ...inputProps
-}: LabeledInputProps) {
+  ...textareaProps
+}: LabeledTextareaProps) {
   return (
     <div className={cn("space-y-4", containerClassName)}>
       <label
@@ -32,13 +31,13 @@ export function LabeledInput({
         {label}
       </label>
       <div className="space-y-2">
-        <Input
+        <textarea
           id={id}
           className={cn(
-            error ? roundedInputErrorClass : roundedInputClass,
+            error ? roundedTextareaErrorClass : roundedTextareaClass,
             className
           )}
-          {...inputProps}
+          {...textareaProps}
         />
         {error && (
           <p className="text-center text-sm text-red-600 font-medium">

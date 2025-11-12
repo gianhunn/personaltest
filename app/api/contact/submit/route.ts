@@ -6,7 +6,7 @@ import { GOOGLE_SHEETS_CONFIG } from '@/lib/config';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { phone, datetime, code } = body;
+    const { phone, datetime, code, birthDate, consultationText } = body;
 
     // Validate required fields
     if (!phone || !datetime) {
@@ -20,7 +20,9 @@ export async function POST(request: NextRequest) {
     const contactData = [
       new Date().toISOString(), // timestamp
       phone,
+      birthDate || '', // birth date
       datetime,
+      consultationText || '', // consultation text
       code || '', // code from URL param
     ];
 

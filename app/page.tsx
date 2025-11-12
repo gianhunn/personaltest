@@ -11,6 +11,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel"
 import { EllipseOverlay, HeroContent, CarouselImage, ContentItem } from "@/components/home"
+import { usePreservedParams } from "@/hooks/use-preserved-params"
 import {
   GALLERY_IMAGES,
   ELLIPSE_CONFIG,
@@ -24,6 +25,7 @@ export default function Home() {
   const [autoplayPlugin, setAutoplayPlugin] = useState<ReturnType<typeof Autoplay> | null>(null)
   const [isDesktop, setIsDesktop] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const { buildUrl } = usePreservedParams()
 
   useEffect(() => {
     setMounted(true)
@@ -199,7 +201,7 @@ export default function Home() {
 
           <div className="flex justify-end">
             <Link
-              href="/test"
+              href={buildUrl("/test")}
               className="inline-block px-10 py-3 border-2 border-[#6b5d52] text-[#6b5d52] font-serif text-base tracking-widest uppercase transition-all hover:bg-[#6b5d52] hover:text-white rounded-full"
             >
               TEST NGAY
