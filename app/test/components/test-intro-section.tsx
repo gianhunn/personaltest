@@ -1,3 +1,5 @@
+import { useCallback, useEffect, useRef, useState } from "react"
+
 import { Button } from "@/components/ui/button"
 import { LabeledInput } from "@/components/form/labeled-input"
 import { SplitImageContent } from "@/components/layout/split-image-content"
@@ -26,11 +28,37 @@ export function TestIntroSection({
   onGenderChange,
   onStart,
 }: TestIntroSectionProps) {
+  const [isStarting, setIsStarting] = useState(false)
+  const animationTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  useEffect(() => {
+    return () => {
+      if (animationTimeoutRef.current) {
+        clearTimeout(animationTimeoutRef.current)
+      }
+    }
+  }, [])
+
+  const handleStartClick = useCallback(() => {
+    if (!name || !gender || isStarting) {
+      return
+    }
+
+    setIsStarting(true)
+    animationTimeoutRef.current = setTimeout(() => {
+      onStart()
+    }, 450)
+  }, [gender, isStarting, name, onStart])
+
   return (
     <SplitImageContent
       as="main"
       imageSrc="/images/test/stylish-woman.jpg"
       alt="Stylish fashion photo"
+      className={cn(
+        "transition-all duration-500 ease-out",
+        isStarting ? "opacity-0 translate-y-6" : "opacity-100 translate-y-0",
+      )}
     >
       <div className="w-full max-w-2xl space-y-12">
         <LabeledInput
@@ -43,7 +71,7 @@ export function TestIntroSection({
         />
 
         <div className="space-y-4">
-          <h2 className="flex justify-center font-serif text-4xl tracking-wide text-[#5B4F47] lg:text-5xl">
+          <h2 className="font-serif text-4xl tracking-wide text-[#5B4F47] lg:text-3xl">
             Giới tính
           </h2>
           <div className="grid grid-cols-2 gap-6">
@@ -73,7 +101,11 @@ export function TestIntroSection({
         </div>
 
         <div className="pt-4 flex justify-center">
-          <Button onClick={onStart} disabled={!name || !gender} className={primaryRoundedButtonClass}>
+          <Button
+            onClick={handleStartClick}
+            disabled={!name || !gender || isStarting}
+            className={primaryRoundedButtonClass}
+          >
             Bắt đầu
           </Button>
         </div>

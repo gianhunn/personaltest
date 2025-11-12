@@ -261,7 +261,7 @@ export function ContactFormSection() {
   }
 
   return (
-    <section className="relative w-full bg-[#f5f1ea]">
+    <section id="contact-form" className="relative w-full bg-[#f5f1ea]">
       <SplitImageContent imageSrc="/images/contact-us/design-space.jpg" alt="Design space">
         <form onSubmit={handleSubmit} noValidate className="w-full max-w-2xl space-y-12">
           <LabeledInput

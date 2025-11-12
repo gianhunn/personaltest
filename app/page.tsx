@@ -173,7 +173,7 @@ export default function Home() {
               ))}
             </div>
             <div className="flex items-center order-first md:order-none">
-              <h2 className="text-4xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light text-balance leading-tight text-right">
+              <h2 className="text-4xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light text-balance leading-tight text-left lg:text-right">
                 VÌ SAO NÊN LÀM TEST?
               </h2>
             </div>

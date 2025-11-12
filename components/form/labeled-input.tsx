@@ -25,7 +25,7 @@ export function LabeledInput({
       <label
         htmlFor={id}
         className={cn(
-          "flex justify-center text-center font-serif text-4xl tracking-wide text-[#5B4F47] lg:text-5xl",
+          "font-serif text-4xl tracking-wide text-[#5B4F47] lg:text-3xl",
           labelClassName,
         )}
       >
