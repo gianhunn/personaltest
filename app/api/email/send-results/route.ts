@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     const mailOptions = {
       from: `"Personality Test" <${process.env.GMAIL_USER}>`,
       to: email,
-      subject: 'Kết quả bài test tính cách của bạn',
+      subject: 'Kết quả bài test tính cách',
       html: generateResultsHtml({
         name,
         gender,
@@ -169,8 +169,7 @@ function generateResultsHtml(data: any) {
           <h1>Kết quả bài test tính cách</h1>
         </div>
 
-        <p>Xin chào <strong>${name}</strong>,</p>
-        <p>Cảm ơn bạn đã hoàn thành bài test tính cách! Dưới đây là kết quả phân tích của bạn:</p>
+        <p>Kết quả bài test BMTI của <strong>${name}</strong>,</p>
 
         <div class="result-box">
           <div class="personality-type">${personalityResult.type}</div>
@@ -193,7 +192,6 @@ function generateResultsHtml(data: any) {
         </ul>
 
         <div class="footer">
-          <p>Đây là kết quả tự động từ bài test tính cách. Nếu bạn có câu hỏi, vui lòng liên hệ với chúng tôi.</p>
           <p>&copy; 2025 Personality Test. All rights reserved.</p>
         </div>
       </div>

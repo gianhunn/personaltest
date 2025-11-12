@@ -78,8 +78,7 @@ function generateContactEmailHtml(data: any) {
           <h1>Thông tin liên hệ</h1>
         </div>
 
-        <p>Xin chào,</p>
-        <p>Khách hàng đã gửi thông tin liên hệ qua form. Dưới đây là chi tiết:</p>
+        <p>Thông tin liên hệ đã được gửi qua form. Dưới đây là chi tiết:</p>
 
         <div class="info-box">
           <div class="info-item">
@@ -114,7 +113,7 @@ function generateContactEmailHtml(data: any) {
         </div>
         ` : ''}
 
-        <p>Vui lòng liên hệ với khách hàng trong thời gian sớm nhất.</p>
+        <p>Vui lòng liên hệ trong thời gian sớm nhất.</p>
 
         <div class="footer">
           <p>Email tự động từ hệ thống liên hệ</p>

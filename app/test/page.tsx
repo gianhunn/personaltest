@@ -4,8 +4,81 @@ import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { HourglassLoader } from "@/components/ui/hourglass"
 import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import { googleSheetsService, emailService } from "@/services"
 import { TestIntroSection } from "./components/test-intro-section"
+import stylesData from "@/lib/data/styles.json"
+import type { StylesData } from "@/lib/data/types"
+
+type Gender = "male" | "female"
+
+const typedStylesData = stylesData as StylesData
+
+function calculatePersonalityType(answers: Record<number, number>): string {
+  let E_I = 0
+  let S_N = 0
+  let T_F = 0
+  let J_P = 0
+
+  Object.entries(answers).forEach(([questionId, answerValue]) => {
+    const answer = Number(answerValue)
+    const qId = parseInt(questionId, 10)
+
+    if (qId === 1) E_I += answer
+    if (qId === 2) E_I -= answer
+    if (qId === 3) T_F += answer
+    if (qId === 4) S_N -= answer
+    if (qId === 5) S_N -= answer
+    if (qId === 6) S_N -= answer
+    if (qId === 7) T_F -= answer
+    if (qId === 8) T_F += answer
+    if (qId === 9) T_F += answer
+    if (qId === 10) J_P += answer
+    if (qId === 11) J_P -= answer
+    if (qId === 12) J_P -= answer
+  })
+
+  const personality = {
+    E_I: E_I > 0 ? "E" : "I",
+    S_N: S_N > 0 ? "S" : "N",
+    T_F: T_F > 0 ? "T" : "F",
+    J_P: J_P > 0 ? "J" : "P",
+  }
+
+  return `${personality.E_I}${personality.S_N}${personality.T_F}${personality.J_P}`
+}
+
+function getStyleIndexForGender(styleKey: string, gender: Gender): number {
+  const styleEntry = (typedStylesData as Record<string, any>)[styleKey]
+
+  if (!styleEntry) {
+    console.error(`Style data not found for key: ${styleKey}`)
+    return 0
+  }
+
+  if (Array.isArray(styleEntry)) {
+    const matchedIndex = styleEntry.findIndex((entry) => entry.gender === gender)
+    return matchedIndex >= 0 ? matchedIndex : 0
+  }
+
+  return 0
+}
+
+function getStyleDataForSelection(styleKey: string, gender: Gender) {
+  const styleEntry = (typedStylesData as Record<string, any>)[styleKey]
+
+  if (!styleEntry) {
+    console.error(`Style data not found for key: ${styleKey}`)
+    return null
+  }
+
+  if (Array.isArray(styleEntry)) {
+    const matchedStyle = styleEntry.find((entry) => entry.gender === gender)
+    return matchedStyle ?? styleEntry[0] ?? null
+  }
+
+  return styleEntry
+}
 
 function Star({ filled }: { filled: boolean }) {
   return (
@@ -96,6 +169,7 @@ const ratingOptions = [
 ]
 
 export default function TestPage() {
+  const router = useRouter()
   const [name, setName] = useState("")
   const [gender, setGender] = useState<"male" | "female" | null>(null)
   const [testStarted, setTestStarted] = useState(false)
@@ -170,6 +244,32 @@ export default function TestPage() {
               console.log('Test results saved successfully')
 
               handleSendEmailResults(updatedAnswers)
+
+              const personalityType = calculatePersonalityType(updatedAnswers)
+              const styleKey = personalityType.toLowerCase()
+              const styleIndex = gender ? getStyleIndexForGender(styleKey, gender) : 0
+              const styleData = gender ? getStyleDataForSelection(styleKey, gender) : null
+
+              if (styleData && typeof window !== "undefined") {
+                try {
+                  window.sessionStorage.setItem(
+                    "testResultStyleData",
+                    JSON.stringify({
+                      styleKey,
+                      gender,
+                      styleIndex,
+                      styleData,
+                    }),
+                  )
+                } catch (storageError) {
+                  console.error("Unable to store test result style data:", storageError)
+                }
+              }
+
+              setIsLoading(true)
+              await new Promise((resolve) => setTimeout(resolve, 5000))
+              router.push(`/result?style=${styleKey}&gender=${gender}&styleIndex=${styleIndex}`)
+              return
             } else {
               console.error('Failed to save test results:', saveResult.message)
             }
@@ -179,9 +279,6 @@ export default function TestPage() {
         } else {
           console.error('Gender not set, cannot save test results')
         }
-
-        // Show loading screen after initiating save
-        setIsLoading(true)
       }
     }
   }
@@ -250,14 +347,14 @@ export default function TestPage() {
             </h2>
           </div>
 
-          <div className="mb-16 flex justify-center gap-5">
+          <div className="mb-16 flex flex-wrap items-stretch justify-center gap-4 sm:gap-5">
             {ratingOptions.map((option) => (
               <button
                 key={option.value}
                 onClick={() => !testCompleted && setSelectedRating(option.value)}
                 disabled={testCompleted}
-                className={`w-[200px] flex flex-col items-center gap-3 rounded-2xl px-8 py-6 transition-all hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed ${option.bgColor
-                  } ${selectedRating === option.value ? "ring-4 ring-[#BD9479]" : ""}`}
+                className={`w-full max-w-[260px] flex flex-col items-center gap-3 rounded-2xl px-5 py-5 text-center transition-all hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed sm:w-[200px] sm:px-8 sm:py-6 ${option.bgColor
+                  } ${selectedRating === option.value ? "ring-4 ring-[#e9b999]" : ""}`}
               >
                 <div className="flex justify-center gap-1">
                   {Array.from({ length: option.stars }).map((_, i) => (
