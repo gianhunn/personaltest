@@ -3,6 +3,8 @@ import Image from "next/image"
 import type { Metadata } from "next"
 import { getStyleData, getSubStyleData, hasSubStyles } from "@/lib/data/getStyleData"
 import type { StyleData } from "@/lib/data/types"
+import { HOW_TO_GET_CONFIDENT_ITEMS, NOT_ONLY_YOU_ITEMS } from "@/lib/home/constants"
+import Link from "next/link"
 
 const DEFAULT_STYLE_KEY = "esfp"
 const DEFAULT_STYLE_INDEX = 0
@@ -18,6 +20,9 @@ type ResolvedStyleData = {
   gender: GenderParam
   styleData: StyleData
 }
+
+const NOT_ONLY_YOU_TEXTS = NOT_ONLY_YOU_ITEMS.map((item) => item.text)
+const HOW_TO_GET_CONFIDENT_TEXTS = HOW_TO_GET_CONFIDENT_ITEMS.map((item) => item.text)
 
 function extractParam(value: string | string[] | undefined): string | null {
   if (typeof value === "string") {
@@ -109,8 +114,84 @@ function resolveFromSearchParams(searchParams: SearchParams): ResolvedStyleData 
   return resolveStyle(styleKey, gender, styleIndex, subStyleIndex)
 }
 
+type ConfidenceSplitSectionProps = {
+  heading: string
+  items: ReadonlyArray<string>
+}
+
+function ConfidenceSplitSection({ heading, items }: ConfidenceSplitSectionProps) {
+  return (
+    <div className="pt-12 md:py-20">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-20">
+          <div className="order-last space-y-8 md:order-first">
+            {items.map((text, index) => (
+              <p key={`confidence-split-${index}`} className="text-lg leading-relaxed text-[#7b6b61]">
+                {text}
+              </p>
+            ))}
+          </div>
+          <div className="flex items-center order-first md:order-none">
+            <h2 className="text-left font-serif text-4xl font-light tracking-wide text-[#6b5d52] text-balance leading-tight md:text-6xl lg:text-right">
+              {heading}
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+type ConfidenceStackedSectionProps = {
+  heading: string
+  items: ReadonlyArray<string>
+}
+
+function ConfidenceStackedSection({ heading, items }: ConfidenceStackedSectionProps) {
+  return (
+    <div className="py-12 md:py-20">
+      <div className="mx-auto max-w-7xl px-6">
+        <h2 className="mb-10 font-serif text-4xl font-light tracking-wide text-[#6b5d52] md:mb-16 md:text-6xl">
+          {heading}
+        </h2>
+        <div className="space-y-8">
+          {items.map((text, index) => (
+            <p key={`confidence-stacked-${index}`} className="max-w-2xl text-lg leading-relaxed text-[#7b6b61]">
+              {text}
+            </p>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function isPromise<T>(value: T | Promise<T>): value is Promise<T> {
   return typeof (value as unknown as Promise<T>)?.then === "function"
+}
+
+function buildUrlWithParams(path: string, params: SearchParams): string {
+  const searchParams = new URLSearchParams()
+
+  Object.entries(params).forEach(([key, value]) => {
+    if (typeof value === "string") {
+      if (value) {
+        searchParams.set(key, value)
+      }
+      return
+    }
+
+    if (Array.isArray(value)) {
+      value.forEach((item) => {
+        if (item) {
+          searchParams.append(key, item)
+        }
+      })
+    }
+  })
+
+  const query = searchParams.toString()
+  return query ? `${path}?${query}` : path
 }
 
 async function unwrapSearchParams(searchParams: SearchParamsInput): Promise<SearchParams> {
@@ -134,6 +215,7 @@ export default async function ResultPage({ searchParams }: { searchParams: Searc
   const resolvedSearchParams = await unwrapSearchParams(searchParams)
   const resolved = resolveFromSearchParams(resolvedSearchParams)
   const { styleData } = resolved
+  const preservedTestUrl = buildUrlWithParams("/test", resolvedSearchParams)
 
   return (
     <div className="min-h-screen bg-[#f8f7f4]">
@@ -314,6 +396,38 @@ export default async function ResultPage({ searchParams }: { searchParams: Searc
               ))}
             </p>
           </blockquote>
+        </div>
+      </section>
+
+      {/* Confidence Invitation Section */}
+      <section className="bg-[#f8f7f4] text-[#5a5a5a]">
+        <div className="mx-auto max-w-5xl px-6 pt-24 pb-12">
+          <div className="flex flex-col items-center gap-6 text-center">
+            <p className="font-serif text-3xl tracking-[0.2em] uppercase text-[#8b7a6f]">
+              Bạn đã biết nhóm MBTI và phong cách thời trang của mình
+            </p>
+            <div className="h-50 w-[3px] bg-[#c4a890]" aria-hidden="true" />
+            <p className="font-serif text-4xl uppercase text-[#5a5a5a]">
+              Nhưng vẫn thấy khó tự tin là chính mình?
+            </p>
+          </div>
+        </div>
+
+        <ConfidenceSplitSection heading="BẠN KHÔNG PHẢI NGƯỜI DUY NHẤT" items={NOT_ONLY_YOU_TEXTS} />
+        <ConfidenceStackedSection heading="TỰ TIN THẬT LÀ NHƯ THẾ NÀO?" items={HOW_TO_GET_CONFIDENT_TEXTS} />
+
+        <div className="mx-auto max-w-5xl px-6 pb-24">
+          <div className="mt-16 border-t border-[#d9c6b3] pt-10 text-center">
+            <p className="font-serif text-xl uppercase tracking-[0.3em] text-[#8b6951]">
+              100 suất cố vấn cá nhân – miễn phí 100%
+            </p>
+            <Link
+              href={preservedTestUrl}
+              className="inline-block px-10 py-3 border-2 border-[#6b5d52] text-[#7b6b61] font-serif text-base tracking-widest uppercase transition-all hover:bg-[#6b5d52] hover:text-white rounded-full"
+            >
+              60-90 phút cố vấn, online và riêng tư
+            </Link>
+          </div>
         </div>
       </section>
     </div>

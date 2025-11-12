@@ -39,10 +39,10 @@ function calculatePersonalityType(answers: Record<number, number>): string {
   })
 
   const personality = {
-    E_I: E_I > 0 ? "E" : "I",
-    S_N: S_N > 0 ? "S" : "N",
-    T_F: T_F > 0 ? "T" : "F",
-    J_P: J_P > 0 ? "J" : "P",
+    E_I: E_I >= 0 ? "E" : "I",
+    S_N: S_N >= 0 ? "S" : "N",
+    T_F: T_F >= 0 ? "T" : "F",
+    J_P: J_P >= 0 ? "J" : "P",
   }
 
   return `${personality.E_I}${personality.S_N}${personality.T_F}${personality.J_P}`
@@ -117,7 +117,7 @@ const questions = [
     id: 5,
     text: "Khi quan sát sự việc, ",
     italicText:
-      "bạn thường tập trung vào ý nghĩa, thông điệp hoặc lý do ẩn sau nó.hơn là quan tâm nó diễn ra như thế nào, ai làm, kết quả ra sao.",
+      "bạn thường tập trung vào ý nghĩa, thông điệp hoặc lý do ẩn sau nó hơn là quan tâm nó diễn ra như thế nào, ai làm, kết quả ra sao.",
   },
   {
     id: 6,

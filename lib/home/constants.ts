@@ -1,11 +1,12 @@
 // Gallery Images
-export const GALLERY_IMAGES = [
-  "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=400&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=400&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&h=600&fit=crop",
-] as const
+const GALLERY_IMAGE_COUNT = 7
+const GALLERY_IMAGE_EXTENSION = ".png"
+
+const generatedGalleryImages = Array.from({ length: GALLERY_IMAGE_COUNT }, (_, index) =>
+  `/images/carousel/${index + 1}${GALLERY_IMAGE_EXTENSION}`,
+)
+
+export const GALLERY_IMAGES: ReadonlyArray<string> = Object.freeze(generatedGalleryImages)
 
 // Ellipse Configuration
 export const ELLIPSE_CONFIG = {
@@ -56,4 +57,28 @@ export const HOW_TO_ITEMS = [
     description:
       "Nền tảng để bạn nâng cao nhận thức về bản thân, từ đó cải thiện kỹ năng giao tiếp, xây dựng các mối quan hệ chất lượng và biến mục tiêu thành hành động thực tế thông qua tư vấn chuyên sâu hơn.",
   },
+] as const
+
+export const NOT_ONLY_YOU_ITEMS = [
+  {
+    text: "Biết phong cách hợp, nhưng vẫn lo “người ta nghĩ gì”",
+  },
+  {
+    text: "Biết phong cách hợp, nhưng vẫn lo “người ta nghĩ gì”",
+  },
+  {
+    text: "Muốn thể hiện bản thân, nhưng sợ bị khác biệt.",
+  },
+] as const
+
+export const HOW_TO_GET_CONFIDENT_ITEMS = [
+  {
+    text: "Tự tin thật không có nghĩa là hoàn hảo hay luôn mạnh mẽ.",
+  },
+  {
+    text: "Mà là hiểu rõ bản thân – dù ai nói gì, bạn vẫn vững vàng.",
+  },
+  {
+    text: "Khi bạn hiểu được giá trị của mình, phong cách, cách nói chuyện và các mối quan hệ sẽ trở nên tự nhiên và có sức hút hơn.",
+  }
 ] as const
