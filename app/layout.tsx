@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Montserrat } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { NavigationTransitionOverlay } from "@/components/ui/navigation-transition-overlay"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className} antialiased`}>
+        <NavigationTransitionOverlay />
         {children}
         <Analytics />
       </body>
