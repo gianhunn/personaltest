@@ -8,7 +8,7 @@ export function HeroContent({ className = "", showBottomMargin = false }: HeroCo
           <p className="mb-4 text-4xl tracking-widest text-[#8b7d72]">
             KHÁM PHÁ
           </p>
-          <h1 className="mb-4 text-4xl font-light text-[#6b5d52] md:text-6xl">
+          <h1 className="mb-4 text-3xl font-bold text-[#6b5d52] md:text-4xl xl:text-5xl">
             PHONG CÁCH ĐỘC BẢN CỦA RIÊNG BẠN
           </h1>
           <p className={`text-3xl text-[#8b7d72] ${showBottomMargin ? "mb-2" : ""}`}>
