@@ -4,7 +4,7 @@ import type { CarouselImageProps } from "./types"
 export function CarouselImage({ src, alt, index }: CarouselImageProps) {
   return (
     <div
-      className="relative aspect-[2/3] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow
+      className="relative aspect-[2/3] overflow-hidden rounded-lg bg-[#f4f0ea] shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl
         w-[calc((100vw-2rem-24px)/2.5)] min-w-[140px] max-w-[280px]
         md:w-[calc((100vw-2rem-48px)/3.5)] md:max-w-[320px]
         lg:w-[calc((100vw-2rem-48px)/4)] lg:max-w-[380px]"

@@ -173,7 +173,7 @@ export default function Home() {
               ))}
             </div>
             <div className="flex items-center order-first md:order-none">
-              <h2 className="text-4xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light text-balance leading-tight text-left lg:text-right">
+              <h2 className="text-4xl font-bold tracking-wide text-[#6b5d52] lg:text-balance leading-tight text-left md:text-6xl lg:text-right">
                 VÌ SAO NÊN LÀM TEST?
               </h2>
             </div>
@@ -184,7 +184,7 @@ export default function Home() {
       {/* How To Section */}
       <section className="py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl md:text-6xl tracking-wide text-[#6b5d52] font-serif font-light mb-10 md:mb-16">
+          <h2 className="mb-10 text-4xl font-bold tracking-wide text-[#6b5d52] md:mb-16 md:text-6xl">
             LÀM THẾ NÀO?
           </h2>
 
@@ -202,7 +202,7 @@ export default function Home() {
           <div className="flex justify-end">
             <Link
               href={buildUrl("/test")}
-              className="inline-block px-10 py-3 border-2 border-[#6b5d52] text-[#6b5d52] font-serif text-base tracking-widest uppercase transition-all hover:bg-[#6b5d52] hover:text-white rounded-full"
+              className="inline-block rounded-full border-2 border-[#6b5d52] px-10 py-3 text-base tracking-widest uppercase text-[#6b5d52] transition-all hover:bg-[#6b5d52] hover:text-white"
             >
               TEST NGAY
             </Link>

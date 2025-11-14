@@ -28,18 +28,21 @@ export function SplitImageContent({
 }: SplitImageContentProps) {
   return (
     <Component
-      className={cn("grid min-h-[calc(100vh-120px)] w-full grid-cols-1 lg:grid-cols-2", className)}
+      className={cn(
+        "grid min-h-screen w-full grid-cols-1 gap-8 overflow-hidden px-6 py-12 sm:px-8 sm:py-14 lg:min-h-[calc(100vh-120px)] lg:grid-cols-2 lg:gap-0 lg:px-0 lg:py-0",
+        className,
+      )}
     >
       <div
         className={cn(
-          "relative flex items-center justify-center overflow-hidden lg:justify-start",
+          "relative flex items-center justify-center overflow-hidden rounded-3xl bg-[#f1ebe5] px-4 py-10 sm:px-6 sm:py-12 lg:order-first lg:rounded-none lg:bg-transparent lg:px-0 lg:py-0 lg:justify-start",
           leftColumnClassName,
         )}
       >
-        <div className="relative h-full w-full">
+        <div className="relative h-full w-full lg:max-h-[calc(100vh-120px)]">
           <section
             className={cn(
-              "flex h-full w-full items-center justify-start py-12 lg:py-20",
+              "flex h-full w-full items-center justify-center lg:justify-start",
               imageSectionClassName,
             )}
           >
@@ -47,7 +50,7 @@ export function SplitImageContent({
               imageSrc={imageSrc}
               alt={alt}
               containerClassName={cn(
-                "w-full max-w-[520px] sm:max-w-[600px] lg:max-w-none lg:w-[700px] lg:-ml-20 xl:w-[760px] xl:-ml-28 2xl:w-[920px] 2xl:-ml-36",
+                "w-full max-w-[360px] sm:max-w-[420px] md:max-w-[480px] lg:max-w-none lg:-ml-10 xl:max-w-[640px] xl:-ml-16 2xl:max-w-[820px] 2xl:-ml-20",
                 imageContainerClassName,
               )}
             />
@@ -56,7 +59,10 @@ export function SplitImageContent({
       </div>
 
       <div
-        className={cn("flex items-center justify-center px-8 py-16 lg:px-16", rightColumnClassName)}
+        className={cn(
+          "flex items-start justify-center rounded-3xl bg-white px-4 py-6 sm:px-6 sm:py-8 lg:order-last lg:rounded-none lg:bg-transparent lg:px-12 lg:py-12 lg:max-h-[calc(100vh-120px)] lg:overflow-y-auto",
+          rightColumnClassName,
+        )}
       >
         {children}
       </div>

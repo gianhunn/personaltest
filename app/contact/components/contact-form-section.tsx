@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { SplitImageContent } from "@/components/layout/split-image-content"
 import { LabeledInput } from "@/components/form/labeled-input"
 import { LabeledTextarea } from "@/components/form/labeled-textarea"
-import { primaryRoundedButtonClass } from "@/lib/form-styles"
+import { formActionRowClass, formWrapperClass, primaryRoundedButtonClass } from "@/lib/form-styles"
 import React, { useState, useEffect } from "react"
 import { contactService, emailService, googleSheetsService } from "@/services"
 
@@ -263,7 +263,7 @@ export function ContactFormSection() {
   return (
     <section id="contact-form" className="relative w-full bg-[#f5f1ea]">
       <SplitImageContent imageSrc="/images/contact-us/design-space.jpg" alt="Design space">
-        <form onSubmit={handleSubmit} noValidate className="w-full max-w-2xl space-y-12">
+        <form onSubmit={handleSubmit} noValidate className={formWrapperClass}>
           <LabeledInput
             id="contact-phone"
             type="tel"
@@ -313,7 +313,7 @@ export function ContactFormSection() {
               {submitMessage}
             </div>
           )}
-          <div className="pt-4 flex justify-center">
+          <div className={formActionRowClass}>
             <Button
               type="submit"
               disabled={isSubmitting}
