@@ -203,7 +203,7 @@ export function HourglassLoader({
       </div>
 
       {message ? (
-        <p className={cn("font-serif text-xl text-[#5a6b6a]", messageClassName)}>
+        <p className={cn("text-xl text-[#5a6b6a]", messageClassName)}>
           {message}
         </p>
       ) : null}

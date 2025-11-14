@@ -8,7 +8,7 @@ export default function ClientsPage() {
       <main className="mx-auto max-w-6xl px-6 py-16">
         <div className="space-y-12">
           <div className="text-center">
-            <h1 className="mb-6 font-serif text-5xl tracking-wide text-[#7ba89f]">Avis Clients</h1>
+            <h1 className="mb-6 text-5xl tracking-wide text-[#7ba89f]">Avis Clients</h1>
             <p className="text-lg leading-relaxed text-[#6b7280]">
               Khám phá những chia sẻ từ khách hàng đã trải nghiệm dịch vụ của chúng tôi
             </p>

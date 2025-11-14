@@ -53,7 +53,7 @@ export function Navigation({ currentPage }: NavigationProps) {
         </div>
 
         <Link href="/" className="flex-shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2">
-          <h1 className="font-serif text-2xl tracking-wide text-[#745E4D] md:text-3xl">PERSONAL TEST, INC.</h1>
+        <h1 className="text-2xl font-bold tracking-wide text-[#745E4D] md:text-4xl">PERSONAL TEST, INC.</h1>
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex lg:flex-1 lg:justify-end cursor-pointer">
@@ -88,7 +88,7 @@ export function Navigation({ currentPage }: NavigationProps) {
         <div className="fixed inset-0 z-[300] flex min-h-[100dvh] flex-col bg-[#F8F7F4] lg:hidden">
           <div className="flex items-center justify-between border-b border-[#d4cfc0] px-6 py-4">
             <Link href="/" onClick={() => setIsMenuOpen(false)}>
-              <h1 className="font-serif text-2xl tracking-wide text-[#745E4D]">PERSONAL TEST, INC.</h1>
+          <h1 className="text-2xl font-semibold tracking-wide text-[#745E4D]">PERSONAL TEST, INC.</h1>
             </Link>
             <button
               onClick={() => setIsMenuOpen(false)}

@@ -1,6 +1,12 @@
 import type { ComponentPropsWithoutRef, ReactNode } from "react"
 
-import { roundedTextareaClass, roundedTextareaErrorClass } from "@/lib/form-styles"
+import {
+  formErrorTextClass,
+  formFieldContainerClass,
+  formLabelClass,
+  roundedTextareaClass,
+  roundedTextareaErrorClass,
+} from "@/lib/form-styles"
 import { cn } from "@/lib/utils"
 
 type LabeledTextareaProps = ComponentPropsWithoutRef<"textarea"> & {
@@ -20,11 +26,11 @@ export function LabeledTextarea({
   ...textareaProps
 }: LabeledTextareaProps) {
   return (
-    <div className={cn("space-y-4", containerClassName)}>
+    <div className={cn(formFieldContainerClass, containerClassName)}>
       <label
         htmlFor={id}
         className={cn(
-          "font-serif text-4xl tracking-wide text-[#5B4F47] lg:text-3xl",
+          formLabelClass,
           labelClassName,
         )}
       >
@@ -39,11 +45,7 @@ export function LabeledTextarea({
           )}
           {...textareaProps}
         />
-        {error && (
-          <p className="text-center text-sm text-red-600 font-medium">
-            {error}
-          </p>
-        )}
+        {error && <p className={formErrorTextClass}>{error}</p>}
       </div>
     </div>
   )

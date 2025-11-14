@@ -3,7 +3,8 @@
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { HourglassLoader } from "@/components/ui/hourglass"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
+import { ArrowLeft, ArrowRight } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { googleSheetsService, emailService } from "@/services"
 import { TestIntroSection } from "./components/test-intro-section"
@@ -96,7 +97,7 @@ const questions = [
   {
     id: 1,
     text: "Trong các buổi gặp gỡ hoặc sự kiện đông người, ",
-    italicText: "bạn thường nhanh chòng hoà nhập, thích trò chuyện với nhiều người mới.",
+    italicText: "bạn thường nhanh chóng hoà nhập, thích trò chuyện với nhiều người mới.",
   },
   {
     id: 2,
@@ -217,9 +218,18 @@ export default function TestPage() {
     }
   }
 
-  const handleContinue = async () => {
-    if (selectedRating !== null) {
-      const updatedAnswers = { ...answers, [questions[currentQuestion].id]: selectedRating }
+  const questionRef = useRef<HTMLDivElement | null>(null)
+
+  const scrollToQuestion = () => {
+    if (questionRef.current) {
+      questionRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
+
+  const handleContinue = async (nextRating?: number) => {
+    const ratingToUse = typeof nextRating === "number" ? nextRating : selectedRating
+    if (ratingToUse !== null) {
+      const updatedAnswers = { ...answers, [questions[currentQuestion].id]: ratingToUse }
       setAnswers(updatedAnswers)
 
       if (currentQuestion < questions.length - 1) {
@@ -339,21 +349,48 @@ export default function TestPage() {
         <Navigation currentPage="test" />
 
         <main className="mx-auto flex min-h-[calc(100vh-120px)] max-w-full flex-col items-center justify-center px-8 py-16">
-          <div className="mb-16 max-w-6xl text-center">
-            <h2 className="font-serif text-3xl leading-relaxed tracking-wide text-[#5a6b6a] lg:text-4xl">
+          <div ref={questionRef} className="mb-16 max-w-8xl text-center">
+            <h2 className="text-3xl leading-relaxed tracking-wide text-[#5a6b6a] lg:text-4xl">
               {question.text}
               <br />
-              <em className="font-serif">{question.italicText}</em>
+              <em>{question.italicText}</em>
             </h2>
           </div>
 
-          <div className="mb-16 flex flex-wrap items-stretch justify-center gap-4 sm:gap-5">
+          <div className="mb-16 grid w-full max-w-8xl grid-cols-[auto_1fr_auto] items-center gap-3 sm:items-center sm:gap-5">
+            <Button
+              onClick={handleBack}
+              disabled={testCompleted}
+              variant="ghost"
+              className="mt-12 flex h-12 w-12 items-center justify-center rounded-full text-[#5a6b6a] transition-transform duration-200 hover:bg-[#f0e9e2] hover:text-[#BD9479] active:scale-90 disabled:opacity-30 sm:mt-0 sm:h-20 sm:w-20"
+            >
+              <svg
+                className="h-6 w-6 sm:h-10 sm:w-10"
+                viewBox="0 0 6 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M5.78033 0.21967C5.48744 -0.0732233 5.01256 -0.0732233 4.71967 0.21967L0.71967 4.21967C0.426777 4.51256 0.426777 4.98744 0.71967 5.28033L4.71967 9.28033C5.01256 9.57322 5.48744 9.57322 5.78033 9.28033C6.07322 8.98744 6.07322 8.51256 5.78033 8.21967L2.31066 4.75L5.78033 1.28033C6.07322 0.987437 6.07322 0.512563 5.78033 0.21967Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </Button>
+
+            <div className="grid gap-3 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-5">
             {ratingOptions.map((option) => (
               <button
                 key={option.value}
-                onClick={() => !testCompleted && setSelectedRating(option.value)}
-                disabled={testCompleted}
-                className={`w-full max-w-[260px] flex flex-col items-center gap-3 rounded-2xl px-5 py-5 text-center transition-all hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed sm:w-[200px] sm:px-8 sm:py-6 ${option.bgColor
+                onClick={() => {
+                  if (testCompleted || isLoading) return
+                  setSelectedRating(option.value)
+                  void handleContinue(option.value)
+                  scrollToQuestion()
+                }}
+                disabled={testCompleted || isLoading}
+                className={`flex w-full max-w-[260px] flex-col items-center gap-2 rounded-2xl px-3 py-3 text-center text-sm transition-transform duration-200 hover:scale-105 active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 sm:w-[200px] sm:px-8 sm:py-6 sm:text-base ${option.bgColor
                   } ${selectedRating === option.value ? "ring-4 ring-[#e9b999]" : ""}`}
               >
                 <div className="flex justify-center gap-1">
@@ -361,31 +398,39 @@ export default function TestPage() {
                     <Star key={i} filled />
                   ))}
                 </div>
-                <span className="whitespace-nowrap rounded-full bg-white px-6 py-2 text-sm font-medium text-[#5a6b6a]">
+                <span className="whitespace-nowrap rounded-full bg-white px-4 py-1 text-xs font-medium text-[#5a6b6a] sm:px-6 sm:py-2 sm:text-sm">
                   {option.label}
                 </span>
               </button>
             ))}
-          </div>
+            </div>
 
-          <div className="flex w-full max-w-6xl justify-between">
             <Button
-              onClick={handleBack}
-              disabled={testCompleted}
-              variant="ghost"
-              className="text-lg text-[#5a6b6a] underline hover:bg-transparent hover:text-[#BD9479] disabled:opacity-50"
-            >
-              Quay lại
-            </Button>
-            <Button
-              onClick={handleContinue}
+              onClick={async () => {
+                scrollToQuestion()
+                await handleContinue()
+              }}
               disabled={selectedRating === null || testCompleted}
               variant="ghost"
-              className="text-lg text-[#5a6b6a] underline hover:bg-transparent hover:text-[#BD9479] disabled:opacity-50"
+              className="mt-12 flex h-12 w-12 items-center justify-center rounded-full text-[#5a6b6a] transition-transform duration-200 hover:bg-[#f0e9e2] hover:text-[#BD9479] active:scale-90 disabled:opacity-30 sm:mt-0 sm:h-20 sm:w-20"
             >
-              {isLastQuestion ? "Kết thúc" : "Tiếp tục"}
+              <svg
+                className="h-6 w-6 sm:h-10 sm:w-10"
+                viewBox="0 0 6 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M0.21967 0.21967C0.512563 -0.0732233 0.987437 -0.0732233 1.28033 0.21967L5.28033 4.21967C5.57322 4.51256 5.57322 4.98744 5.28033 5.28033L1.28033 9.28033C0.987437 9.57322 0.512563 9.57322 0.21967 9.28033C-0.0732233 8.98744 -0.0732233 8.51256 0.21967 8.21967L3.68934 4.75L0.21967 1.28033C-0.0732233 0.987437 -0.0732233 0.512563 0.21967 0.21967Z"
+                  fill="currentColor"
+                />
+              </svg>
             </Button>
           </div>
+
+          <div className="flex w-full max-w-8xl justify-between sm:hidden" />
         </main>
       </div>
     )
