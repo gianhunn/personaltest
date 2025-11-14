@@ -6,10 +6,10 @@ import type { StyleData } from "@/lib/data/types"
 import { HOW_TO_GET_CONFIDENT_ITEMS, NOT_ONLY_YOU_ITEMS } from "@/lib/home/constants"
 import Link from "next/link"
 
-const DEFAULT_STYLE_KEY = "esfp"
+const DEFAULT_STYLE_KEY = "estj"
 const DEFAULT_STYLE_INDEX = 0
 
-type GenderParam = "male" | "female" | null
+type GenderParam = "female" | "male" | null
 type SearchParams = { [key: string]: string | string[] | undefined }
 type SearchParamsInput = SearchParams | Promise<SearchParams>
 
@@ -401,8 +401,8 @@ export default async function ResultPage({ searchParams }: { searchParams: Searc
           />
           <div className="-z-10 absolute inset-0 bg-black/55 sm:bg-black/40" />
 
-          <blockquote className="container mx-auto flex max-w-6xl flex-col items-center text-center lg:max-w-7xl">
-            <pre className="mb-6 w-full text-pretty text-xl italic text-white sm:mb-8 sm:text-3xl lg:text-5xl">
+          <blockquote className="container mx-auto flex max-w-6xl flex-col items-center text-center font-sans lg:max-w-7xl">
+            <pre className="font-sans mb-6 w-full text-pretty text-xl italic text-white sm:mb-8 sm:text-3xl lg:text-5xl">
               {styleData.quoteSection.quote}
             </pre>
             <p className="w-full max-w-5xl text-pretty text-sm leading-relaxed text-white sm:text-base md:text-lg xl:text-xl">
