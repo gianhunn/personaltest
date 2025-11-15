@@ -61,7 +61,7 @@ export const HOW_TO_ITEMS = [
 
 export const NOT_ONLY_YOU_ITEMS = [
   {
-    text: "Biết phong cách hợp, nhưng vẫn lo “người ta nghĩ gì”",
+    text: "Hiểu lý thuyết MBTI, nhưng chưa biết áp dụng vào thực tế.",
   },
   {
     text: "Biết phong cách hợp, nhưng vẫn lo “người ta nghĩ gì”",

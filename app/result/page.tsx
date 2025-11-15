@@ -441,7 +441,7 @@ export default async function ResultPage({ searchParams }: { searchParams: Searc
         <div className="mx-auto max-w-5xl px-6 pb-24">
           <div className="mt-16 border-t border-[#d9c6b3] pt-10 text-center">
             <p className="text-xl uppercase tracking-[0.3em] text-[#8b6951] pb-[20px]">
-              100 xuất cố vấn cá nhân – miễn phí 100%
+              100 suất cố vấn cá nhân – miễn phí 100%
             </p>
             <Link
               href={`${preservedContactUrl}#contact-form`}
